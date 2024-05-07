@@ -1,0 +1,13 @@
+pre-commit:
+  commands:
+    lint-json:
+      glob: "**/*.json"
+      run: dprint check {staged_files}
+    lint-restfox-workspaces:
+      glob: "*/restfox.json"
+      run: jq -e '.currentEnvironment == "Default"' {staged_files}
+
+fix:
+  commands:
+    fix-lint:
+      run: dprint fmt --allow-no-files {staged_files}
