@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "Rc8JAgCzUE9DLLudPgA3s",
+    "name": "Sentry authentication",
+    "code": "function preRequest() {\n  rf.request.setHeader('Authorization', `Bearer ${rf.getEnvVar('auth_token')}`);\n}\n\nif ('request' in rf) {\n  preRequest();\n}\n",
+    "enabled": true,
+    "createdAt": 1715211435646,
+    "updatedAt": 1715211579832
+  }
+]
