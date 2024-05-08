@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/teams/{team_slug}/discussions",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"title\": \"string\",\n  \"body\": \"string\",\n  \"private\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 6
+}

@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/actions/runners/generate-jitconfig",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"runner_group_id\": 0,\n  \"labels\": [\n    \"string\"\n  ],\n  \"work_folder\": \"_work\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 67
+}

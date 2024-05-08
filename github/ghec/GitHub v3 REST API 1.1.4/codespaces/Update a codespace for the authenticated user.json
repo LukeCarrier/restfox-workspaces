@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/codespaces/{codespace_name}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"machine\": \"string\",\n  \"display_name\": \"string\",\n  \"recent_folders\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 40
+}

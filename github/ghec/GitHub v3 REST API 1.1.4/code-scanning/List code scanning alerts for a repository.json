@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/code-scanning/alerts",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "sort",
+      "value": "created",
+      "disabled": true
+    },
+    {
+      "name": "state",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "severity",
+      "value": "null",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

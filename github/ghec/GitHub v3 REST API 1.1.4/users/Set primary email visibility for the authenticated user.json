@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/email/visibility",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"visibility\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 6
+}

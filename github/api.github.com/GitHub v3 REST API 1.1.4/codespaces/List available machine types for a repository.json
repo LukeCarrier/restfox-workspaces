@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/codespaces/machines",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "location",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "client_ip",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ref",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 19
+}

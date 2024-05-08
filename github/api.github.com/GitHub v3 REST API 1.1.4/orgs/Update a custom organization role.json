@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/organization-roles/{role_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"permissions\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 41
+}

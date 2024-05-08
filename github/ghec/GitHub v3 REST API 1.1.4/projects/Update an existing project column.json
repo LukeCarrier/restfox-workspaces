@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/projects/columns/{column_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 7
+}

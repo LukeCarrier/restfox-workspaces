@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/blocks/{username}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 11
+}

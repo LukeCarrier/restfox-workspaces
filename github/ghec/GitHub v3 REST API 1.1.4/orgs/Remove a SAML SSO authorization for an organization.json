@@ -1,0 +1,20 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/credential-authorizations/{credential_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "credential_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 14
+}

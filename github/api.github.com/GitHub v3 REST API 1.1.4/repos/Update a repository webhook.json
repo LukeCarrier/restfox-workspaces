@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/hooks/{hook_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"config\": null,\n  \"events\": [\n    \"push\"\n  ],\n  \"add_events\": [\n    \"string\"\n  ],\n  \"remove_events\": [\n    \"string\"\n  ],\n  \"active\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 107
+}

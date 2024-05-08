@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/rulesets",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"target\": \"string\",\n  \"enforcement\": null,\n  \"bypass_actors\": [\n    null\n  ],\n  \"conditions\": null,\n  \"rules\": [\n    null\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 162
+}

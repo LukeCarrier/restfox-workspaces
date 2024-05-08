@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"strict\": true,\n  \"contexts\": [\n    \"string\"\n  ],\n  \"checks\": [\n    {\n      \"context\": \"string\",\n      \"app_id\": 0\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 35
+}

@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/statuses/{sha}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"state\": \"string\",\n  \"target_url\": null,\n  \"description\": null,\n  \"context\": \"default\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "sha",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 173
+}

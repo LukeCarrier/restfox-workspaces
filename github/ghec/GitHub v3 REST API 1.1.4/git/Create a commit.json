@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/git/commits",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"message\": \"string\",\n  \"tree\": \"string\",\n  \"parents\": [\n    \"string\"\n  ],\n  \"author\": {\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"date\": \"2024-05-08T20:10:59.604Z\"\n  },\n  \"committer\": {\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"date\": \"2024-05-08T20:10:59.604Z\"\n  },\n  \"signature\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

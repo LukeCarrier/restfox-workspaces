@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/branches/{branch}/protection/required_pull_request_reviews",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"dismissal_restrictions\": {\n    \"users\": [\n      \"string\"\n    ],\n    \"teams\": [\n      \"string\"\n    ],\n    \"apps\": [\n      \"string\"\n    ]\n  },\n  \"dismiss_stale_reviews\": true,\n  \"require_code_owner_reviews\": true,\n  \"required_approving_review_count\": 0,\n  \"require_last_push_approval\": true,\n  \"bypass_pull_request_allowances\": {\n    \"users\": [\n      \"string\"\n    ],\n    \"teams\": [\n      \"string\"\n    ],\n    \"apps\": [\n      \"string\"\n    ]\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 29
+}

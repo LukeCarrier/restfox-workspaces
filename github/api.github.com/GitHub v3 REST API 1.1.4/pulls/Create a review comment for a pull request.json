@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/pulls/{pull_number}/comments",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"body\": \"string\",\n  \"commit_id\": \"string\",\n  \"path\": \"string\",\n  \"position\": 0,\n  \"side\": \"string\",\n  \"line\": 0,\n  \"start_line\": 0,\n  \"start_side\": \"string\",\n  \"in_reply_to\": 0,\n  \"subject_type\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 9
+}

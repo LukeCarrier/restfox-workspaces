@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/projects/{project_id}/collaborators",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "affiliation",
+      "value": "all",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 15
+}

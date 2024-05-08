@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/scim/v2/enterprises/{enterprise}/Groups/{scim_group_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 45
+}

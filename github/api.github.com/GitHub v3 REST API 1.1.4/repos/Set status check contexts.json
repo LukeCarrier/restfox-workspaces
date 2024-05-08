@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/branches/{branch}/protection/required_status_checks/contexts",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 39
+}

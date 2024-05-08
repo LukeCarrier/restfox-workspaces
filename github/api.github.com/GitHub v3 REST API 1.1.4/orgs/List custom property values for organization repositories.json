@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/properties/values",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "repository_query",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 61
+}

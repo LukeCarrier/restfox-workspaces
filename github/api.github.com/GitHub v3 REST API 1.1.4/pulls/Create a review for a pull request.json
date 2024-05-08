@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/pulls/{pull_number}/reviews",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"commit_id\": \"string\",\n  \"body\": \"string\",\n  \"event\": \"string\",\n  \"comments\": [\n    {\n      \"path\": \"string\",\n      \"position\": 0,\n      \"body\": \"string\",\n      \"line\": 0,\n      \"side\": \"string\",\n      \"start_line\": 0,\n      \"start_side\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 19
+}

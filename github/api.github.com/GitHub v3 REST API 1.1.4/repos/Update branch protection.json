@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/branches/{branch}/protection",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"required_status_checks\": null,\n  \"enforce_admins\": null,\n  \"required_pull_request_reviews\": null,\n  \"restrictions\": null,\n  \"required_linear_history\": true,\n  \"allow_force_pushes\": null,\n  \"allow_deletions\": true,\n  \"block_creations\": true,\n  \"required_conversation_resolution\": true,\n  \"lock_branch\": true,\n  \"allow_fork_syncing\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 23
+}

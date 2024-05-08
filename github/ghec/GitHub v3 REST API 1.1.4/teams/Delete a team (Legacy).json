@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/teams/{team_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 39
+}

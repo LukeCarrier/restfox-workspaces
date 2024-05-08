@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/properties/schema/{custom_property_name}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"value_type\": \"string\",\n  \"required\": true,\n  \"default_value\": null,\n  \"description\": null,\n  \"allowed_values\": null\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 59
+}

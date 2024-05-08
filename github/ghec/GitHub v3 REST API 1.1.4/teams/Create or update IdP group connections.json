@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/teams/{team_slug}/team-sync/group-mappings",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"groups\": [\n    {\n      \"group_id\": \"string\",\n      \"group_name\": \"string\",\n      \"group_description\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 35
+}

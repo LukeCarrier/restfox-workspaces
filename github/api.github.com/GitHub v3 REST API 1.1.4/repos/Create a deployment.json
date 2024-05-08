@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/deployments",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"ref\": \"string\",\n  \"task\": \"deploy\",\n  \"auto_merge\": true,\n  \"required_contexts\": [\n    \"string\"\n  ],\n  \"payload\": null,\n  \"environment\": \"production\",\n  \"description\": null,\n  \"transient_environment\": true,\n  \"production_environment\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 81
+}

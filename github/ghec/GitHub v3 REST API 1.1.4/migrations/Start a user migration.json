@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/migrations",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"lock_repositories\": true,\n  \"exclude_metadata\": true,\n  \"exclude_git_data\": true,\n  \"exclude_attachments\": true,\n  \"exclude_releases\": true,\n  \"exclude_owner_projects\": true,\n  \"org_metadata_only\": true,\n  \"exclude\": [\n    \"string\"\n  ],\n  \"repositories\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 16
+}

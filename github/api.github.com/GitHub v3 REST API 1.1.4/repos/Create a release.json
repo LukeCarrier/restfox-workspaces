@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/releases",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"tag_name\": \"string\",\n  \"target_commitish\": \"string\",\n  \"name\": \"string\",\n  \"body\": \"string\",\n  \"draft\": true,\n  \"prerelease\": true,\n  \"discussion_category_name\": \"string\",\n  \"generate_release_notes\": true,\n  \"make_latest\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 146
+}

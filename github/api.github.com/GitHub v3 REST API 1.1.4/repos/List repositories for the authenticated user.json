@@ -1,0 +1,41 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/repos",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "visibility",
+      "value": "all",
+      "disabled": true
+    },
+    {
+      "name": "affiliation",
+      "value": "owner,collaborator,organization_member",
+      "disabled": true
+    },
+    {
+      "name": "type",
+      "value": "all",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "full_name",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 191
+}

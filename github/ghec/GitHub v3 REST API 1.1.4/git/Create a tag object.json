@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/git/tags",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"tag\": \"string\",\n  \"message\": \"string\",\n  \"object\": \"string\",\n  \"type\": \"string\",\n  \"tagger\": {\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"date\": \"2024-05-08T20:10:59.604Z\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 9
+}

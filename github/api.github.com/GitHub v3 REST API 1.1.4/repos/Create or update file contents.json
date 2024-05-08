@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/contents/{path}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"message\": \"string\",\n  \"content\": \"string\",\n  \"sha\": \"string\",\n  \"branch\": \"string\",\n  \"committer\": {\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"date\": \"string\"\n  },\n  \"author\": {\n    \"name\": \"string\",\n    \"email\": \"string\",\n    \"date\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "path",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 77
+}

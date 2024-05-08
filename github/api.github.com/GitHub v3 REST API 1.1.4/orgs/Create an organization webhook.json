@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/hooks",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"config\": {\n    \"url\": null,\n    \"content_type\": null,\n    \"secret\": null,\n    \"insecure_ssl\": null,\n    \"username\": \"string\",\n    \"password\": \"string\"\n  },\n  \"events\": [\n    \"push\"\n  ],\n  \"active\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 10
+}

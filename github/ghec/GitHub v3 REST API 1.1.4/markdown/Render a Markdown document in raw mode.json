@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/markdown/raw",
+  "method": "POST",
+  "body": {
+    "mimeType": "text/plain"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

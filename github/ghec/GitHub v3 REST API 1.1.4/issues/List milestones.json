@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/milestones",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "state",
+      "value": "open",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "due_on",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "asc",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 33
+}

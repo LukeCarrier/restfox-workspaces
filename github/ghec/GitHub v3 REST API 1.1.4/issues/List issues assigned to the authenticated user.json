@@ -1,0 +1,51 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/issues",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "filter",
+      "value": "assigned",
+      "disabled": true
+    },
+    {
+      "name": "state",
+      "value": "open",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "created",
+      "disabled": true
+    },
+    {
+      "name": "collab",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "orgs",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "owned",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "pulls",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

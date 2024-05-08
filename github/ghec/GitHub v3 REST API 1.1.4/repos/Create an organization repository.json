@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/repos",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"description\": \"string\",\n  \"homepage\": \"string\",\n  \"private\": true,\n  \"visibility\": \"string\",\n  \"has_issues\": true,\n  \"has_projects\": true,\n  \"has_wiki\": true,\n  \"has_downloads\": true,\n  \"is_template\": true,\n  \"team_id\": 0,\n  \"auto_init\": true,\n  \"gitignore_template\": \"string\",\n  \"license_template\": \"string\",\n  \"allow_squash_merge\": true,\n  \"allow_merge_commit\": true,\n  \"allow_rebase_merge\": true,\n  \"allow_auto_merge\": true,\n  \"delete_branch_on_merge\": true,\n  \"use_squash_pr_title_as_default\": true,\n  \"squash_merge_commit_title\": \"string\",\n  \"squash_merge_commit_message\": \"string\",\n  \"merge_commit_title\": \"string\",\n  \"merge_commit_message\": \"string\",\n  \"custom_properties\": {}\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

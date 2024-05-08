@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/check-runs/{check_run_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"details_url\": \"string\",\n  \"external_id\": \"string\",\n  \"started_at\": \"2024-05-08T20:10:59.602Z\",\n  \"status\": \"string\",\n  \"conclusion\": \"string\",\n  \"completed_at\": \"2024-05-08T20:10:59.602Z\",\n  \"output\": {\n    \"title\": \"string\",\n    \"summary\": \"string\",\n    \"text\": \"string\",\n    \"annotations\": [\n      {\n        \"path\": \"string\",\n        \"start_line\": 0,\n        \"end_line\": 0,\n        \"start_column\": 0,\n        \"end_column\": 0,\n        \"annotation_level\": \"string\",\n        \"message\": \"string\",\n        \"title\": \"string\",\n        \"raw_details\": \"string\"\n      }\n    ],\n    \"images\": [\n      {\n        \"alt\": \"string\",\n        \"image_url\": \"string\",\n        \"caption\": \"string\"\n      }\n    ]\n  },\n  \"actions\": [\n    {\n      \"label\": \"string\",\n      \"description\": \"string\",\n      \"identifier\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

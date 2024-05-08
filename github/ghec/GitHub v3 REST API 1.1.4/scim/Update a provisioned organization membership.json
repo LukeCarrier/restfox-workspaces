@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/scim/v2/organizations/{org}/Users/{scim_user_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"schemas\": [\n    \"string\"\n  ],\n  \"displayName\": \"string\",\n  \"externalId\": \"string\",\n  \"groups\": [\n    \"string\"\n  ],\n  \"active\": true,\n  \"userName\": \"string\",\n  \"name\": {\n    \"givenName\": \"Jane\",\n    \"familyName\": \"User\"\n  },\n  \"emails\": [\n    {\n      \"type\": \"string\",\n      \"value\": \"string\",\n      \"primary\": true\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

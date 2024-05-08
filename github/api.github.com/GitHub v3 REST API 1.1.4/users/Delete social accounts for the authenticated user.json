@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/social_accounts",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"account_urls\": [\n    \"https://www.linkedin.com/company/github/\",\n    \"https://twitter.com/github\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 26
+}

@@ -1,0 +1,81 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/advisories",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "ghsa_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "type",
+      "value": "reviewed",
+      "disabled": true
+    },
+    {
+      "name": "cve_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ecosystem",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "severity",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "cwes",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "is_withdrawn",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "affects",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "published",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "updated",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "modified",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "30",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "published",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

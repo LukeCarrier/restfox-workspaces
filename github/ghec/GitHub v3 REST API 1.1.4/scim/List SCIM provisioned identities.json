@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/scim/v2/organizations/{org}/Users",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startIndex",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "count",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "filter",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

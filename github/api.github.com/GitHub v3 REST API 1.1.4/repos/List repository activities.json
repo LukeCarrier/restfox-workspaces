@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/activity",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "ref",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "actor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "time_period",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "activity_type",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 12
+}

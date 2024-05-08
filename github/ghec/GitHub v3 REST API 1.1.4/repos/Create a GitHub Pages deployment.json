@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/pages/deployments",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"artifact_id\": 0,\n  \"artifact_url\": \"string\",\n  \"environment\": \"github-pages\",\n  \"pages_build_version\": \"GITHUB_SHA\",\n  \"oidc_token\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 136
+}

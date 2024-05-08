@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/pulls",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"title\": \"string\",\n  \"head\": \"string\",\n  \"head_repo\": \"string\",\n  \"base\": \"string\",\n  \"body\": \"string\",\n  \"maintainer_can_modify\": true,\n  \"draft\": true,\n  \"issue\": 0\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

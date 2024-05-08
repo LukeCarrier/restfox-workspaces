@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/enterprises/{enterprise}/code_security_and_analysis",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"advanced_security_enabled_for_new_repositories\": true,\n  \"advanced_security_enabled_new_user_namespace_repos\": true,\n  \"dependabot_alerts_enabled_for_new_repositories\": true,\n  \"secret_scanning_enabled_for_new_repositories\": true,\n  \"secret_scanning_push_protection_enabled_for_new_repositories\": true,\n  \"secret_scanning_push_protection_custom_link\": null,\n  \"secret_scanning_validity_checks_enabled\": null\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 38
+}

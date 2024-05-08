@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org}/actions/runner-groups",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"visibility\": \"all\",\n  \"selected_repository_ids\": [\n    0\n  ],\n  \"runners\": [\n    0\n  ],\n  \"allows_public_repositories\": true,\n  \"restricted_to_workflows\": true,\n  \"selected_workflows\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 18
+}

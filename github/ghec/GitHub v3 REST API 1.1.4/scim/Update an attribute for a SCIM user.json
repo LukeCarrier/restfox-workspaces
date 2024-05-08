@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/scim/v2/organizations/{org}/Users/{scim_user_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"schemas\": [\n    \"string\"\n  ],\n  \"Operations\": [\n    {\n      \"op\": \"string\",\n      \"path\": \"string\",\n      \"value\": null\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 5
+}

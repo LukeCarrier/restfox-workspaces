@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/code-scanning/sarifs",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"commit_sha\": null,\n  \"ref\": null,\n  \"sarif\": null,\n  \"checkout_uri\": \"string\",\n  \"started_at\": \"2024-05-08T20:10:59.602Z\",\n  \"tool_name\": \"string\",\n  \"validate\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 13
+}

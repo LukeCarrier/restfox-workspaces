@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/repos/{owner}/{repo}/issues/{issue_number}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"title\": null,\n  \"body\": null,\n  \"assignee\": null,\n  \"state\": \"string\",\n  \"state_reason\": null,\n  \"milestone\": null,\n  \"labels\": [\n    null\n  ],\n  \"assignees\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 13
+}
