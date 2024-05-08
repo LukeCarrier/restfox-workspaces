@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/delete-a-project/](https://docs.sentry.io/api/projects/delete-a-project/)\n\nSchedules a project for deletion.\n\nDeletion happens asynchronously and therefore is not immediate. However once deletion has begun the state of a project changes and will be hidden from most public views.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the project belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project to delete.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:admin`",
+  "sortOrder": 2
+}

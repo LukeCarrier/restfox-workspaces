@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/tags/:key/values/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/list-a-tags-values/](https://docs.sentry.io/api/projects/list-a-tags-values/)\n\nReturn a list of values associated with this key. The `query` parameter can be used to to perform a \"contains\" match on values.\n\nWhen [paginated](https://docs.sentry.io/api/pagination) can return at most 1000 values.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project.\n\n`key` *(string)*REQUIRED\n\nThe tag key to look up.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:read`",
+  "sortOrder": 9
+}

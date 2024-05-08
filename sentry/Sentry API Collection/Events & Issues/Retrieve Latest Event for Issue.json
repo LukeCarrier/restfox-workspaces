@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/issues/:issue_id/events/latest/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/retrieve-the-latest-event-for-an-issue/](https://docs.sentry.io/api/events/retrieve-the-latest-event-for-an-issue/)\n\nRetrieves the details of the latest event for an issue.\n\n### Path Parameters\n\n`issue_id` *(string)*REQUIRED\n\nThe ID of the issue.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:read`",
+  "sortOrder": 11
+}

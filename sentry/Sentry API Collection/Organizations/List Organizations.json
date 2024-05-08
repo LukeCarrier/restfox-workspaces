@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "owner",
+      "value": null,
+      "description": "Restrict results to organizations in which you are an organization owner.",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": null,
+      "description": "A pointer to the last object fetched and its sort order; used to retrieve the next or previous results.",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/organizations/list-your-organizations/](https://docs.sentry.io/api/organizations/list-your-organizations/)\n\nReturn a list of organizations available to the authenticated session. This is particularly useful for requests with an user bound context. For API key based requests this will only return the organization that belongs to the key.\n\n### Query Parameters:\n\n`owner` *(boolean)*\n\nRestrict results to organizations in which you are an organization owner.\n\n`cursor` *(string)*\n\nA pointer to the last object fetched and its sort order; used to retrieve the next or previous results.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `org: read`",
+  "sortOrder": 5
+}

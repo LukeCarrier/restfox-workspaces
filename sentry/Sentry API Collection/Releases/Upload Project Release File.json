@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/:project_slug/releases/:version/files/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"name\": \"My New File Name\",\n    \"file\": \"release.min.js\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "dateReleased",
+      "value": "2022-08-30T15:07:12.201937Z",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/upload-a-new-project-release-file/](https://docs.sentry.io/api/releases/upload-a-new-project-release-file/)\n\nUpload a new project release file.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)* REQUIRED\n\nThe slug of the project.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n### Body Parameters\n\n`name` *(string)*\n\nThe name (full path) of the file.\n\n`file` *(string)* REQUIRED\n\nThe multipart encoded file.\n\n`dist` *(string)*\n\nThe name of the dist.\n\n`header` *(string)*\n\nThis parameter can be supplied multiple times to attach headers to the file. Each header is a string in the format `key:value`. For instance it can be used to define a content type.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 21
+}

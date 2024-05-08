@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/replays/:replay_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Delete a Replay Instance\n\n[https://docs.sentry.io/api/replays/delete-a-replay-instance/](https://docs.sentry.io/api/replays/delete-a-replay-instance/)\n\nDELETE/api/0/projects/{organization_slug}/{project_slug}/replays/{replay_id}/\n\nDelete a replay\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`project_slug` _(string)_REQUIRED\n\nThe slug of the project the resource belongs to.\n\n`replay_id` _(string)_REQUIRED\n\nThe ID of the replay you'd like to retrieve.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `project:admin`\n    \n- `project:read`\n    \n- `project:write`",
+  "sortOrder": 0
+}

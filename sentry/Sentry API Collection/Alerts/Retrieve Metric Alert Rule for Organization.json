@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/alert-rules/:alert_rule_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Retrieve a Metric Alert Rule for an Organization\n\n[https://docs.sentry.io/api/alerts/retrieve-a-metric-alert-rule-for-an-organization/](https://docs.sentry.io/api/alerts/retrieve-a-metric-alert-rule-for-an-organization/)\n\nGET/api/0/organizations/{organization_slug}/alert-rules/{alert_rule_id}/\n\nReturn details on an individual metric alert rule.\n\nA metric alert rule is a configuration that defines the conditions for triggering an alert. It specifies the metric type, function, time interval, and threshold values that determine when an alert should be triggered. Metric alert rules are used to monitor and notify you when certain metrics, like error count, latency, or failure rate, cross a predefined threshold. These rules help you proactively identify and address issues in your project.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`alert_rule_id` _(integer)_REQUIRED\n\nThe ID of the rule you'd like to query.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `alert_rule:read`\n    \n- `alerts:read`\n    \n- `org:admin`\n    \n- `org:read`\n    \n- `org:write`",
+  "sortOrder": 10
+}

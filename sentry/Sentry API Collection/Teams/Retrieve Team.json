@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/teams/{{organization_slug}}/:team_slug/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/teams/retrieve-a-team/](https://docs.sentry.io/api/teams/retrieve-a-team/)\n\nReturn details on an individual team.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the team belongs to.\n\n`team_slug` *(string)* REQUIRED\n\nThe slug of the team to get.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `team:read`",
+  "sortOrder": 5
+}

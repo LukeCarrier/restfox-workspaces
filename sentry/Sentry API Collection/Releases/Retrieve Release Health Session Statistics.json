@@ -1,0 +1,71 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/sessions/?project=-1&field=count_unique(user)&groupBy=release&statsPeriod=1d&interval=1h",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "project",
+      "value": "-1"
+    },
+    {
+      "name": "field",
+      "value": "count_unique(user)"
+    },
+    {
+      "name": "field",
+      "value": "p95(session.duration)",
+      "disabled": true
+    },
+    {
+      "name": "environment",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "name": "groupBy",
+      "value": "release"
+    },
+    {
+      "name": "query",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "name": "statsPeriod",
+      "value": "1d"
+    },
+    {
+      "name": "interval",
+      "value": "1h"
+    },
+    {
+      "name": "statsPeriodStart",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "name": "statsPeriodEnd",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "name": "start",
+      "value": "",
+      "disabled": true
+    },
+    {
+      "name": "end",
+      "value": "",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/retrieve-release-health-session-statistics/](https://docs.sentry.io/api/releases/retrieve-release-health-session-statistics/)\n\nReturns a time series of release health session statistics for projects bound to an organization.\n\nThe interval and date range are subject to certain restrictions and rounding rules.\n\nThe date range is rounded to align with the interval, and is rounded to at least one hour. The interval can at most be one day and at least one hour currently. It has to cleanly divide one day, for rounding reasons.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n### Query Parameters:\n\n`project` *(array(integer))* REQUIRED\n\nThe ID of the projects to filter by.\n\nUse `-1` to include all accessible projects.\n\n`field` *(array(string))* REQUIRED\n\nThe list of fields to query.\n\nThe available fields are `sum(session)`, `count_unique(user)`, and the following functions applied to the `session.duration` metric: `avg`, `p50`, `p75`, `p90`, `p95`, `p99` and `max`.\n\nFor example, `p99(session.duration)`.\n\n`environment` *(array(string))*\n\nThe name of environments to filter by.\n\n`groupBy` *(array(string))*\n\nThe list of properties to group by.\n\nThe available groupBy conditions are `project`, `release`, `environment` and `session.status`.\n\n`query` *(string)*\n\nA free-form query that is applied as a filter.\n\nAn example query could be `release:\"1.1.0\" or release:\"1.2.0\"`.\n\n`statsPeriod` *(string)*\n\nThis defines the range of the time series, relative to now.\n\nThe range is given in a `\"\"` format.\n\nFor example `1d` for a one day range. Possible units are `m` for minutes, `h` for hours, `d` for days and `w` for weeks.\n\nIt defaults to `90d`.\n\n`interval` *(string)*\n\nThis is the resolution of the time series, given in the same format as `statsPeriod`.\n\nThe default resolution is `1h` and the minimum resolution is currently restricted to `1h` as well.\n\nIntervals larger than `1d` are not supported, and the interval has to cleanly divide one day.\n\n`statsPeriodStart` *(string)*\n\nThis defines the start of the time series range, in the same format as the `interval`, relative to now.\n\n`statsPeriodEnd` *(string)*\n\nThis defines the end of the time series range, in the same format as the `interval`, relative to now.\n\n`start` *(string)*\n\nThis defines the start of the time series range as an explicit datetime.\n\n`end` *(string)*\n\nThis defines the inclusive end of the time series range as an explicit datetime.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `org: read`",
+  "sortOrder": 16
+}

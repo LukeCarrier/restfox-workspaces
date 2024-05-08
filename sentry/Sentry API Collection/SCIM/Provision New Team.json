@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/scim/v2/Groups",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/scim/provision-a-new-team/](https://docs.sentry.io/api/scim/provision-a-new-team/)\n\nCreate a new team bound to an organization via a SCIM Groups POST Request. Note that teams are always created with an empty member set. The endpoint will also do a normalization of uppercase / spaces to lowercase and dashes.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `team:write`",
+  "sortOrder": 0
+}

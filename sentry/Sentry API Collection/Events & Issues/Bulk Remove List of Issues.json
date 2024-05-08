@@ -1,0 +1,25 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/issues/?id=3495986828&id=3496002081",
+  "body": {
+    "mimeType": "application/json",
+    "text": ""
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "id",
+      "value": "3495986828"
+    },
+    {
+      "name": "id",
+      "value": "3496002081"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/bulk-remove-a-list-of-issues/](https://docs.sentry.io/api/events/bulk-remove-a-list-of-issues/)\n\nPermanently remove the given issues. The list of issues to modify is given through the `id` query parameter. It is repeated for each issue that should be removed.\n\nOnly queries by 'id' are accepted.\n\nIf any ids are out of scope this operation will succeed without any data mutation.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the issues belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the issues belong to.\n\n### Query Parameters:\n\n`id` *(integer)*\n\nA list of IDs of the issues to be removed. This parameter shall be repeated for each issue.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:admin`",
+  "sortOrder": 1
+}

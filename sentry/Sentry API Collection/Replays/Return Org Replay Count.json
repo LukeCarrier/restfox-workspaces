@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/replay-count/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Return a Count of Replays\n\n[https://docs.sentry.io/api/replays/return-a-count-of-replays/](https://docs.sentry.io/api/replays/return-a-count-of-replays/)\n\nGET/api/0/organizations/{organization_slug}/replay-count/\n\nReturn a count of replays for the given issue or transaction id.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Query Parameters:\n\n`end` _(string)_\n\nThe end of the period of time for the query, expected in ISO-8601 format. For example `2001-12-14T12:34:56.7890`.\n\n`environment` _(array(string))_\n\nThe name of environments to filter by.\n\n`start` _(string)_\n\nThe start of the period of time for the query, expected in ISO-8601 format. For example `2001-12-14T12:34:56.7890`.\n\n`statsPeriod` _(string)_\n\nThe period of time for the query, will override the start & end parameters, a number followed by one of:\n\n- `d` for days\n- `h` for hours\n- `m` for minutes\n- `s` for seconds\n- `w` for weeks\n    \n\nFor example `24h`, to mean query data starting from 24 hours ago to now.\n\n`project` _(array(integer))_\n\nThe IDs of projects to filter by. `-1` means all available projects. For example the following are valid parameters:\n\n- `/?project=1234&project=56789`\n- `/?project=-1`\n    \n\n`query` _(string)_\n\nThe search filter for your query, read more about query syntax [here](https://docs.sentry.io/product/sentry-basics/search/).\n\nexample: `query=(transaction:foo AND release:abc) OR (transaction:[bar,baz] AND release:def)`\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n- `org:read`\n- `org:write`\n    \n\n```\ncurl https://sentry.io/api/0/organizations/{organization_slug}/replay-count/ \\\n -H &#x27;Authorization: Bearer <auth_token>&#x27;\n\n ```\n\nRESPONSESCHEMA200400403\n\n```\n{\n  \"1\": 9,\n  \"2\": 0,\n  \"5\": 0,\n  \"9\": 1,\n  \"10\": 29\n}\n\n ```",
+  "sortOrder": 7
+}

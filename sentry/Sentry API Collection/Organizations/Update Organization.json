@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"name\": \"New Name\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/organizations/update-an-organization/](https://docs.sentry.io/api/organizations/update-an-organization/)\n\nUpdate various attributes and configurable settings for the given organization.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization to update.\n\n### Body Parameters\n\n`name` *(string)*REQUIRED\n\nAn optional new name for the organization.\n\n`slug` *(string)*\n\nAn optional new slug for the organization. Needs to be available and unique.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `org:write`",
+  "sortOrder": 11
+}

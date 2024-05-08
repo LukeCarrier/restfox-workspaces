@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/eventids/:event_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/organizations/resolve-an-event-id/](https://docs.sentry.io/api/organizations/resolve-an-event-id/)\n\nThis resolves an event ID to the project slug and internal issue ID and internal event ID.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the event ID should be looked up in.\n\n`event_id` *(string)*REQUIRED\n\nThe event ID to look up.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `org: read`",
+  "sortOrder": 7
+}

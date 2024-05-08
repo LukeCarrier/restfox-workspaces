@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/events/:event_id/owners/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://sentry.io/api/0/projects/{org-slug}/{project-slug}/events/{event-id}/owners/](https://sentry.io/api/0/projects/{org-slug}/{project-slug}/events/{event-id}/owners/)\n\nReturn owners details for on an individual event.\n\n### Path Parameters\n\n`organization_slug` _(string)_ REQUIRED\n\nThe slug of the organization the event belongs to.\n\n`project_slug` _(string)_ REQUIRED\n\nThe slug of the project the event belongs to.\n\n`event_id` _(string)_ REQUIRED\n\nThe ID of the event to retrieve. It is the hexadecimal ID as reported by the client.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://desktop.postman.com/?desktopVersion=9.31.0&userId=314074&teamId=0) requires one of the following scopes:\n\n\\*   `project:read`\n    \n\nAuthorizationBearer TokenThis request is using an authorization helper from collection Dirk's Sentry CollectionPath Variablesevent_id57af509826ca4a8197d4a7e5d1e18261",
+  "sortOrder": 2
+}

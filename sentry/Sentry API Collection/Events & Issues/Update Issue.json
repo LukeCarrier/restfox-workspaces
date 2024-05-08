@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/issues/:issue_id/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\"assignedTo\":\"dirk@quickstark.com\"}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/update-an-issue/](https://docs.sentry.io/api/events/update-an-issue/)\n\nUpdates an individual issue's attributes. Only the attributes submitted are modified.\n\n### Path Parameters\n\n`issue_id` *(string)* REQUIRED\n\nThe ID of the group to retrieve.\n\n### Body Parameters\n\n`status` *(string)*\n\nThe new status for the issues. Valid values are `\"resolved\"`, `\"resolvedInNextRelease\"`, `\"unresolved\"`, and `\"ignored\"`.\n\n`assignedTo` *(string)*\n\nThe actor id (or username) of the user or team that should be assigned to this issue.\n\n`hasSeen` *(boolean)*\n\nIn case this API call is invoked with a user context this allows changing of the flag that indicates if the user has seen the event.\n\n`isBookmarked` *(boolean)*\n\nIn case this API call is invoked with a user context this allows changing of the bookmark flag.\n\n`isPublic` *(boolean)*\n\nSets the issue to public or private.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:write`",
+  "sortOrder": 13
+}

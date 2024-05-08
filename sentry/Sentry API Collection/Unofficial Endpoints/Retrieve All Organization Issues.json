@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/issues/?end=2022-10-11T20%3A22%3A09&limit=1000&query=&start=2021-10-11T20%3A22%3A09",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "end",
+      "value": "2022-10-11T20%3A22%3A09"
+    },
+    {
+      "name": "limit",
+      "value": "1000"
+    },
+    {
+      "name": "query",
+      "value": ""
+    },
+    {
+      "name": "start",
+      "value": "2021-10-11T20%3A22%3A09"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

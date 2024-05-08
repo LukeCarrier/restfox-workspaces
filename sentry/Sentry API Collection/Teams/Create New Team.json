@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/teams/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\"name\":\"dirk_test-team\"}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/teams/create-a-new-team/](https://docs.sentry.io/api/teams/create-a-new-team/)\n\nCreate a new team bound to an organization. Only the name of the team is needed to create it, the slug can be auto generated.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the team should be created for.\n\n### Body Parameters\n\n`name` *(string)* REQUIRED\n\nThe name of the team.\n\n`slug` *(string)*\n\nThe optional slug for this team. If not provided it will be auto generated from the name.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `team:write`",
+  "sortOrder": 1
+}

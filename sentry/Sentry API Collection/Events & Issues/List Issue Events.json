@@ -1,0 +1,20 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/issues/:issue_id/events/?full=true",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "full",
+      "value": "true"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/list-an-issues-events/](https://docs.sentry.io/api/events/list-an-issues-events/)\n\nThis endpoint lists an issue's events.\n\n### Path Parameters\n\n`issue_id` *(string)*REQUIRED\n\nThe ID of the issue to retrieve.\n\n### Query Parameters:\n\n`full` *(boolean)*\n\nIf this is set to true then the event payload will include the full event body, including the stacktrace. Set to true to enable.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:read`",
+  "sortOrder": 5
+}

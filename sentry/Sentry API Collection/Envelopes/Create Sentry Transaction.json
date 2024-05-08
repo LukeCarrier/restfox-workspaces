@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "{{sentry_url}}{{project_id}}/envelope/?sentry_key={{public_key}}",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{{txnheader}}\n{{txnitem}}\n{{txnpayload}}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "sentry_key",
+      "value": "{{public_key}}"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "URL formatted for Local Relay instance (useful for testing / development)",
+  "sortOrder": 0
+}

@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/teams/{{organization_slug}}/:team_slug/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/teams/delete-a-team/](https://docs.sentry.io/api/teams/delete-a-team/)\n\nSchedules a team for deletion.\n\nNote: Deletion happens asynchronously and therefore is not immediate. However once deletion has begun the state of a project changes and will be hidden from most public views.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the team belongs to.\n\n`team_slug` *(string)* REQUIRED\n\nThe slug of the team to get.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `team:admin`",
+  "sortOrder": 2
+}

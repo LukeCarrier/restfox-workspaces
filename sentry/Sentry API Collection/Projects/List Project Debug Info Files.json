@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/files/dsyms/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/list-a-projects-debug-information-files/](https://docs.sentry.io/api/projects/list-a-projects-debug-information-files/)\n\nRetrieve a list of debug information files for a given project.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the file belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project to list the DIFs of.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:read`",
+  "sortOrder": 5
+}

@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/releases/:version/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\"dateReleased\":null}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "dateReleased",
+      "value": "2022-08-30T15:07:12.201937Z",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/update-an-organizations-release/](https://docs.sentry.io/api/releases/update-an-organizations-release/)\n\nUpdate a release for a given organization.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the release belongs to.\n\n`version` *(string)*REQUIRED\n\nThe version identifier of the release.\n\n### Body Parameters\n\n`ref` *(string)*\n\nAn optional commit reference. This is useful if a tagged version has been provided.\n\n`url` *(string)*\n\nA URL that points to the release. This can be the path to an online interface to the source code for instance.\n\n`dateReleased` *(string)*\n\nAn optional date that indicates when the release went live. If not provided the current time is assumed.\n\n`commits` *(array)*\n\nAn optional list of commit data to be associated with the release. Commits must include parameters `id` (the sha of the commit), and can optionally include `repository`, `message`, `author_name`, `author_email`, and `timestamp`.\n\n`refs` *(array)*\n\nAn optional way to indicate the start and end commits for each repository included in a release. Head commits must include parameters `repository` and `commit` (the HEAD sha). They can optionally include `previousCommit` (the sha of the HEAD of the previous release), which should be specified if this is the first time you've sent commit data.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 19
+}

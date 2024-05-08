@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://{{organization_slug}}.sentry.io/api/0/projects/{{organization_slug}}/:project_slug/ownership/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\"raw\":\"#Testing\\npath:src/views/checkout dirk@quickstark.com\\nurl:https://example.com/checkout dirk@quickstark.com\"}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 5
+}

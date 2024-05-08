@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/issues/:issue_id/tags/:key/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/retrieve-tag-details/](https://docs.sentry.io/api/events/retrieve-tag-details/)\n\nReturns details for given tag key related to an issue.\n\n### Path Parameters\n\n`issue_id` *(string)*REQUIRED\n\nThe ID of the issue to retrieve.\n\n`key` *(string)*REQUIRED\n\nThe tag key to look the values up for.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:read`",
+  "sortOrder": 10
+}

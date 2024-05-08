@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/hooks/:hook_id",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/remove-a-service-hook/](https://docs.sentry.io/api/projects/remove-a-service-hook/)\n\nRemove a service hook.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the client keys belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the client keys belong to.\n\n`hook_id` *(string)*REQUIRED\n\nThe GUID of the service hook.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:admin`",
+  "sortOrder": 12
+}

@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/keys/:key_id",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"name\": \"My New Key\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/delete-a-client-key/](https://docs.sentry.io/api/projects/delete-a-client-key/)\n\nDelete a client key.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the client keys belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the client keys belong to.\n\n`key_id` *(string)*REQUIRED\n\nThe ID of the key to delete.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:admin`",
+  "sortOrder": 1
+}

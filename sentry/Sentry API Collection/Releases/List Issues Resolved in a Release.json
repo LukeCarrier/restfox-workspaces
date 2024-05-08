@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/releases/:version/resolved/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/list-issues-to-be-resolved-in-a-particular-release/](https://docs.sentry.io/api/releases/list-issues-to-be-resolved-in-a-particular-release/)\n\nNote: This API is intended to pull Issues designated to be fixed in a release as per the Issue dropdown.\n\n![](https://content.pstmn.io/b9753157-9d9c-4efd-a93d-c23fa529684d/UmVzb2x2ZSBpbiBOZXh0IFJlbGVhc2UuZ2lm)\n\nList issues to be resolved in a particular release.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)* REQUIRED\n\nThe slug of the project.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 11
+}

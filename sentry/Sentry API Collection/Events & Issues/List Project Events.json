@@ -1,0 +1,25 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/events/?",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": null,
+      "value": null
+    },
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/list-a-projects-events/](https://docs.sentry.io/api/events/list-a-projects-events/)\n\nReturn a list of events bound to a project.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the groups belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the groups belong to.\n\n### Query Parameters:\n\n`full` *(boolean)*\n\nIf this is set to true then the event payload will include the full event body, including the stacktrace. Set to true to enable.\n\n`cursor` *(string)*\n\nA pointer to the last object fetched and its sort order; used to retrieve the next or previous results.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:read`",
+  "sortOrder": 2
+}

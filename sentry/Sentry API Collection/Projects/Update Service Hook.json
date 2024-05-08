@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/hooks/:hook_id/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"url\": \"New Hook URL\",\n    \"events\": \"New Events to Subscribe to\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/update-a-service-hook/](https://docs.sentry.io/api/projects/update-a-service-hook/)\n\nUpdate a service hook.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the client keys belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the client keys belong to.\n\n`hook_id` *(string)*REQUIRED\n\nThe GUID of the service hook.\n\n### Body Parameters\n\n`url` *(string)*REQUIRED\n\nThe URL for the webhook.\n\n`events` *(array)*REQUIRED\n\nThe events to subscribe to.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 19
+}

@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/rules/:rule_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Delete an Issue Alert Rule\n\n[https://docs.sentry.io/api/alerts/delete-an-issue-alert-rule/](https://docs.sentry.io/api/alerts/delete-an-issue-alert-rule/)\n\n  \nDELETE/api/0/projects/{organization_slug}/{project_slug}/rules/{rule_id}/\n\nDelete a specific issue alert rule.\n\nAn issue alert rule triggers whenever a new event is received for any issue in a project that matches the specified alert conditions. These conditions can include a resolved issue re-appearing or an issue affecting many users. Alert conditions have three parts:\n\n- Triggers: specify what type of activity you'd like monitored or when an alert should be triggered.\n    \n- Filters: help control noise by triggering an alert only if the issue matches the specified criteria.\n    \n- Actions: specify what should happen when the trigger conditions are met and the filters match.\n    \n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`project_slug` _(string)_REQUIRED\n\nThe slug of the project the resource belongs to.\n\n`rule_id` _(integer)_REQUIRED\n\nThe ID of the rule you'd like to query.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `alerts:write`\n    \n- `project:admin`\n    \n- `project:write`",
+  "sortOrder": 3
+}

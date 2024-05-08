@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/replays/:replay_id/recording-segments/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# List Recording Segments\n\n[https://docs.sentry.io/api/replays/list-recording-segments/](https://docs.sentry.io/api/replays/list-recording-segments/)\n\nGET/api/0/projects/{organization_slug}/{project_slug}/replays/{replay_id}/recording-segments/\n\nReturn a collection of replay recording segments.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`project_slug` _(string)_REQUIRED\n\nThe slug of the project the resource belongs to.\n\n`replay_id` _(string)_REQUIRED\n\nThe ID of the replay you'd like to retrieve.\n\n### Query Parameters:\n\n`cursor` _(string)_\n\nA pointer to the last object fetched and its sort order; used to retrieve the next or previous results.\n\n`per_page` _(integer)_\n\nLimit the number of rows to return in the result. Default and maximum allowed is 100.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `project:admin`\n    \n- `project:read`\n    \n- `project:write`",
+  "sortOrder": 5
+}

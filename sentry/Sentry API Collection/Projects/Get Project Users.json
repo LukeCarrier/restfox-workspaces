@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/users/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "query",
+      "value": null,
+      "description": "Limit results to users matching the given query. Prefixes should be used to suggest the field to match on: id, email, username, ip. For example, query=email:foo@example.com",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/list-a-projects-users/](https://docs.sentry.io/api/projects/list-a-projects-users/)\n\nReturn a list of users seen within this project.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project.\n\n### Query Parameters:\n\n`query` *(string)*\n\nLimit results to users matching the given query. Prefixes should be used to suggest the field to match on: `id`, `email`, `username`, `ip`. For example, `query=email:foo@example.com`\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:read`",
+  "sortOrder": 8
+}

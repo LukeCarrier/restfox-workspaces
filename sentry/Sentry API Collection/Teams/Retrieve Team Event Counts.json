@@ -1,0 +1,35 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/teams/{{organization_slug}}/:team_slug/stats/?stat=received",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "stat",
+      "value": "received"
+    },
+    {
+      "name": "since",
+      "value": null,
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": null,
+      "disabled": true
+    },
+    {
+      "name": "resolution",
+      "value": null,
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/teams/retrieve-event-counts-for-a-team/](https://docs.sentry.io/api/teams/retrieve-event-counts-for-a-team/)\n\nCaution: this endpoint may change in the future without notice.\n\nReturn a set of points representing a normalized timestamp and the number of events seen in the period.\n\nQuery ranges are limited to Sentry’s configured time-series resolutions.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the team belongs to.\n\n`team_slug` *(string)* REQUIRED\n\nThe slug of the team to get.\n\n### Query Parameters:\n\n`stat` *(string)*choices:\n\n*   `received`\n*   `rejected`\n    \n\nThe name of the stat to query `(\"received\", \"rejected\")`.\n\n`since` *(string)*\n\nA timestamp to set the start of the query in seconds since UNIX epoch.\n\n`until` *(string)*\n\nA timestamp to set the end of the query in seconds since UNIX epoch.\n\n`resolution` *(string)*choices:\n\n*   `10s`\n*   `1h`\n*   `1d`\n    \n\nAn explicit resolution to search for (one of `10s`, `1h`, and `1d`).\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `team:read`",
+  "sortOrder": 6
+}

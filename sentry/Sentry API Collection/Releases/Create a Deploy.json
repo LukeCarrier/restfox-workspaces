@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/releases/{{version}}/deploys/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"environment\": \"production\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/create-a-new-deploy-for-an-organization/](https://docs.sentry.io/api/releases/create-a-new-deploy-for-an-organization/)\n\nCreate a deploy.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n### Body Parameters\n\n`environment` *(string)* REQUIRED\n\nThe environment you're deploying to.\n\n`url` *(string)*\n\nThe optional URL that points to the deploy.\n\n`name` *(string)*\n\nThe optional name of the deploy.\n\n`projects` *(array)*\n\nThe optional list of projects to deploy.\n\n`dateStarted` *(string)*\n\nAn optional date that indicates when the deploy started.\n\n`dateFinished` *(string)*\n\nAn optional date that indicates when the deploy ended. If not provided, the current time is used.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 0
+}

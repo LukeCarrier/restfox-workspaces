@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/releases/:version/files/:file_id",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/retrieve-an-organization-releases-file/](https://docs.sentry.io/api/releases/retrieve-an-organization-releases-file/)\n\nRetrieve a file for a given release.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n`file_id` *(string)* REQUIRED\n\nThe ID of the file to retrieve.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 13
+}

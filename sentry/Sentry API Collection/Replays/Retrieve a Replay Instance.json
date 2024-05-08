@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/replays/:replay_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Retrieve a Replay Instance\n\n[https://docs.sentry.io/api/replays/retrieve-a-replay-instance/](https://docs.sentry.io/api/replays/retrieve-a-replay-instance/)\n\nGET/api/0/organizations/{organization_slug}/replays/{replay_id}/\n\nReturn details on an individual replay.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`replay_id` _(string)_REQUIRED\n\nThe ID of the replay you'd like to retrieve.\n\n### Query Parameters:\n\n`statsPeriod` _(string)_\n\nThis defines the range of the time series, relative to now. The range is given in a  format. For example `1d` for a one day range. Possible units are `m` for minutes, `h` for hours, `d` for days and `w` for weeks. You must either provide a `statsPeriod`, or a `start` and `end`.\n\n`start` _(string)_\n\nThis defines the start of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds. Use along with `end` instead of `statsPeriod`.\n\n`end` _(string)_\n\nThis defines the inclusive end of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds. Use along with `start` instead of `statsPeriod`.\n\n`field` _(array(string))_**choices**:\n\n- `activity`\n    \n- `browser`\n    \n- `count_dead_clicks`\n    \n- `count_errors`\n    \n- `count_rage_clicks`\n    \n- `count_segments`\n    \n- `count_urls`\n    \n- `device`\n    \n- `dist`\n    \n- `duration`\n    \n- `environment`\n    \n- `error_ids`\n    \n- `finished_at`\n    \n- `id`\n    \n- `is_archived`\n    \n- `os`\n    \n- `platform`\n    \n- `project_id`\n    \n- `releases`\n    \n- `sdk`\n    \n- `started_at`\n    \n- `tags`\n    \n- `trace_ids`\n    \n- `urls`\n    \n- `user`\n    \n- `clicks`\n    \n- `info_ids`\n    \n- `warning_ids`\n    \n- `count_warnings`\n    \n- `count_infos`\n    \n\nSpecifies a field that should be marshaled in the output. Invalid fields will be rejected.\n\n`project` _(array(integer))_\n\nThe ID of the projects to filter by.\n\n`environment` _(string)_\n\nThe environment to filter by.\n\n`sort` _(string)_\n\nThe field to sort the output by.\n\n`query` _(string)_\n\nA structured query string to filter the output by.\n\n`per_page` _(integer)_\n\nLimit the number of rows to return in the result.\n\n`cursor` _(string)_\n\nThe cursor parameter is used to paginate results. See [here](https://docs.sentry.io/api/pagination/) for how to use this query parameter\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n    \n- `org:read`\n    \n- `org:write`",
+  "sortOrder": 6
+}

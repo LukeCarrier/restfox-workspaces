@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/replays/:replay_id/recording-segments/:segment_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Fetch Recording Segment\n\n[https://docs.sentry.io/api/replays/fetch-recording-segment/](https://docs.sentry.io/api/replays/fetch-recording-segment/)\n\nGET/api/0/projects/{organization_slug}/{project_slug}/replays/{replay_id}/recording-segments/{segment_id}/\n\nReturn a replay recording segment.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`project_slug` _(string)_REQUIRED\n\nThe slug of the project the resource belongs to.\n\n`replay_id` _(string)_REQUIRED\n\nThe ID of the replay you'd like to retrieve.\n\n`segment_id` _(integer)_REQUIRED\n\nThe ID of the segment you'd like to retrieve.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `project:admin`\n    \n- `project:read`\n    \n- `project:write`",
+  "sortOrder": 1
+}

@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/hooks/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"url\": \"https://e9c1f8a8dcebbc68f39582f9d3e39010.m.pipedream.net\",\n    \"events\": [\n        \"event.alert\",\n        \"event.created\"\n    ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/register-a-new-service-hook/](https://docs.sentry.io/api/projects/register-a-new-service-hook/)\n\nRegister a new service hook on a project.\n\nEvents include:\n\n*   event.alert: An alert is generated for an event (via rules).\n*   event.created: A new event has been processed.\n    \n\nThis endpoint requires the 'servicehooks' feature to be enabled for your project.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the client keys belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the client keys belong to.\n\n### Body Parameters\n\n`url` *(string)*REQUIRED\n\nThe URL for the webhook.\n\n`events` *(array)*REQUIRED\n\nThe events to subscribe to.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 11
+}

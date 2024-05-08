@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/replay-selectors/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# List an Organization's Selectors\n\n[https://docs.sentry.io/api/replays/list-an-organizations-selectors/](https://docs.sentry.io/api/replays/list-an-organizations-selectors/)\n\nGET/api/0/organizations/{organization_slug}/replay-selectors/\n\nReturn a list of selectors for a given organization.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Query Parameters:\n\n`environment` _(array(string))_\n\nThe name of environments to filter by.\n\n`statsPeriod` _(string)_\n\nThis defines the range of the time series, relative to now. The range is given in a  format. For example `1d` for a one day range. Possible units are `m` for minutes, `h` for hours, `d` for days and `w` for weeks.You must either provide a `statsPeriod`, or a `start` and `end`.\n\n`start` _(string)_\n\nThis defines the start of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds.Use along with `end` instead of `statsPeriod`.\n\n`end` _(string)_\n\nThis defines the inclusive end of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds.Use along with `start` instead of `statsPeriod`.\n\n`project` _(array(undefined))_\n\nThe ID of the projects to filter by.\n\n`sort` _(string)_\n\nThe field to sort the output by.\n\n`cursor` _(string)_\n\nA pointer to the last object fetched and its sort order; used to retrieve the next or previous results.\n\n`per_page` _(integer)_\n\nLimit the number of rows to return in the result. Default and maximum allowed is 100.\n\n`query` _(string)_\n\nThe search filter for your query, read more about query syntax [here](https://docs.sentry.io/product/sentry-basics/search/).\n\nexample: `query=(transaction:foo AND release:abc) OR (transaction:[bar,baz] AND release:def)`\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n    \n- `org:read`\n    \n- `org:write`\n    \n\n```\ncurl https://sentry.io/api/0/organizations/{organization_slug}/replay-selectors/ \\\n -H &#x27;Authorization: Bearer <auth_token>&#x27;\n\n ```\n\nRESPONSESCHEMA200400403\n\n```\n{\n  \"data\": [\n    {\n      \"count_dead_clicks\": 2,\n      \"count_rage_clicks\": 1,\n      \"dom_element\": \"div#myid.class1.class2\",\n      \"element\": {\n        \"alt\": \"\",\n        \"aria_label\": \"\",\n        \"class\": [\n          \"class1\",\n          \"class2\"\n        ],\n        \"id\": \"myid\",\n        \"role\": \"\",\n        \"tag\": \"div\",\n        \"testid\": \"\",\n        \"title\": \"\"\n      },\n      \"project_id\": \"1\"\n    }\n  ]\n}\n\n ```",
+  "sortOrder": 3
+}

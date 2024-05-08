@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/stats_v2/?groupBy=project&field=sum(quantity)&statsPeriod=7d&project=-1&category=error",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "groupBy",
+      "value": "project"
+    },
+    {
+      "name": "field",
+      "value": "sum(quantity)"
+    },
+    {
+      "name": "statsPeriod",
+      "value": "7d"
+    },
+    {
+      "name": "project",
+      "value": "-1"
+    },
+    {
+      "name": "category",
+      "value": "error"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/organizations/retrieve-event-counts-for-an-organization-v2/](https://docs.sentry.io/api/organizations/retrieve-event-counts-for-an-organization-v2/)\n\nQuery event counts for your Organization. Select a field, define a date range, and group or filter by columns.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Query Parameters:\n\n`statsPeriod` *(string)*\n\nThis defines the range of the time series, relative to now. The range is given in a  format. For example `1d` for a one day range. Possible units are `m` for minutes, `h` for hours, `d` for days and `w` for weeks.You must either provide a `statsPeriod`, or a `start` and `end`.\n\n`interval` *(string)*\n\nThis is the resolution of the time series, given in the same format as `statsPeriod`. The default resolution is `1h` and the minimum resolution is currently restricted to `1h` as well. Intervals larger than `1d` are not supported, and the interval has to cleanly divide one day.\n\n`start` *(string)*\n\nThis defines the start of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds.Use along with `end` instead of `statsPeriod`.\n\n`end` *(string)*\n\nThis defines the inclusive end of the time series range as an explicit datetime, either in UTC ISO8601 or epoch seconds.Use along with `start` instead of `statsPeriod`.\n\n`groupBy` *(array(string))*REQUIREDchoices:\n\n*   `outcome`\n*   `category`\n*   `reason`\n*   `project`\n    \n\ncan pass multiple groupBy parameters to group by multiple, e.g. `groupBy=project&groupBy=outcome` to group by multiple dimensions. Note that grouping by project can cause missing rows if the number of projects / interval is large. If you have a large number of projects, we recommend filtering and querying by them individually.Also note that grouping by projects does not currently support timeseries interval responses and will instead be a sum of the projectover the entire period specified.\n\n`field` *(string)*REQUIREDchoices:\n\n*   `sum(quantity)`\n*   `sum(times_seen)`\n    \n\nthe `sum(quantity)` field is bytes for attachments, and all others the 'event' count for those types of events.\n\n`sum(times_seen)` sums the number of times an event has been seen. For 'normal' event types, this will be equal to `sum(quantity)` for now. For sessions, quantity will sum the total number of events seen in a session, while `times_seen` will be the unique number of sessions. and for attachments, `times_seen` will be the total number of attachments, while quantity will be the total sum of attachment bytes.\n\n`project` *(array(null))*\n\nThe ID of the projects to filter by.\n\nUse `-1` to include all accessible projects.\n\n`category` *(string)*choices:\n\n*   `error`\n*   `transaction`\n*   `attachment`\n    \n\nIf filtering by attachments, you cannot filter by any other category due to quantity values becoming nonsensical (combining bytes and event counts).\n\nIf filtering by `error`, it will automatically add `default` and `security` as we currently roll those two categories into `error` for displaying.\n\n`outcome` *(string)*choices:\n\n*   `accepted`\n*   `filtered`\n*   `rate_limited`\n*   `invalid`\n*   `abuse`\n*   `client_discard`\n    \n\nSee [https://docs.sentry.io/product/stats/](https://docs.sentry.io/product/stats/) for more information on outcome statuses.\n\n`reason` *(string)*\n\nThe reason field will contain why an event was filtered/dropped.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `org:admin`\n*   `org:read`\n*   `org:write`",
+  "sortOrder": 10
+}

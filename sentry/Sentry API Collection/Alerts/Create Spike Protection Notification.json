@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/notifications/actions/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"integration_id\": \"default\",\n    \"projects\": [\n        4504843082924032\n    ],\n    \"service_type\": \"sentry_notification\",\n    \"trigger_type\": \"spike-protection\",\n    \"target_identifier\": \"default\",\n    \"target_display\": \"default\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Create a Spike Protection Notification Action\n\n[https://docs.sentry.io/api/alerts/create-a-spike-protection-notification-action/](https://docs.sentry.io/api/alerts/create-a-spike-protection-notification-action/)\n\nPOST/api/0/organizations/{organization_slug}/notifications/actions/\n\nCreates a new Notification Action for Spike Protection.\n\nNotification Actions notify a set of members when an action has been triggered through a notification service such as Slack or Sentry. For example, organization owners and managers can receive an email when a spike occurs.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Body Parameters\n\n`trigger_type` _(string)_REQUIRED\n\nType of the trigger that causes the notification. The only supported trigger right now is: `spike-protection`.\n\n`service_type` _(string)_REQUIRED\n\nService that is used for sending the notification.\n\n- `email`\n- `slack`\n- `sentry_notification`\n- `pagerduty`\n- `opsgenie`\n    \n\n`integration_id` _(integer)_\n\nID of the integration used as the notification service. See [List Integrations](https://docs.sentry.io/api/integrations/list-an-organizations-available-integrations/) to retrieve a full list of integrations.\n\nRequired if **service_type** is `slack`, `pagerduty` or `opsgenie`.\n\n`target_identifier` _(string)_\n\nID of the notification target, like a Slack channel ID.\n\nRequired if **service_type** is `slack` or `opsgenie`.\n\n`target_display` _(string)_\n\nName of the notification target, like a Slack channel name.\n\nRequired if **service_type** is `slack` or `opsgenie`.\n\n`projects` _(array(string))_\n\nList of projects slugs that the Notification Action is created for.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n- `org:read`\n- `org:write`",
+  "sortOrder": 2
+}

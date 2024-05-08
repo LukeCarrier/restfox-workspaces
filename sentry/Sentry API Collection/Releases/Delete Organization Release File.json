@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/releases/:version/files/:file_id/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"version\": \"1.0.1\", //string\n    \"ref\": null, //string\n    \"url\": null, //string\n    \"projects\": null, //array\n    \"dateReleased\": null, //ISO Date : 2020-08-31T19:40:38.651670Z\n    \"commits\": null, //array\n    \"refs\": null //array\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/delete-an-organization-releases-file/](https://docs.sentry.io/api/releases/delete-an-organization-releases-file/)\n\nDelete a file for a given release.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization the release belongs to.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n`file_id` *(string)* REQUIRED\n\nThe ID of the file to delete.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 3
+}

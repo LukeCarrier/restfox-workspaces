@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/releases/:version/files/:file_id/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\"dateReleased\":\"2022-08-30T19:21:56+0000\"}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/update-a-project-release-file/](https://docs.sentry.io/api/releases/update-a-project-release-file/)\n\nUpdate a project release file.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)* REQUIRED\n\nThe slug of the project.\n\n`version` *(string)* REQUIRED\n\nThe version identifier of the release.\n\n`file_id` *(string)* REQUIRED\n\nThe ID of the file to retrieve.\n\n### Body Parameters\n\n`name` *(string)*\n\nThe new name (full path) of the file.\n\n`dist` *(string)*\n\nThe new name of the dist.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 17
+}

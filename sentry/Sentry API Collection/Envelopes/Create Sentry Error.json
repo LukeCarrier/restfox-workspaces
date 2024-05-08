@@ -1,0 +1,20 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "{{sentry_url}}{{project_id}}/envelope/?sentry_key={{public_key}}",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{{errorheader}}\n{{erroritem}}\n{{errorpayload}}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "sentry_key",
+      "value": "{{public_key}}"
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

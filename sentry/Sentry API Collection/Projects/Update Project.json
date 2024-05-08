@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"name\": \"Netlify Sentry Toolbox\",\n    \"slug\": \"New Slug\",\n    \"platform\": \"The New Platform\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/update-a-project/](https://docs.sentry.io/api/projects/update-a-project/)\n\nUpdate various attributes and configurable settings for the given project. Only supplied values are updated.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the project belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project to update.\n\n### Body Parameters\n\n`name` *(string)*\n\nThe new name for the project.\n\n`slug` *(string)*\n\nThe new slug for the project.\n\n`platform` *(string)*\n\nThe new platform for the project.\n\n`isBookmarked` *(boolean)*\n\nIn case this API call is invoked with a user context this allows changing of the bookmark flag.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 18
+}

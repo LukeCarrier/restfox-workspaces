@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/notifications/actions/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# List Spike Protection Notifications\n\n[https://docs.sentry.io/api/alerts/list-spike-protection-notifications/](https://docs.sentry.io/api/alerts/list-spike-protection-notifications/)\n\n  \nGET/api/0/organizations/{organization_slug}/notifications/actions/\n\nReturns all Spike Protection Notification Actions for an organization.\n\nNotification Actions notify a set of members when an action has been triggered through a notification service such as Slack or Sentry. For example, organization owners and managers can receive an email when a spike occurs.\n\nYou can use either the `project` or `projectSlug` query parameter to filter for certain projects. Note that if both are present, `projectSlug` takes priority.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Query Parameters:\n\n`project` _(array(integer))_\n\nThe IDs of projects to filter by. `-1` means all available projects. For example the following are valid parameters:\n\n- `/?project=1234&project=56789`\n    \n- `/?project=-1`\n    \n\n`project_slug` _(array(string))_\n\nThe project slugs to filter by. Use `$all` to include all available projects. For example the following are valid parameters:\n\n- `/?projectSlug=$all`\n    \n- `/?projectSlug=android&projectSlug=javascript-react`\n    \n\n`triggerType` _(string)_\n\nType of the trigger that causes the notification. The only supported value right now is: `spike-protection`\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n    \n- `org:read`\n    \n- `org:write`",
+  "sortOrder": 8
+}

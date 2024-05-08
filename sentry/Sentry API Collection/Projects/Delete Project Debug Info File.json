@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "DELETE",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/files/dsyms/?id",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "id",
+      "value": null,
+      "description": "The ID of the DIF to delete."
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/delete-a-specific-projects-debug-information-file/](https://docs.sentry.io/api/projects/delete-a-specific-projects-debug-information-file/)\n\nDelete a debug information file for a given project.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the file belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project to delete the DIF.\n\n### Query Parameters:\n\n`id` *(string)*REQUIRED\n\nThe ID of the DIF to delete.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:admin`",
+  "sortOrder": 3
+}

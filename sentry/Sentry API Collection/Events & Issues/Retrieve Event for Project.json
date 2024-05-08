@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/events/:event_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/retrieve-an-event-for-a-project/](https://docs.sentry.io/api/events/retrieve-an-event-for-a-project/)\n\nReturn details on an individual event.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the event belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the event belongs to.\n\n`event_id` *(string)*REQUIRED\n\nThe ID of the event to retrieve. It is the hexadecimal ID as reported by the client.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:read`",
+  "sortOrder": 8
+}

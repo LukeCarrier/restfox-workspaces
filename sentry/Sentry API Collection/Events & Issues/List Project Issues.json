@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/issues/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "query",
+      "value": "se:*dirk*",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/events/list-a-projects-issues/](https://docs.sentry.io/api/events/list-a-projects-issues/)\n\nReturn a list of issues (groups) bound to a project. All parameters are supplied as query string parameters.\n\nA default query of `is:unresolved` is applied. To return results with other statuses send an new query value (i.e. `?query=` for all results).\n\nThe `statsPeriod` parameter can be used to select the timeline stats which should be present. Possible values are: `\"\"` (disable),`\"24h\"`, `\"14d\"`\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the issues belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the issues belong to.\n\n### Query Parameters:\n\n`statsPeriod` *(string)*\n\nAn optional stat period (can be one of `\"24h\"`, `\"14d\"`, and `\"\"`).\n\n`shortIdLookup` *(boolean)*\n\nIf this is set to true then short IDs are looked up by this function as well. This can cause the return value of the function to return an event issue of a different project which is why this is an opt-in. Set to 1 to enable.\n\n`query` *(string)*\n\nAn optional Sentry structured search query. If not provided an implied `\"is:unresolved\"` is assumed.\n\n`cursor` *(string)*\n\nA pointer to the last object fetched and its sort order; used to retrieve the next or previous results.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:read`",
+  "sortOrder": 3
+}

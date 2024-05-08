@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "PUT",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/keys/:key_id/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"name\": \"My Updated Key\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/update-a-client-key/](https://docs.sentry.io/api/projects/update-a-client-key/)\n\nUpdate a client key. This can be used to rename a key.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the client keys belong to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project the client keys belong to.\n\n`key_id` *(string)*REQUIRED\n\nThe ID of the key to update.\n\n### Body Parameters\n\n`name` *(string)*\n\nThe new name for the client key.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 17
+}

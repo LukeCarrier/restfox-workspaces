@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/releases/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"version\": \"javascript@1.0.3\", \n    \"url\": null,\n    \"ref\":\"mx\",\n    \"projects\": [\"images\", \"fastapi\"],\n    \"dateReleased\": null\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/releases/create-a-new-release-for-an-organization/](https://docs.sentry.io/api/releases/create-a-new-release-for-an-organization/)\n\nCreate a new release for the given organization. Releases are used by Sentry to improve its error reporting abilities by correlating first seen events with the release that might have introduced the problem. Releases are also necessary for source maps and other debug features that require manual upload for functioning well.\n\n### Path Parameters\n\n`organization_slug` *(string)* REQUIRED\n\nThe slug of the organization.\n\n### Body Parameters\n\n`version` *(string)* REQUIRED\n\nA version identifier for this release. Can be a version number, a commit hash, etc.\n\n`ref` *(string)*\n\nAn optional commit reference. This is useful if a tagged version has been provided.\n\n`url` *(string)*\n\nA URL that points to the release. This can be the path to an online interface to the source code for instance\n\n`projects` *(array)* REQUIRED\n\nA list of project slugs that are involved in this release.\n\n`dateReleased` *(string)*\n\nAn optional date that indicates when the release went live. If not provided the current time is assumed.\n\n`commits` *(array)*\n\nAn optional list of commit data to be associated with the release. Commits must include parameters `id` (the SHA of the commit), and can optionally include `repository`, `message`, `patch_set`, `author_name`, `author_email`, and `timestamp`.\n\n`refs` *(array)*\n\nAn optional way to indicate the start and end commits for each repository included in a release. Head commits must include parameters `repository` and `commit` (the HEAD sha). They can optionally include `previousCommit` (the sha of the HEAD of the previous release), which should be specified if this is the first time you've sent commit data. `commit` may contain a range in the form of `previousCommit..commit`.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:releases`",
+  "sortOrder": 1
+}

@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/files/dsyms/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/upload-a-new-file/](https://docs.sentry.io/api/projects/upload-a-new-file/)\n\nUpload a new debug information file for the given release.\n\nUnlike other API requests, files must be uploaded using the traditional multipart/form-data content-type.\n\nThe file uploaded is a zip archive of an Apple .dSYM folder which contains the individual debug images. Uploading through this endpoint will create different files for the contained images.\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization the project belongs to.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project to upload a file to.\n\n### Body Parameters\n\n`file` *(string)*REQUIRED\n\nThe multipart encoded file.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 20
+}

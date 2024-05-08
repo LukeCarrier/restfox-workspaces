@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/notifications/actions/:action_id/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "0:200:0",
+      "disabled": true
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# Retrieve a Spike Protection Notification Action\n\n[https://docs.sentry.io/api/alerts/retrieve-a-spike-protection-notification-action/](https://docs.sentry.io/api/alerts/retrieve-a-spike-protection-notification-action/)\n\nGET/api/0/organizations/{organization_slug}/notifications/actions/{action_id}/\n\nReturns a serialized Spike Protection Notification Action object.\n\nNotification Actions notify a set of members when an action has been triggered through a notification service such as Slack or Sentry. For example, organization owners and managers can receive an email when a spike occurs.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n`action_id` _(integer)_REQUIRED\n\nID of the notification action to retrieve\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n    \n- `org:read`\n    \n- `org:write`",
+  "sortOrder": 11
+}

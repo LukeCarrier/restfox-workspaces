@@ -1,0 +1,15 @@
+{
+  "_type": "request",
+  "method": "GET",
+  "url": "https://sentry.io/api/0/organizations/{{organization_slug}}/integrations/",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "# List an Organization's Available Integrations\n\n[https://docs.sentry.io/api/integrations/list-an-organizations-available-integrations/](https://docs.sentry.io/api/integrations/list-an-organizations-available-integrations/)\n\nGET/api/0/organizations/{organization_slug}/integrations/\n\nLists all the available Integrations for an Organization.\n\n### Path Parameters\n\n`organization_slug` _(string)_REQUIRED\n\nThe slug of the organization the resource belongs to.\n\n### Query Parameters:\n\n`providerKey` _(string)_\n\nSpecific integration provider to filter by such as `slack`. See our [Integrations Documentation](https://docs.sentry.io/product/integrations/) for an updated list of providers.\n\n`features` _(array(string))_\n\nIntegration features to filter by. See our [Integrations Documentation](https://docs.sentry.io/product/integrations/) for an updated list of features. Current available ones are:\n\n- alert-rule\n    \n- chat-unfurl\n    \n- codeowners\n    \n- commits\n    \n- data-forwarding\n    \n- deployment\n    \n- enterprise-alert-rule\n    \n- enterprise-incident-management\n    \n- incident-management\n    \n- issue-basic\n    \n- issue-sync\n    \n- mobile\n    \n- serverless\n    \n- session-replay\n    \n- stacktrace-link\n    \n- ticket-rules\n    \n\n`includeConfig` _(boolean)_\n\nSpecify `True` to fetch third-party integration configurations. Note that this can add several seconds to the response time.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth/) requires one of the following scopes:\n\n- `org:admin`\n    \n- `org:integrations`\n    \n- `org:read`\n    \n- `org:write`",
+  "sortOrder": 0
+}

@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/sentry-app-installations/:uuid/external-issues/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"issueID\": \"\",\n    \"webUrl\": \"\",\n    \"project\": \"\",\n    \"identifier\": \"\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/integration/create-an-external-issue/](https://docs.sentry.io/api/integration/create-an-external-issue/)\n\nCreate an external issue from an integration platform integration.\n\n### Path Parameters\n\n`uuid` *(string)*REQUIRED\n\nThe uuid of the integration platform integration.\n\n### Body Parameters\n\n`issueId` *(integer)*REQUIRED\n\nThe ID of the Sentry issue to link the external issue to.\n\n`webUrl` *(string)*REQUIRED\n\nThe URL of the external service to link the issue to.\n\n`project` *(string)*REQUIRED\n\nThe external service's project.\n\n`identifier` *(string)*REQUIRED\n\nA unique identifier of the external issue.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `event:write`",
+  "sortOrder": 0
+}

@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "method": "POST",
+  "url": "https://sentry.io/api/0/projects/{{organization_slug}}/:project_slug/user-feedback/",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n    \"event_id\": \"903505d13c6a4a58a496ca13eb88d624\",\n    \"name\": \"Dirk Feedback Test\",\n    \"email\": \"stanbeeman89012@gmail.com\",\n    \"comments\": \"This was a problem\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "description": "[https://docs.sentry.io/api/projects/submit-user-feedback/](https://docs.sentry.io/api/projects/submit-user-feedback/)\n\nSubmit and associate user feedback with an issue.\n\nFeedback must be received by the server no more than 30 minutes after the event was saved.\n\nAdditionally, within 5 minutes of submitting feedback it may also be overwritten. This is useful in situations where you may need to retry sending a request due to network failures.\n\nIf feedback is rejected due to a mutability threshold, a 409 status code will be returned.\n\nNote: Feedback may be submitted with DSN authentication (see auth documentation).\n\n### Path Parameters\n\n`organization_slug` *(string)*REQUIRED\n\nThe slug of the organization.\n\n`project_slug` *(string)*REQUIRED\n\nThe slug of the project.\n\n### Body Parameters\n\n`event_id` *(string)*REQUIRED\n\nThe event ID. This can be retrieved from the [beforeSend callback](https://docs.sentry.io/platforms/javascript/configuration/filtering/#using-beforesend).\n\n`name` *(string)*REQUIRED\n\nUser's name.\n\n`email` *(string)*REQUIRED\n\nUser's email address.\n\n`comments` *(string)*REQUIRED\n\nComments supplied by user.\n\n### Scopes\n\nYou need to [authenticate via bearer auth token.](https://docs.sentry.io/api/auth) requires one of the following scopes:\n\n*   `project:write`",
+  "sortOrder": 16
+}
