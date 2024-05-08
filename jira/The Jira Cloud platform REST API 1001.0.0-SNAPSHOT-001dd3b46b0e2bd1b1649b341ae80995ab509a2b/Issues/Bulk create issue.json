@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/bulk",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"issueUpdates\": [\n    {\n      \"fields\": {},\n      \"historyMetadata\": null,\n      \"properties\": [\n        {\n          \"key\": \"string\",\n          \"value\": null\n        }\n      ],\n      \"transition\": null,\n      \"update\": {}\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 4
+}

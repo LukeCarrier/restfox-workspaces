@@ -1,0 +1,42 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/universal_avatar/type/{type}/owner/{entityId}",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "x",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "y",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "size",
+      "value": "0",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "type",
+      "value": ""
+    },
+    {
+      "name": "entityId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

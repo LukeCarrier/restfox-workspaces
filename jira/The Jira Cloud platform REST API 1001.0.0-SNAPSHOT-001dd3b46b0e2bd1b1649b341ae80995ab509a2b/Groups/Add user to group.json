@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/group/user",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"accountId\": \"string\",\n  \"name\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "groupname",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "groupId",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

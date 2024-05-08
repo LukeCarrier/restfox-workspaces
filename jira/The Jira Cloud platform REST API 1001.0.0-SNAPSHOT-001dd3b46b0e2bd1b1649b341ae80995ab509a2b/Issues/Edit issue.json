@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"fields\": {},\n  \"historyMetadata\": null,\n  \"properties\": [\n    {\n      \"key\": \"string\",\n      \"value\": null\n    }\n  ],\n  \"transition\": null,\n  \"update\": {}\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "notifyUsers",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "overrideScreenSecurity",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "overrideEditableFlag",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "returnIssue",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 12
+}

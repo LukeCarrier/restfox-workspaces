@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme/{id}/issuetype/{issueType}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "updateDraftIfNeeded",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    },
+    {
+      "name": "issueType",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 11
+}

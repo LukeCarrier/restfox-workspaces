@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/worklog/list",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"ids\": [\n    0\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

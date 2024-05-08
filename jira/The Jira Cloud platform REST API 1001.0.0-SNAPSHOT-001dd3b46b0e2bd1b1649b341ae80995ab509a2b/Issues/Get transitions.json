@@ -1,0 +1,48 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/transitions",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "transitionId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "skipRemoteOnlyCondition",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "includeUnavailableTransitions",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "sortByOpsBarAndStatus",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 18
+}

@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issuetype/{id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "alternativeIssueTypeId",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

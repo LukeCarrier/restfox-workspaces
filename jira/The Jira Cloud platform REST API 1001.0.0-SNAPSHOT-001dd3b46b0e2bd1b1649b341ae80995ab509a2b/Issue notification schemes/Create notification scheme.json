@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/notificationscheme",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"string\",\n  \"name\": \"string\",\n  \"notificationSchemeEvents\": [\n    {\n      \"event\": null,\n      \"notifications\": [\n        {\n          \"notificationType\": \"string\",\n          \"parameter\": \"string\"\n        }\n      ]\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"defaultWorkflow\": \"string\",\n  \"description\": \"string\",\n  \"issueTypeMappings\": {},\n  \"name\": \"string\",\n  \"updateDraftIfNeeded\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

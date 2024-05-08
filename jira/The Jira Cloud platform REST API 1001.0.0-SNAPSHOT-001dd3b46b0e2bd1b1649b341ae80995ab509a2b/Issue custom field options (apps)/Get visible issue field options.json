@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldKey}/option/suggestions/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "projectId",
+      "value": "0",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

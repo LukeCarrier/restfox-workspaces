@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldId}/context/mapping",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"mappings\": [\n    {\n      \"issueTypeId\": \"string\",\n      \"projectId\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "50",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 5
+}

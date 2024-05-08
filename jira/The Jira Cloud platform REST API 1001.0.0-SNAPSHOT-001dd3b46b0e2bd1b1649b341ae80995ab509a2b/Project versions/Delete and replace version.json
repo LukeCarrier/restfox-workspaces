@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/version/{id}/removeAndSwap",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"customFieldReplacementList\": [\n    {\n      \"customFieldId\": 0,\n      \"moveTo\": 0\n    }\n  ],\n  \"moveAffectedIssuesTo\": 0,\n  \"moveFixIssuesTo\": 0\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 12
+}

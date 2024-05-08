@@ -1,0 +1,58 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/app/field/{fieldIdOrKey}/context/configuration",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "fieldContextId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "issueId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "projectKeyOrId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "issueTypeId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "100",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldIdOrKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

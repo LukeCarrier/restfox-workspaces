@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/worklog/{worklogId}/properties",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": ""
+    },
+    {
+      "name": "worklogId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

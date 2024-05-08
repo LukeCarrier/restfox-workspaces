@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldKey}/option/{optionId}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"config\": {\n    \"attributes\": [\n      \"string\"\n    ],\n    \"scope\": null\n  },\n  \"id\": 0,\n  \"properties\": {},\n  \"value\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "fieldKey",
+      "value": ""
+    },
+    {
+      "name": "optionId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

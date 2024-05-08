@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/notificationscheme/{notificationSchemeId}/notification/{notificationId}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "notificationSchemeId",
+      "value": ""
+    },
+    {
+      "name": "notificationId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 7
+}

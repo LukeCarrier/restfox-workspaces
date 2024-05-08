@@ -1,0 +1,30 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/dashboard/{dashboardId}/items/{itemId}/properties/{propertyKey}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "dashboardId",
+      "value": ""
+    },
+    {
+      "name": "itemId",
+      "value": ""
+    },
+    {
+      "name": "propertyKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 10
+}

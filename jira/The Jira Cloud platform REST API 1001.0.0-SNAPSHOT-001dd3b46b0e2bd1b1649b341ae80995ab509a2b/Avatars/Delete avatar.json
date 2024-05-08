@@ -1,0 +1,30 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/universal_avatar/type/{type}/owner/{owningObjectId}/avatar/{id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "type",
+      "value": ""
+    },
+    {
+      "name": "owningObjectId",
+      "value": ""
+    },
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}/role/{id}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"group\": [\n    \"string\"\n  ],\n  \"groupId\": [\n    \"string\"\n  ],\n  \"user\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": ""
+    },
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

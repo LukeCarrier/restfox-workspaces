@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/atlassian-connect/1/addons/{addonKey}/properties/{propertyKey}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "addonKey",
+      "value": ""
+    },
+    {
+      "name": "propertyKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

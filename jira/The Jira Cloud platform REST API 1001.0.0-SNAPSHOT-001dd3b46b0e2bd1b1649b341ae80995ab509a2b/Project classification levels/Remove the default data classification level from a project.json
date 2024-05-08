@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}/classification-level/default",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme/update/mappings",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"defaultWorkflowId\": \"string\",\n  \"id\": \"string\",\n  \"workflowsForIssueTypes\": [\n    {\n      \"issueTypeIds\": [\n        \"string\"\n      ],\n      \"workflowId\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 4
+}

@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldId}/screens",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "100",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

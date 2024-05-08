@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "enableUndo",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": "10001"
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 4
+}

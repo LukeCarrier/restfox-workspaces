@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/properties/{propertyKey}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"currentValue\": null,\n  \"entityIds\": [\n    0\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "propertyKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

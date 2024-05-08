@@ -1,0 +1,39 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflow/transitions/{transitionId}/properties",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"value\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "key",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "workflowName",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "workflowMode",
+      "value": "live",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "transitionId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

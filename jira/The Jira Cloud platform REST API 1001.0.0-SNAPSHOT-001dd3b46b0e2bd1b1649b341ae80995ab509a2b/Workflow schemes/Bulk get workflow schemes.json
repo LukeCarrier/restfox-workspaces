@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme/read",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"projectIds\": [\n    \"string\"\n  ],\n  \"workflowSchemeIds\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

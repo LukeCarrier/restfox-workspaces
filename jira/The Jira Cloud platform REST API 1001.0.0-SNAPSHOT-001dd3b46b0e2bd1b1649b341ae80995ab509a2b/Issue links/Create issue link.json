@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issueLink",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"comment\": {\n    \"body\": null,\n    \"properties\": [\n      {\n        \"key\": \"string\",\n        \"value\": null\n      }\n    ],\n    \"visibility\": null\n  },\n  \"inwardIssue\": {\n    \"id\": \"string\",\n    \"key\": \"string\"\n  },\n  \"outwardIssue\": {\n    \"id\": \"string\",\n    \"key\": \"string\"\n  },\n  \"type\": {\n    \"id\": \"string\",\n    \"inward\": \"string\",\n    \"name\": \"string\",\n    \"outward\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

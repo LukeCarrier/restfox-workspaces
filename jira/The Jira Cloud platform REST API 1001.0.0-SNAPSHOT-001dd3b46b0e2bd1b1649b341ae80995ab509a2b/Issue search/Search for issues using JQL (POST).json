@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/search",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"expand\": [\n    \"string\"\n  ],\n  \"fields\": [\n    \"string\"\n  ],\n  \"fieldsByKeys\": true,\n  \"jql\": \"string\",\n  \"maxResults\": 50,\n  \"properties\": [\n    \"string\"\n  ],\n  \"startAt\": 0,\n  \"validateQuery\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

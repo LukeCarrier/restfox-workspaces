@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/remotelink/{linkId}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": "10000"
+    },
+    {
+      "name": "linkId",
+      "value": "10000"
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

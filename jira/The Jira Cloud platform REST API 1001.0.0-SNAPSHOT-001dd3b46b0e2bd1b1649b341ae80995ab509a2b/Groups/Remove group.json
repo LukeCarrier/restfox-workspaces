@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/group",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "groupname",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "groupId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "swapGroup",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "swapGroupId",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

@@ -1,0 +1,33 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}/roledetails",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "currentMember",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "excludeConnectAddons",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

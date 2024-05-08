@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/limit/report",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"issuesApproachingLimitParams\": {}\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 8
+}

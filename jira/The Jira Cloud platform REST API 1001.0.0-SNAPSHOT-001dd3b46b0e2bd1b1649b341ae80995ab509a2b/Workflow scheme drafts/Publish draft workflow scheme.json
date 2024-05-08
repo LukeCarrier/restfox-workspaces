@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme/{id}/draft/publish",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"statusMappings\": [\n    {\n      \"issueTypeId\": \"string\",\n      \"newStatusId\": \"string\",\n      \"statusId\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "validateOnly",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 10
+}

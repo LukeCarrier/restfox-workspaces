@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/version",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"archived\": true,\n  \"description\": \"string\",\n  \"expand\": \"string\",\n  \"moveUnfixedIssuesTo\": \"string\",\n  \"name\": \"string\",\n  \"project\": \"string\",\n  \"projectId\": 0,\n  \"releaseDate\": \"string\",\n  \"released\": true,\n  \"startDate\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

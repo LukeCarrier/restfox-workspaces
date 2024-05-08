@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/atlassian-connect/1/migration/properties/{entityType}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  {\n    \"entityId\": 123,\n    \"key\": \"mykey\",\n    \"value\": \"newValue\"\n  }\n]"
+  },
+  "headers": [
+    {
+      "name": "Atlassian-Transfer-Id",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "entityType",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

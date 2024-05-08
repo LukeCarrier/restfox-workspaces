@@ -1,0 +1,47 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldId}/context/{contextId}/option",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "optionId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "onlyOptions",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "100",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldId",
+      "value": ""
+    },
+    {
+      "name": "contextId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

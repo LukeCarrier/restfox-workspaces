@@ -1,0 +1,58 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflow/rule/config",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "10",
+      "disabled": true
+    },
+    {
+      "name": "types",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "keys",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "workflowNames",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "withTags",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "draft",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

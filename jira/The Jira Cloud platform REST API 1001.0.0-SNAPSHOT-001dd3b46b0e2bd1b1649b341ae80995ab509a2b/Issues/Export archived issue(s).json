@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issues/archive/export",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"archivedBy\": [\n    \"string\"\n  ],\n  \"archivedDateRange\": {\n    \"dateAfter\": \"string\",\n    \"dateBefore\": \"string\"\n  },\n  \"issueTypes\": [\n    \"string\"\n  ],\n  \"projects\": [\n    \"string\"\n  ],\n  \"reporters\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 20
+}

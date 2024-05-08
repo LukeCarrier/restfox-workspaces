@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/uiModifications/{uiModificationId}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"contexts\": [\n    {\n      \"issueTypeId\": \"string\",\n      \"projectId\": \"string\",\n      \"viewType\": \"string\"\n    }\n  ],\n  \"data\": \"string\",\n  \"description\": \"string\",\n  \"name\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "uiModificationId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

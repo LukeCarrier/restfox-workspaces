@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/dashboard/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"string\",\n  \"editPermissions\": [\n    {\n      \"group\": null,\n      \"project\": null,\n      \"role\": null,\n      \"type\": \"string\",\n      \"user\": null\n    }\n  ],\n  \"name\": \"string\",\n  \"sharePermissions\": [\n    {\n      \"group\": null,\n      \"project\": null,\n      \"role\": null,\n      \"type\": \"string\",\n      \"user\": null\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 15
+}

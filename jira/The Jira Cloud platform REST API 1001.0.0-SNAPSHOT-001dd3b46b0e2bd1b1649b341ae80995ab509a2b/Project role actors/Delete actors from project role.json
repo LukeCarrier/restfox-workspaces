@@ -1,0 +1,42 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}/role/{id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "user",
+      "value": "5b10ac8d82e05b22cc7d4ef5",
+      "disabled": true
+    },
+    {
+      "name": "group",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "groupId",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": ""
+    },
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

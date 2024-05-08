@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/{projectIdOrKey}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"assigneeType\": \"string\",\n  \"avatarId\": 0,\n  \"categoryId\": 0,\n  \"description\": \"string\",\n  \"issueSecurityScheme\": 0,\n  \"key\": \"string\",\n  \"lead\": \"string\",\n  \"leadAccountId\": \"string\",\n  \"name\": \"string\",\n  \"notificationScheme\": 0,\n  \"permissionScheme\": 0,\n  \"url\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "projectIdOrKey",
+      "value": "10001"
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

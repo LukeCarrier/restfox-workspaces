@@ -1,0 +1,41 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/field/{fieldId}/context/{contextId}/option/{optionId}/issue",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "replaceWith",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "jql",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fieldId",
+      "value": ""
+    },
+    {
+      "name": "optionId",
+      "value": ""
+    },
+    {
+      "name": "contextId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

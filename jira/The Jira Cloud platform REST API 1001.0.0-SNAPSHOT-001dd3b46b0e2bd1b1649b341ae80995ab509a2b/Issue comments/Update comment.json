@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/comment/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"body\": null,\n  \"properties\": [\n    {\n      \"key\": \"string\",\n      \"value\": null\n    }\n  ],\n  \"visibility\": null\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "notifyUsers",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "overrideEditableFlag",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": ""
+    },
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 5
+}

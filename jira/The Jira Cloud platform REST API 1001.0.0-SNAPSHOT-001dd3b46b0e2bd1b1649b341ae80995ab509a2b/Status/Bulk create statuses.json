@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/statuses",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"scope\": {\n    \"project\": {\n      \"id\": \"string\"\n    },\n    \"type\": \"string\"\n  },\n  \"statuses\": [\n    {\n      \"description\": \"string\",\n      \"name\": \"string\",\n      \"statusCategory\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

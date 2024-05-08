@@ -1,0 +1,52 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/worklog/{id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "notifyUsers",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "adjustEstimate",
+      "value": "auto",
+      "disabled": true
+    },
+    {
+      "name": "newEstimate",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "increaseBy",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "overrideEditableFlag",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": ""
+    },
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/permissionscheme",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"string\",\n  \"name\": \"string\",\n  \"permissions\": [\n    {\n      \"holder\": null,\n      \"permission\": \"string\"\n    }\n  ],\n  \"scope\": null\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

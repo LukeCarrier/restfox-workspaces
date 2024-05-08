@@ -1,0 +1,48 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/screens",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "100",
+      "disabled": true
+    },
+    {
+      "name": "id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "queryString",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "scope",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "orderBy",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/user/columns",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "accountId",
+      "value": "5b10ac8d82e05b22cc7d4ef5",
+      "disabled": true
+    },
+    {
+      "name": "username",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 5
+}

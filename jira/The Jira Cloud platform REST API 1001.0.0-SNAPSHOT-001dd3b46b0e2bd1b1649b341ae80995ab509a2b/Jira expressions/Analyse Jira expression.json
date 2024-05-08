@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/expression/analyse",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"contextVariables\": {},\n  \"expressions\": \"issues.map(issue => issue.properties['property_key'])\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "check",
+      "value": "syntax",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

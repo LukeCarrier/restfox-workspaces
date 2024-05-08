@@ -1,0 +1,83 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/project/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "orderBy",
+      "value": "key",
+      "disabled": true
+    },
+    {
+      "name": "id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "keys",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "query",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "typeKey",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "categoryId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "action",
+      "value": "view",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "live",
+      "disabled": true
+    },
+    {
+      "name": "properties",
+      "value": "[object Object]",
+      "disabled": true
+    },
+    {
+      "name": "propertyQuery",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

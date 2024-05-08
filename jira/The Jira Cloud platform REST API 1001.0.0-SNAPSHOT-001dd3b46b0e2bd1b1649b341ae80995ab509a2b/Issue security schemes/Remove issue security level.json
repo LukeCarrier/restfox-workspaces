@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issuesecurityschemes/{schemeId}/level/{levelId}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "replaceWith",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "schemeId",
+      "value": ""
+    },
+    {
+      "name": "levelId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 12
+}

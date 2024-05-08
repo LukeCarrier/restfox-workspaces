@@ -1,0 +1,21 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/atlassian-connect/1/service-registry",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "serviceIds",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

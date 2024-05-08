@@ -1,0 +1,58 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "jql",
+      "value": "project = HSP",
+      "disabled": true
+    },
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "validateQuery",
+      "value": "strict",
+      "disabled": true
+    },
+    {
+      "name": "fields",
+      "value": "*navigable",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "properties",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "fieldsByKeys",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

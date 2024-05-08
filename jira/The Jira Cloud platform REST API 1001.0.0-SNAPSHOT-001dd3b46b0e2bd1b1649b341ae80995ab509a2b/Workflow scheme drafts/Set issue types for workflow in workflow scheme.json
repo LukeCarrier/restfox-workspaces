@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflowscheme/{id}/draft/workflow",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"defaultMapping\": true,\n  \"issueTypes\": [\n    \"string\"\n  ],\n  \"updateDraftIfNeeded\": true,\n  \"workflow\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "workflowName",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 13
+}

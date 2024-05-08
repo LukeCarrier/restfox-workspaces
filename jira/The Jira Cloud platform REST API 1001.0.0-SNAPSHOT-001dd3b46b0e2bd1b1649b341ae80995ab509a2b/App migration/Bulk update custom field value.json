@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/atlassian-connect/1/migration/field",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"updateValueList\": [\n    {\n      \"_type\": \"string\",\n      \"fieldID\": 0,\n      \"issueID\": 0,\n      \"number\": 0,\n      \"optionID\": \"string\",\n      \"richText\": \"string\",\n      \"string\": \"string\",\n      \"text\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "Atlassian-Transfer-Id",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

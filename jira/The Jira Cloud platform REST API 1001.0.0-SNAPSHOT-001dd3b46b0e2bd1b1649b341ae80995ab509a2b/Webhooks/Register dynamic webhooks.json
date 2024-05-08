@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/webhook",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"url\": \"string\",\n  \"webhooks\": [\n    {\n      \"events\": [\n        \"string\"\n      ],\n      \"fieldIdsFilter\": [\n        \"string\"\n      ],\n      \"issuePropertyKeysFilter\": [\n        \"string\"\n      ],\n      \"jqlFilter\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

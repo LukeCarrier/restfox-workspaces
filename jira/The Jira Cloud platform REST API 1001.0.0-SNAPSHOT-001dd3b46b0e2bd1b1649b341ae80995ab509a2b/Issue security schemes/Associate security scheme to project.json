@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issuesecurityschemes/project",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"oldToNewSecurityLevelMappings\": [\n    {\n      \"newLevelId\": \"string\",\n      \"oldLevelId\": \"string\"\n    }\n  ],\n  \"projectId\": \"string\",\n  \"schemeId\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 6
+}

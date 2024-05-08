@@ -1,0 +1,30 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/screens/{screenId}/tabs/{tabId}/move/{pos}",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "screenId",
+      "value": ""
+    },
+    {
+      "name": "tabId",
+      "value": ""
+    },
+    {
+      "name": "pos",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 5
+}

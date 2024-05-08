@@ -1,0 +1,78 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/filter/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "filterName",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "accountId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "owner",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "groupname",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "groupId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "projectId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "orderBy",
+      "value": "name",
+      "disabled": true
+    },
+    {
+      "name": "startAt",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxResults",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "overrideSharePermissions",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 3
+}

@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/issue/{issueIdOrKey}/remotelink",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "globalId",
+      "value": "system=http://www.mycompany.com/support&id=1",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "issueIdOrKey",
+      "value": "10000"
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

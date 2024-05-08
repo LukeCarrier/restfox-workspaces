@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/auditing/record",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "offset",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "1000",
+      "disabled": true
+    },
+    {
+      "name": "filter",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "from",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "to",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

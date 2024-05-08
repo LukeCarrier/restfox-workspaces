@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/permissionscheme/{schemeId}/permission/{permissionId}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "schemeId",
+      "value": ""
+    },
+    {
+      "name": "permissionId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 8
+}

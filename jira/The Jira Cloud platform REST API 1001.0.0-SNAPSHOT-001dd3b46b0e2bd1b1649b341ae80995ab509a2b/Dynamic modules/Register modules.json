@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/atlassian-connect/1/app/module/dynamic",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"jiraEntityProperties\": [\n    {\n      \"keyConfigurations\": [\n        {\n          \"extractions\": [\n            {\n              \"objectName\": \"extension\",\n              \"type\": \"text\",\n              \"alias\": \"attachmentExtension\"\n            }\n          ],\n          \"propertyKey\": \"attachment\"\n        }\n      ],\n      \"entityType\": \"issue\",\n      \"name\": {\n        \"value\": \"Attachment Index Document\"\n      },\n      \"key\": \"dynamic-attachment-entity-property\"\n    }\n  ],\n  \"jiraIssueFields\": [\n    {\n      \"description\": {\n        \"value\": \"A dynamically added single-select field\"\n      },\n      \"type\": \"single_select\",\n      \"extractions\": [\n        {\n          \"path\": \"category\",\n          \"type\": \"text\",\n          \"name\": \"categoryName\"\n        }\n      ],\n      \"name\": {\n        \"value\": \"Dynamic single select\"\n      },\n      \"key\": \"dynamic-select-field\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

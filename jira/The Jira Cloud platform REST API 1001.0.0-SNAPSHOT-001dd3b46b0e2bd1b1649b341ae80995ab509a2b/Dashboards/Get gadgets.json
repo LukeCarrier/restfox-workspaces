@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/dashboard/{dashboardId}/gadget",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "moduleKey",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "uri",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "gadgetId",
+      "value": "0",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "dashboardId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 5
+}

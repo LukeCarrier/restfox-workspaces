@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/user/properties/{propertyKey}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "accountId",
+      "value": "5b10ac8d82e05b22cc7d4ef5",
+      "disabled": true
+    },
+    {
+      "name": "userKey",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "username",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "propertyKey",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

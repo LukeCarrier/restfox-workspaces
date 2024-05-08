@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rest/api/3/workflow/rule/config",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"workflows\": [\n    {\n      \"conditions\": [\n        {\n          \"configuration\": {\n            \"disabled\": true,\n            \"tag\": \"string\",\n            \"value\": \"string\"\n          },\n          \"id\": \"string\"\n        }\n      ],\n      \"postFunctions\": [\n        {\n          \"configuration\": {\n            \"disabled\": true,\n            \"tag\": \"string\",\n            \"value\": \"string\"\n          },\n          \"id\": \"string\"\n        }\n      ],\n      \"validators\": [\n        {\n          \"configuration\": {\n            \"disabled\": true,\n            \"tag\": \"string\",\n            \"value\": \"string\"\n          },\n          \"id\": \"string\"\n        }\n      ],\n      \"workflowId\": {\n        \"draft\": true,\n        \"name\": \"string\"\n      }\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}
