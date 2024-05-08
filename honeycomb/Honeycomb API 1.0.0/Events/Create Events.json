@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/1/batch/{datasetSlug}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  null\n]"
+  },
+  "headers": [
+    {
+      "name": "Content-Encoding",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "X-Honeycomb-Team",
+      "value": "{{ xHoneycombTeam }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

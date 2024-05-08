@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/1/burn_alerts/{datasetSlug}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Honeycomb-Team",
+      "value": "{{ xHoneycombTeam }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "slo_id",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

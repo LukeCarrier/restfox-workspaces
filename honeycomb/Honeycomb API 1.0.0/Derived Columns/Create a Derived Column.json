@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/1/derived_columns/{datasetSlug}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [
+    {
+      "name": "X-Honeycomb-Team",
+      "value": "{{ xHoneycombTeam }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

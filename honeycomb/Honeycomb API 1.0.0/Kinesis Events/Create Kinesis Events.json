@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/1/kinesis_events/{datasetSlug}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [
+    {
+      "name": "X-Amz-Firehose-Access-Key",
+      "value": "{{ xAmzFirehoseAccessKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}
