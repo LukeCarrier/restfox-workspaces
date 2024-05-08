@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/custom-content/{custom-content-id}/properties/{property-id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"key\": \"string\",\n  \"value\": null,\n  \"version\": {\n    \"number\": 0,\n    \"message\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "custom-content-id",
+      "value": ""
+    },
+    {
+      "name": "property-id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 13
+}

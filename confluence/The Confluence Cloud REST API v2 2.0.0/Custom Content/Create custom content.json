@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/custom-content",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"type\": \"string\",\n  \"status\": \"string\",\n  \"spaceId\": \"string\",\n  \"pageId\": \"string\",\n  \"blogPostId\": \"string\",\n  \"customContentId\": \"string\",\n  \"title\": \"string\",\n  \"body\": null\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/inline-comments/{comment-id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"version\": {\n    \"number\": 0,\n    \"message\": \"string\"\n  },\n  \"body\": null,\n  \"resolved\": true\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "comment-id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 15
+}

@@ -1,0 +1,53 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/attachments/{id}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "include-labels",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "include-properties",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "include-operations",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "include-versions",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "include-version",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 1
+}

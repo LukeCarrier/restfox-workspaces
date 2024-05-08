@@ -1,0 +1,78 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/spaces",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "ids",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "keys",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "type",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "labels",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "favorited-by",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "not-favorited-by",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "description-format",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "include-icon",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "25",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

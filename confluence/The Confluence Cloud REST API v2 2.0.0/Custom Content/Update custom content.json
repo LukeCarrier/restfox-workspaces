@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/custom-content/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"id\": \"string\",\n  \"type\": \"string\",\n  \"status\": \"string\",\n  \"spaceId\": \"string\",\n  \"pageId\": \"string\",\n  \"blogPostId\": \"string\",\n  \"customContentId\": \"string\",\n  \"title\": \"string\",\n  \"body\": null,\n  \"version\": {\n    \"number\": 0,\n    \"message\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 4
+}

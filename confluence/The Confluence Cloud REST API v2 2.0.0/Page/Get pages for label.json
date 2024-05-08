@@ -1,0 +1,48 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/labels/{id}/pages",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "space-id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "body-format",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "25",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

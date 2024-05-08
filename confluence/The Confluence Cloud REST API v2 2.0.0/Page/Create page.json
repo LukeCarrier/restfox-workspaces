@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/pages",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"spaceId\": \"string\",\n  \"status\": \"string\",\n  \"title\": \"string\",\n  \"parentId\": \"string\",\n  \"body\": null\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "embedded",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "private",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "root-level",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

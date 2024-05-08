@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/tasks/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"id\": \"string\",\n  \"localId\": \"string\",\n  \"spaceId\": \"string\",\n  \"pageId\": \"string\",\n  \"blogPostId\": \"string\",\n  \"status\": \"string\",\n  \"createdBy\": \"string\",\n  \"assignedTo\": \"string\",\n  \"completedBy\": \"string\",\n  \"createdAt\": \"2024-05-08T21:00:53.040Z\",\n  \"updatedAt\": \"2024-05-08T21:00:53.040Z\",\n  \"dueAt\": \"2024-05-08T21:00:53.040Z\",\n  \"completedAt\": \"2024-05-08T21:00:53.040Z\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "body-format",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 2
+}

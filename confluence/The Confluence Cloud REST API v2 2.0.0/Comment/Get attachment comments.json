@@ -1,0 +1,48 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/attachments/{id}/footer-comments",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "body-format",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "25",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "version",
+      "value": "0",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

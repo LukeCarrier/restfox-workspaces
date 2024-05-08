@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/databases",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"spaceId\": \"string\",\n  \"title\": \"string\",\n  \"parentId\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "private",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

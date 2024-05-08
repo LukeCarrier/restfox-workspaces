@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/inline-comments",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"blogPostId\": \"string\",\n  \"pageId\": \"string\",\n  \"parentCommentId\": \"string\",\n  \"body\": null,\n  \"inlineCommentProperties\": {\n    \"textSelection\": \"string\",\n    \"textSelectionMatchCount\": 0,\n    \"textSelectionMatchIndex\": 0\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 13
+}

@@ -1,0 +1,108 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/tasks",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "body-format",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "include-blank-tasks",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "task-id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "space-id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "page-id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "blogpost-id",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "created-by",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "assigned-to",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "completed-by",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "created-at-from",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "created-at-to",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "due-at-from",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "due-at-to",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "completed-at-from",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "completed-at-to",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "25",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 0
+}

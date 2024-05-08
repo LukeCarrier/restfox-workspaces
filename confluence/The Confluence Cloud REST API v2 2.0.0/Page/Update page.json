@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/pages/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"id\": \"string\",\n  \"status\": \"string\",\n  \"title\": \"string\",\n  \"spaceId\": null,\n  \"parentId\": null,\n  \"ownerId\": null,\n  \"body\": null,\n  \"version\": {\n    \"number\": 0,\n    \"message\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 4
+}

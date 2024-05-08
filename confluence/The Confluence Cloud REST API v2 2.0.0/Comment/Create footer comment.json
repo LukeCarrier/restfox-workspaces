@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/footer-comments",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"blogPostId\": \"string\",\n  \"pageId\": \"string\",\n  \"parentCommentId\": \"string\",\n  \"attachmentId\": \"string\",\n  \"customContentId\": \"string\",\n  \"body\": null\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 7
+}
