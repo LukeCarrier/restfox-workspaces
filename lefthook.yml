@@ -11,3 +11,8 @@ fix:
   commands:
     fix-lint:
       run: dprint fmt --allow-no-files {staged_files}
+
+collapse:
+  commands:
+    collapse:
+      run: find . -type d -mindepth 2 -a -not '(' -path '*.git*' -o -name '_environments' ')' -exec touch '{}/_collapsed' \;
