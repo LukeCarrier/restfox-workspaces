@@ -1,0 +1,47 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/response_plays",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "From",
+      "value": "user@example.com",
+      "disabled": true
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "query",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "filter_for_manual_run",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

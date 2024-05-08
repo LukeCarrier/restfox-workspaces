@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/standards/scores/{resource_type}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "ids",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

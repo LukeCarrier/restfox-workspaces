@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rulesets/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"ruleset\": {\n    \"id\": \"0e84de00-9511-4380-9f4f-a7b568bb49a0\",\n    \"name\": \"MySQL Clusters\",\n    \"type\": \"global\",\n    \"routing_keys\": [\n      \"R0212P1QXGEIQE2NMTQ7L7WXD00DWHIN\"\n    ],\n    \"self\": \"https://api.pagerduty.com/rulesets/0e84de00-9511-4380-9f4f-a7b568bb49a0\",\n    \"created_at\": \"2019-12-24T21:18:52Z\",\n    \"creator\": {\n      \"type\": \"user_reference\",\n      \"self\": \"https://api.pagerduty.com/users/PABO808\",\n      \"id\": \"PABO808\"\n    },\n    \"updated_at\": \"2019-12-25T14:54:23Z\",\n    \"updater\": {\n      \"type\": \"user_reference\",\n      \"self\": \"https://api.pagerduty.com/users/PABO808\",\n      \"id\": \"PABO808\"\n    },\n    \"team\": {\n      \"type\": \"team_reference\",\n      \"self\": \"https://api.pagerduty.com/teams/P3ZQXDF\",\n      \"id\": \"P3ZQXDF\"\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 3
+}

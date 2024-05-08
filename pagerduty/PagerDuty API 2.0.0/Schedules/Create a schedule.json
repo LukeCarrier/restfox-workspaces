@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/schedules",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"schedule\": null\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "overflow",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

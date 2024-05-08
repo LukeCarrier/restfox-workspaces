@@ -1,0 +1,52 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/paused_incident_reports/alerts",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "since",
+      "value": "2024-05-08T21:08:37.773Z",
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": "2024-05-08T21:08:37.773Z",
+      "disabled": true
+    },
+    {
+      "name": "service_id",
+      "value": "P123456",
+      "disabled": true
+    },
+    {
+      "name": "suspended_by",
+      "value": "null",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

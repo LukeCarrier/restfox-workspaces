@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/templates/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"template\": {\n    \"template_type\": \"string\",\n    \"name\": \"string\",\n    \"description\": \"string\",\n    \"templated_fields\": {\n      \"email_subject\": \"string\",\n      \"email_body\": \"string\",\n      \"message\": \"string\"\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 3
+}

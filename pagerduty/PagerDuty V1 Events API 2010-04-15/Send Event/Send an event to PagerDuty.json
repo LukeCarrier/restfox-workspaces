@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/create_event.json",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"service_key\": \"string\",\n  \"event_type\": \"string\",\n  \"incident_key\": \"string\",\n  \"description\": \"string\",\n  \"details\": {},\n  \"client\": \"string\",\n  \"client_url\": \"string\",\n  \"contexts\": [\n    null\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

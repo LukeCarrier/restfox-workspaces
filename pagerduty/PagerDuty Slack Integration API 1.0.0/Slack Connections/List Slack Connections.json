@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/workspaces/{slack_team_id}/connections",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "offset",
+      "value": "0",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

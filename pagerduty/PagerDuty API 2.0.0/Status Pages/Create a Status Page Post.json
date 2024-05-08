@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/status_pages/{id}/posts",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"post\": {\n    \"type\": \"string\",\n    \"title\": \"string\",\n    \"post_type\": \"string\",\n    \"starts_at\": \"2024-05-08T21:08:37.773Z\",\n    \"ends_at\": \"2024-05-08T21:08:37.773Z\",\n    \"updates\": [\n      {\n        \"post\": {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        \"message\": \"string\",\n        \"status\": {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        \"severity\": {\n          \"id\": \"string\",\n          \"type\": \"string\"\n        },\n        \"impacted_services\": [\n          {\n            \"service\": null,\n            \"impact\": null\n          }\n        ],\n        \"update_frequency_ms\": 0,\n        \"notify_subscribers\": true,\n        \"reported_at\": \"2024-05-08T21:08:37.773Z\",\n        \"type\": \"string\"\n      }\n    ],\n    \"status_page\": {\n      \"id\": \"string\",\n      \"type\": \"string\"\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 10
+}

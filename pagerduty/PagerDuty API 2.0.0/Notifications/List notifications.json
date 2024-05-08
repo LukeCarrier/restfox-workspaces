@@ -1,0 +1,72 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/notifications",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "offset",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "total",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "time_zone",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2024-05-08T21:08:37.772Z",
+      "disabled": false
+    },
+    {
+      "name": "until",
+      "value": "2024-05-08T21:08:37.772Z",
+      "disabled": false
+    },
+    {
+      "name": "filter",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "include[]",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

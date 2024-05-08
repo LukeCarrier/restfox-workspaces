@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/rules",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"rule\": {\n    \"name\": \"Sample Rule\",\n    \"enabled\": true,\n    \"config\": {\n      \"sync_comments\": true,\n      \"services\": [\n        {\n          \"id\": \"PIJ90N7\",\n          \"type\": \"service_reference\"\n        }\n      ],\n      \"projects\": [\n        {\n          \"id\": \"10000\",\n          \"key\": \"PD\",\n          \"label\": \"PagerDuty\",\n          \"icon\": \"https://example.com/secure/projectavatar?avatarId=10324\",\n          \"html_url\": \"https://example.com/projects/PD\"\n        }\n      ],\n      \"issue_types\": [\n        {\n          \"id\": \"10002\",\n          \"label\": \"Story\",\n          \"icon\": \"http://example.com/images/icons/issuetypes/story.svg\"\n        }\n      ],\n      \"autocreate_issues\": true,\n      \"autocreate_issues_config\": [\n        {\n          \"condition\": {\n            \"pd_events\": [\n              \"incident.trigger\",\n              \"incident.acknowledge\",\n              \"incident.assign\"\n            ],\n            \"pd_priorities\": [\n              {\n                \"id\": \"PZQ39X0\",\n                \"type\": \"priority_reference\"\n              }\n            ],\n            \"pd_urgency\": \"string\"\n          },\n          \"actions\": [\n            {}\n          ],\n          \"actions_params\": {},\n          \"target_project\": {\n            \"id\": \"10000\",\n            \"key\": \"PD\",\n            \"label\": \"PagerDuty\",\n            \"icon\": \"https://example.com/secure/projectavatar?avatarId=10324\",\n            \"html_url\": \"https://example.com/projects/PD\"\n          },\n          \"target_issue_type\": {\n            \"id\": \"10002\",\n            \"label\": \"Story\",\n            \"icon\": \"http://example.com/images/icons/issuetypes/story.svg\"\n          }\n        }\n      ],\n      \"autocreate_incidents\": true,\n      \"autocreate_incidents_config\": [\n        {\n          \"jql\": \"string\",\n          \"on_create\": true,\n          \"on_update\": true,\n          \"actions\": [\n            {}\n          ],\n          \"actions_params\": {},\n          \"target_service\": {\n            \"id\": \"PIJ90N7\",\n            \"type\": \"service_reference\"\n          }\n        }\n      ],\n      \"react_on_incident_event\": true,\n      \"react_on_incident_event_config\": [\n        {\n          \"condition\": {\n            \"pd_events\": [\n              \"incident.acknowledge\",\n              \"incident.assign\",\n              \"incident.escalate\"\n            ],\n            \"pd_priorities\": [\n              {\n                \"id\": \"PZQ39X0\",\n                \"type\": \"priority_reference\"\n              }\n            ],\n            \"pd_urgency\": \"string\"\n          },\n          \"actions\": [\n            {}\n          ],\n          \"actions_params\": {},\n          \"target_project\": {\n            \"id\": \"10000\",\n            \"key\": \"PD\",\n            \"label\": \"PagerDuty\",\n            \"icon\": \"https://example.com/secure/projectavatar?avatarId=10324\",\n            \"html_url\": \"https://example.com/projects/PD\"\n          },\n          \"target_issue_type\": null\n        }\n      ],\n      \"react_on_issue_status_change\": true,\n      \"react_on_issue_status_change_config\": [\n        {\n          \"jira_statuses\": [\n            {\n              \"id\": \"10000\",\n              \"label\": \"To Do\"\n            }\n          ],\n          \"actions\": [\n            {}\n          ],\n          \"actions_params\": {}\n        }\n      ]\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "x-pagerduty-jira-signature",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

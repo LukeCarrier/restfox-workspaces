@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/analytics/raw/responders/{responder_id}/incidents",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"filters\": {\n    \"created_at_start\": \"2023-05-01T00:00:00-04:00\",\n    \"created_at_end\": \"2023-06-01T00:00:00-04:00\",\n    \"urgency\": \"high\",\n    \"major\": true,\n    \"team_ids\": [\n      \"P373JQQ\",\n      \"PAECHJV\",\n      \"P7SYGW6\"\n    ],\n    \"service_ids\": [\n      \"PC8O0L3\",\n      \"PX01HJD\",\n      \"P5FK83M\"\n    ],\n    \"priority_ids\": [\n      \"PITMC5Y\",\n      \"PEHBBT8\",\n      \"PB8QADI\"\n    ],\n    \"priority_names\": [\n      \"P1\",\n      \"P2\",\n      \"P3\"\n    ]\n  },\n  \"starting_after\": \"string\",\n  \"ending_before\": \"string\",\n  \"order\": \"string\",\n  \"order_by\": \"string\",\n  \"limit\": 20,\n  \"time_zone\": \"Etc/UTC\"\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 12
+}

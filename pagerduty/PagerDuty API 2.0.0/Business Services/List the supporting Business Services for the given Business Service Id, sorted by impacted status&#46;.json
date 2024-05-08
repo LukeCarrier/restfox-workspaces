@@ -1,0 +1,42 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/business_services/{id}/supporting_services/impacts",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "X-EARLY-ACCESS",
+      "value": "business-impact-early-access",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "additional_fields[]",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ids[]",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 9
+}

@@ -1,0 +1,37 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/users/{id}/status_update_notification_rules",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "X-EARLY-ACCESS",
+      "value": "status-update-notification-rules",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 30
+}

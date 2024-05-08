@@ -1,0 +1,24 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/workspaces/{slack_team_id}/connections",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"slack_connection\": {\n    \"id\": \"string\",\n    \"source_id\": \"string\",\n    \"source_name\": \"string\",\n    \"source_type\": \"string\",\n    \"channel_id\": \"string\",\n    \"channel_name\": \"string\",\n    \"notification_type\": \"responder\",\n    \"config\": {\n      \"events\": [\n        \"string\"\n      ],\n      \"urgency\": \"string\",\n      \"priorities\": [\n        \"string\"\n      ]\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

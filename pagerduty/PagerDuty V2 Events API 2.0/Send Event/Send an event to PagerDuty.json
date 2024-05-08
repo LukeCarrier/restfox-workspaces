@@ -1,0 +1,16 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/enqueue",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"payload\": {\n    \"summary\": \"string\",\n    \"timestamp\": \"2024-05-08T21:09:14.346Z\",\n    \"severity\": null,\n    \"source\": \"string\",\n    \"component\": \"string\",\n    \"group\": \"string\",\n    \"class\": \"string\",\n    \"custom_details\": {}\n  },\n  \"routing_key\": \"string\",\n  \"event_action\": null,\n  \"dedup_key\": \"string\",\n  \"client\": \"string\",\n  \"client_url\": \"string\",\n  \"links\": [\n    {\n      \"href\": \"string\",\n      \"text\": \"string\"\n    }\n  ],\n  \"images\": [\n    {\n      \"src\": \"string\",\n      \"href\": \"string\",\n      \"alt\": \"string\"\n    }\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

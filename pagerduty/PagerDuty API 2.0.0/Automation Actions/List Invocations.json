@@ -1,0 +1,52 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/automation_actions/invocations",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "invocation_state",
+      "value": "sent",
+      "disabled": true
+    },
+    {
+      "name": "not_invocation_state",
+      "value": "sent",
+      "disabled": true
+    },
+    {
+      "name": "incident_id",
+      "value": "Q2LAR4ADCXC8IB",
+      "disabled": true
+    },
+    {
+      "name": "action_id",
+      "value": "01DAW70HK24JZORNE0P9C2V1L9",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 14
+}

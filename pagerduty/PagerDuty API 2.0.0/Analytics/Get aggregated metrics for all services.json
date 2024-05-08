@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/analytics/metrics/incidents/services/all",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"filters\": {\n    \"created_at_start\": \"2024-01-01T00:00:00+05:00\",\n    \"created_at_end\": \"2024-02-01T00:00:00Z\",\n    \"urgency\": \"high\",\n    \"major\": true,\n    \"min_ackowledgements\": 1,\n    \"min_timeout_escalations\": 1,\n    \"min_manual_escalations\": 1,\n    \"team_ids\": [\n      \"P373JQQ\",\n      \"PAECHJV\",\n      \"P7SYGW6\"\n    ],\n    \"service_ids\": [\n      \"PSEJLIN\",\n      \"PSLWBL8\",\n      \"PT4KHLX\"\n    ],\n    \"escalation_policy_ids\": [\n      \"PDJXDF3\",\n      \"PG4EHNS\"\n    ],\n    \"priority_ids\": [\n      \"PC8O0L3\",\n      \"PX01HJD\",\n      \"P5FK83M\"\n    ],\n    \"priority_names\": [\n      \"P1\",\n      \"P2\",\n      \"P3\"\n    ]\n  },\n  \"time_zone\": \"Etc/UTC\",\n  \"order\": \"string\",\n  \"order_by\": \"created_at\",\n  \"aggregate_unit\": \"day\"\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

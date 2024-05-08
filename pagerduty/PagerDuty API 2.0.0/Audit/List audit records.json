@@ -1,0 +1,82 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/audit/records",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2024-05-08T21:08:37.771Z",
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": "2024-05-08T21:08:37.771Z",
+      "disabled": true
+    },
+    {
+      "name": "root_resource_types[]",
+      "value": "users",
+      "disabled": true
+    },
+    {
+      "name": "actor_type",
+      "value": "user_reference",
+      "disabled": true
+    },
+    {
+      "name": "actor_id",
+      "value": "P123456",
+      "disabled": true
+    },
+    {
+      "name": "method_type",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "method_truncated_token",
+      "value": "3xyz",
+      "disabled": true
+    },
+    {
+      "name": "actions[]",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

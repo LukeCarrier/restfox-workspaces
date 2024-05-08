@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/webhook_subscriptions",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"webhook_subscription\": {\n    \"type\": \"webhook_subscription\",\n    \"active\": true,\n    \"delivery_method\": {\n      \"temporarily_disabled\": true,\n      \"type\": \"http_delivery_method\",\n      \"url\": \"string\",\n      \"custom_headers\": [\n        null\n      ]\n    },\n    \"description\": \"string\",\n    \"events\": [\n      \"string\"\n    ],\n    \"filter\": {\n      \"id\": \"string\",\n      \"type\": \"string\"\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "application/vnd.pagerduty+json;version=2",
+      "disabled": false
+    },
+    {
+      "name": "Content-Type",
+      "value": "application/json",
+      "disabled": false
+    },
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

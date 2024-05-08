@@ -1,0 +1,52 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/templates",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "offset",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "total",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "query",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "template_type",
+      "value": "status_update",
+      "disabled": true
+    },
+    {
+      "name": "sort_by",
+      "value": "created_at:asc",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}
