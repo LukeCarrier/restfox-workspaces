@@ -1,0 +1,10 @@
+[
+  {
+    "_id": "wwI1-5aAU0J2-uh8cwIDo",
+    "name": "GitHub authentication",
+    "code": "function preRequest() {\n  rf.request.setHeader('Authorization', `Bearer ${rf.getEnvVar('pat')}`);\n}\n\nif ('request' in rf) {\n  preRequest();\n}\n",
+    "enabled": true,
+    "createdAt": 1715200710044,
+    "updatedAt": 1715200852591
+  }
+]
