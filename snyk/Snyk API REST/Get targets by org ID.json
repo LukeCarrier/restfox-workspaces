@@ -1,0 +1,84 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/targets",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "count",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    },
+    {
+      "name": "is_private",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "exclude_empty",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "url",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "source_types",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "display_name",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "created_gte",
+      "value": "2024-05-08T22:35:21.320Z",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 18
+}

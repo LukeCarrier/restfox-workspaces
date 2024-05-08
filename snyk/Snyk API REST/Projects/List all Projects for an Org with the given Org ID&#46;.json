@@ -1,0 +1,149 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/projects",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "target_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "target_reference",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "target_file",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "target_runtime",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "meta_count",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ids",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "names",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "names_start_with",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "origins",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "types",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "meta.latest_issue_counts",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "meta.latest_dependency_total",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "cli_monitored_before",
+      "value": "2024-05-08T22:35:21.319Z",
+      "disabled": true
+    },
+    {
+      "name": "cli_monitored_after",
+      "value": "2024-05-08T22:35:21.319Z",
+      "disabled": true
+    },
+    {
+      "name": "importing_user_public_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "tags",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "business_criticality",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "environment",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "lifecycle",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

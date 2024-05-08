@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/self/apps/installs",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 23
+}

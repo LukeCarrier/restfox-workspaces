@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/container_images/{image_id}/relationships/image_target_refs",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": "f59045b3-f093-40c3-871d-a334ae30c568"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 2
+}

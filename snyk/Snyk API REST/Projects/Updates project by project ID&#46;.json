@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/projects/{project_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
+    },
+    {
+      "name": "project_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

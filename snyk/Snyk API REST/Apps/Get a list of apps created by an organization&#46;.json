@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/apps",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 6
+}

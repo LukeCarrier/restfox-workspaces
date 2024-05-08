@@ -1,0 +1,99 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/groups/{group_id}/issues",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    },
+    {
+      "name": "scan_item.id",
+      "value": "4a18d42f-0706-4ad0-b127-24078731fbee",
+      "disabled": true
+    },
+    {
+      "name": "scan_item.type",
+      "value": "project",
+      "disabled": true
+    },
+    {
+      "name": "type",
+      "value": "cloud",
+      "disabled": true
+    },
+    {
+      "name": "updated_before",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "updated_after",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "created_before",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "created_after",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "effective_severity_level",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ignored",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "group_id",
+      "value": "4a18d42f-0706-4ad0-b127-24078731fbed"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

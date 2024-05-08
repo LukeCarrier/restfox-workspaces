@@ -1,0 +1,44 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/packages/{purl}/issues",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "offset",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 5
+}

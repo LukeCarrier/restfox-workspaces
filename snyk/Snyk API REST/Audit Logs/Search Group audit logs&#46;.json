@@ -1,0 +1,74 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/groups/{group_id}/audit_logs/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "from",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "to",
+      "value": "2024-05-08T22:35:21.316Z",
+      "disabled": true
+    },
+    {
+      "name": "size",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "sort_order",
+      "value": "DESC",
+      "disabled": true
+    },
+    {
+      "name": "user_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "project_id",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "events",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "exclude_events",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}
