@@ -32,7 +32,8 @@
   "authentication": {
     "type": "bearer",
     "token": "{{bearerToken}}",
-    "prefix": ""
+    "prefix": "",
+    "disabled": true
   },
   "sortOrder": 4
 }

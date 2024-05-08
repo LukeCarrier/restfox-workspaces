@@ -1,43 +1,44 @@
 {
-    "_type": "request",
-    "url": "{{ base_url }}/orgs/{org_id}/projects/{project_id}/sbom",
-    "method": "GET",
-    "body": {
-        "mimeType": "No Body"
+  "_type": "request",
+  "url": "{{ base_url }}/orgs/{org_id}/projects/{project_id}/sbom",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "Authorization",
+      "value": "{{ authorization }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "version",
+      "value": "string",
+      "disabled": false
     },
-    "headers": [
-        {
-            "name": "Authorization",
-            "value": "{{ authorization }}",
-            "disabled": false
-        }
-    ],
-    "parameters": [
-        {
-            "name": "version",
-            "value": "string",
-            "disabled": false
-        },
-        {
-            "name": "format",
-            "value": "cyclonedx1.4+json",
-            "disabled": true
-        }
-    ],
-    "pathParameters": [
-        {
-            "name": "org_id",
-            "value": ""
-        },
-        {
-            "name": "project_id",
-            "value": ""
-        }
-    ],
-    "authentication": {
-        "type": "bearer",
-        "token": "{{bearerToken}}",
-        "prefix": ""
+    {
+      "name": "format",
+      "value": "cyclonedx1.4+json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "org_id",
+      "value": ""
     },
-    "sortOrder": 0
+    {
+      "name": "project_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": "",
+    "disabled": true
+  },
+  "sortOrder": 0
 }

@@ -1,6 +1,6 @@
 {
   "_type": "request",
-  "url": "{{ base_url }}/self",
+  "url": "{{ base_url }}/self?version=2024-04-29",
   "method": "GET",
   "body": {
     "mimeType": "No Body"
@@ -15,15 +15,15 @@
   "parameters": [
     {
       "name": "version",
-      "value": "string",
-      "disabled": false
+      "value": "2024-04-29"
     }
   ],
   "pathParameters": [],
   "authentication": {
     "type": "bearer",
     "token": "{{bearerToken}}",
-    "prefix": ""
+    "prefix": "",
+    "disabled": true
   },
   "sortOrder": 0
 }
