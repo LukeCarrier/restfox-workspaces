@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "restfox-workspace-utils"
+version = "0.1.0"
+description = "Utilities for working with Restfox workspaces"
+authors = ["Luke Carrier <luke@carrier.family>"]
+license = "UNLICENSED"
+readme = "README.md"
+
+[tool.poetry.scripts]
+openapi = "restfox_workspace_utils.openapi:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+PyYAML = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
