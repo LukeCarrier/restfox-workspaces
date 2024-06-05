@@ -1,0 +1,33 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/fine_tuning/jobs/{fine_tuning_job_id}/events",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "20",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "fine_tuning_job_id",
+      "value": "ft-AF1WoRqd3aJAHsqc9NY7iL8F"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 5
+}

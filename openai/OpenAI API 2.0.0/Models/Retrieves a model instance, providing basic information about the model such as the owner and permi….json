@@ -1,0 +1,22 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/models/{model}",
+    "method": "GET",
+    "body": {
+        "mimeType": "No Body"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [
+        {
+            "name": "model",
+            "value": "gpt-3.5-turbo"
+        }
+    ],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 2
+}

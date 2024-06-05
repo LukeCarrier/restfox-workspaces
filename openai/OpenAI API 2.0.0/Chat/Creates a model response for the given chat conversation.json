@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/chat/completions",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"frequency_penalty\": 0,\n  \"function_call\": null,\n  \"functions\": [\n    {\n      \"description\": \"string\",\n      \"name\": \"string\",\n      \"parameters\": {}\n    }\n  ],\n  \"logit_bias\": {},\n  \"logprobs\": true,\n  \"max_tokens\": 0,\n  \"messages\": [\n    null\n  ],\n  \"model\": \"gpt-4-turbo\",\n  \"n\": 1,\n  \"presence_penalty\": 0,\n  \"response_format\": {\n    \"type\": \"json_object\"\n  },\n  \"seed\": 0,\n  \"stop\": null,\n  \"stream\": true,\n  \"stream_options\": {\n    \"include_usage\": true\n  },\n  \"temperature\": 1,\n  \"tool_choice\": null,\n  \"tools\": [\n    {\n      \"function\": {\n        \"description\": \"string\",\n        \"name\": \"string\",\n        \"parameters\": {}\n      },\n      \"type\": \"string\"\n    }\n  ],\n  \"top_logprobs\": 0,\n  \"top_p\": 1,\n  \"user\": \"user-1234\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

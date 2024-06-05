@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/assistants",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"string\",\n  \"instructions\": \"string\",\n  \"metadata\": {},\n  \"model\": \"gpt-4-turbo\",\n  \"name\": \"string\",\n  \"response_format\": null,\n  \"temperature\": 1,\n  \"tool_resources\": {\n    \"code_interpreter\": {\n      \"file_ids\": []\n    },\n    \"file_search\": {\n      \"vector_store_ids\": [\n        \"string\"\n      ],\n      \"vector_stores\": [\n        {\n          \"chunking_strategy\": {},\n          \"file_ids\": [\n            \"string\"\n          ],\n          \"metadata\": {}\n        }\n      ]\n    }\n  },\n  \"tools\": [],\n  \"top_p\": 1\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

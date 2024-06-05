@@ -1,0 +1,28 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/fine_tuning/jobs",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "20",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

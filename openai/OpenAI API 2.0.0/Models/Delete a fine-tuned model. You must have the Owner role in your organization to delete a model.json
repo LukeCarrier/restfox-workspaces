@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/models/{model}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "model",
+      "value": "ft:gpt-3.5-turbo:acemeco:suffix:abc123"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

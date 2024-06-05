@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/vector_stores",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"chunking_strategy\": {},\n  \"expires_after\": {\n    \"anchor\": \"string\",\n    \"days\": 0\n  },\n  \"file_ids\": [\n    \"string\"\n  ],\n  \"metadata\": {},\n  \"name\": \"string\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 12
+}

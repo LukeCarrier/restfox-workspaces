@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/threads/{thread_id}/runs/{run_id}/cancel",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "thread_id",
+      "value": ""
+    },
+    {
+      "name": "run_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 19
+}

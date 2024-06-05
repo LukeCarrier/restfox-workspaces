@@ -1,0 +1,47 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/threads/{thread_id}/runs/{run_id}/steps",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "20",
+      "disabled": true
+    },
+    {
+      "name": "order",
+      "value": "desc",
+      "disabled": true
+    },
+    {
+      "name": "after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "before",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "thread_id",
+      "value": ""
+    },
+    {
+      "name": "run_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 20
+}

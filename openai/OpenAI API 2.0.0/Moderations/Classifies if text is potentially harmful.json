@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/moderations",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"input\": null,\n  \"model\": \"text-moderation-stable\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

@@ -1,0 +1,18 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/fine_tuning/jobs",
+    "method": "POST",
+    "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"hyperparameters\": {\n    \"batch_size\": \"auto\",\n    \"learning_rate_multiplier\": \"auto\",\n    \"n_epochs\": \"auto\"\n  },\n  \"integrations\": [\n    {\n      \"type\": null,\n      \"wandb\": {\n        \"entity\": \"string\",\n        \"name\": \"string\",\n        \"project\": \"my-wandb-project\",\n        \"tags\": [\n          \"custom-tag\"\n        ]\n      }\n    }\n  ],\n  \"model\": \"gpt-3.5-turbo\",\n  \"seed\": 42,\n  \"suffix\": \"string\",\n  \"training_file\": \"file-abc123\",\n  \"validation_file\": \"file-abc123\"\n}"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 1
+}

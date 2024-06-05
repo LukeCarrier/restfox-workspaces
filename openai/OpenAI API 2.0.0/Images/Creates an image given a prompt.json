@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/images/generations",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"model\": \"dall-e-3\",\n  \"n\": 1,\n  \"prompt\": \"A cute baby sea otter\",\n  \"quality\": \"standard\",\n  \"response_format\": \"url\",\n  \"size\": \"1024x1024\",\n  \"style\": \"vivid\",\n  \"user\": \"user-1234\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

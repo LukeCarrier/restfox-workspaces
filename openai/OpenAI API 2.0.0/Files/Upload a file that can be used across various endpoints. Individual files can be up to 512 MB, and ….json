@@ -1,0 +1,17 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/files",
+    "method": "POST",
+    "body": {
+        "mimeType": "No Body"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 1
+}

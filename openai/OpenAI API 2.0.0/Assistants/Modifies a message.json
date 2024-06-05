@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/threads/{thread_id}/messages/{message_id}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"metadata\": {}\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "thread_id",
+      "value": ""
+    },
+    {
+      "name": "message_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 14
+}

@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/files",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "purpose",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

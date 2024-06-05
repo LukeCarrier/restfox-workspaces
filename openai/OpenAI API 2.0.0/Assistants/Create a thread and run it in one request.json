@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/threads/runs",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"assistant_id\": \"string\",\n  \"instructions\": \"string\",\n  \"max_completion_tokens\": 0,\n  \"max_prompt_tokens\": 0,\n  \"metadata\": {},\n  \"model\": \"gpt-4-turbo\",\n  \"response_format\": null,\n  \"stream\": true,\n  \"temperature\": 1,\n  \"thread\": {\n    \"messages\": [\n      {\n        \"attachments\": [\n          {\n            \"file_id\": \"string\",\n            \"tools\": [\n              null\n            ]\n          }\n        ],\n        \"content\": null,\n        \"metadata\": {},\n        \"role\": \"string\"\n      }\n    ],\n    \"metadata\": {},\n    \"tool_resources\": {\n      \"code_interpreter\": {\n        \"file_ids\": []\n      },\n      \"file_search\": {\n        \"vector_store_ids\": [\n          \"string\"\n        ],\n        \"vector_stores\": [\n          {\n            \"chunking_strategy\": {},\n            \"file_ids\": [\n              \"string\"\n            ],\n            \"metadata\": {}\n          }\n        ]\n      }\n    }\n  },\n  \"tool_choice\": null,\n  \"tool_resources\": {\n    \"code_interpreter\": {\n      \"file_ids\": []\n    },\n    \"file_search\": {\n      \"vector_store_ids\": [\n        \"string\"\n      ]\n    }\n  },\n  \"tools\": [\n    null\n  ],\n  \"top_p\": 1,\n  \"truncation_strategy\": {\n    \"last_messages\": 0,\n    \"type\": \"string\"\n  }\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 6
+}

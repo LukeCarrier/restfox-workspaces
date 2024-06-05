@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/audio/speech",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"input\": \"Hello, world. Please take your seats. The show is about to begin.\",\n  \"model\": \"tts-1\",\n  \"response_format\": \"mp3\",\n  \"speed\": 1,\n  \"voice\": \"alloy\"\n}"
+  },
+  "headers": [
+    {
+      "name": "Accept",
+      "value": "audio/mpeg"
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

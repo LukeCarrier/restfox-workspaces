@@ -1,0 +1,22 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/batches/{batch_id}/cancel",
+    "method": "POST",
+    "body": {
+        "mimeType": "No Body"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [
+        {
+            "name": "batch_id",
+            "value": ""
+        }
+    ],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 3
+}

@@ -1,0 +1,26 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/vector_stores/{vector_store_id}/file_batches/{batch_id}/cancel",
+    "method": "POST",
+    "body": {
+        "mimeType": "No Body"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [
+        {
+            "name": "vector_store_id",
+            "value": ""
+        },
+        {
+            "name": "batch_id",
+            "value": ""
+        }
+    ],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 18
+}

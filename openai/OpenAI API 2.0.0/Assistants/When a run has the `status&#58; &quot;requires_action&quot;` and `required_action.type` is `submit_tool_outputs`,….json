@@ -1,0 +1,27 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/threads/{thread_id}/runs/{run_id}/submit_tool_outputs",
+    "method": "POST",
+    "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"stream\": true,\n  \"tool_outputs\": [\n    {\n      \"output\": \"string\",\n      \"tool_call_id\": \"string\"\n    }\n  ]\n}"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [
+        {
+            "name": "thread_id",
+            "value": ""
+        },
+        {
+            "name": "run_id",
+            "value": ""
+        }
+    ],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 22
+}

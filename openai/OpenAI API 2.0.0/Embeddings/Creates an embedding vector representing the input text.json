@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/embeddings",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"dimensions\": 0,\n  \"encoding_format\": \"float\",\n  \"input\": \"The quick brown fox jumped over the lazy dog\",\n  \"model\": \"text-embedding-3-small\",\n  \"user\": \"user-1234\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

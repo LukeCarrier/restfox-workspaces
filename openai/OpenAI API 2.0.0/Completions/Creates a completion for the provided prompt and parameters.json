@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/completions",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"best_of\": 1,\n  \"echo\": true,\n  \"frequency_penalty\": 0,\n  \"logit_bias\": {},\n  \"logprobs\": 0,\n  \"max_tokens\": 16,\n  \"model\": null,\n  \"n\": 1,\n  \"presence_penalty\": 0,\n  \"prompt\": \"<|endoftext|>\",\n  \"seed\": 0,\n  \"stop\": null,\n  \"stream\": true,\n  \"stream_options\": {\n    \"include_usage\": true\n  },\n  \"suffix\": \"test.\",\n  \"temperature\": 1,\n  \"top_p\": 1,\n  \"user\": \"user-1234\"\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

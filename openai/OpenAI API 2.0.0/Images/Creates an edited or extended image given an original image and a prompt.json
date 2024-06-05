@@ -1,0 +1,17 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/images/edits",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

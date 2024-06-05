@@ -1,0 +1,23 @@
+{
+    "_type": "request",
+    "url": "{{ base_url }}/vector_stores/{vector_store_id}/files",
+    "method": "POST",
+    "body": {
+        "mimeType": "application/json",
+        "text": "{\n  \"chunking_strategy\": {},\n  \"file_id\": \"string\"\n}"
+    },
+    "headers": [],
+    "parameters": [],
+    "pathParameters": [
+        {
+            "name": "vector_store_id",
+            "value": "vs_abc123"
+        }
+    ],
+    "authentication": {
+        "type": "bearer",
+        "token": "{{bearerToken}}",
+        "prefix": ""
+    },
+    "sortOrder": 21
+}

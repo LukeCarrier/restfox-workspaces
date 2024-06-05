@@ -1,0 +1,22 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/assistants/{assistant_id}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "assistant_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}
