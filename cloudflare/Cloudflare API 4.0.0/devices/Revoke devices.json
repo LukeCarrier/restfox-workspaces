@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/devices/revoke",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  \"f174e90a-fafe-4643-bbbc-4a0ed4fc8415\"\n]"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 20
+}

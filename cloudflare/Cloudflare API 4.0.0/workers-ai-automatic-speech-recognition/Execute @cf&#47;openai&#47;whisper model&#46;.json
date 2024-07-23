@@ -1,0 +1,33 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/ai/run/@cf/openai/whisper",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": "023e105f4ecef8ad9ca31a8372d0c353"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

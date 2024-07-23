@@ -1,0 +1,66 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dex/traceroute-tests/{test_id}/percentiles",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "from",
+      "value": "2023-09-20T17:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "to",
+      "value": "2023-09-20T17:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "colo",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "test_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 11
+}

@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_identifier}/filters/{id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "null"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    },
+    {
+      "name": "zone_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 6
+}

@@ -1,0 +1,83 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/firewall/waf/packages/{package_id}/rules",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "mode",
+      "value": "CHL",
+      "disabled": true
+    },
+    {
+      "name": "group_id",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "order",
+      "value": "status",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "desc",
+      "disabled": true
+    },
+    {
+      "name": "match",
+      "value": "all",
+      "disabled": true
+    },
+    {
+      "name": "description",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "priority",
+      "value": "undefined",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "package_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

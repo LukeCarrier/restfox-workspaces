@@ -1,0 +1,94 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/organizations/{organization_id}/audit_logs",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "value": "f174be97-19b1-40d6-954d-70cd5fbd52db",
+      "disabled": true
+    },
+    {
+      "name": "export",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "action.type",
+      "value": "add",
+      "disabled": true
+    },
+    {
+      "name": "actor.ip",
+      "value": "17.168.228.63",
+      "disabled": true
+    },
+    {
+      "name": "actor.email",
+      "value": "alice@example.com",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2019-04-30T01:12:20Z",
+      "disabled": true
+    },
+    {
+      "name": "before",
+      "value": "2019-04-30T01:12:20Z",
+      "disabled": true
+    },
+    {
+      "name": "zone.name",
+      "value": "example.com",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "desc",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "25",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "50",
+      "disabled": true
+    },
+    {
+      "name": "hide_user_logs",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "organization_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,35 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/logpush/datasets/{dataset_id}/fields",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "dataset_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

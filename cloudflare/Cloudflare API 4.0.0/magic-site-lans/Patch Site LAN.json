@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/sites/{site_id}/lans/{lan_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"name\": \"string\",\n  \"nat\": {\n    \"static_prefix\": \"192.0.2.0/24\"\n  },\n  \"physport\": 1,\n  \"routed_subnets\": [\n    {\n      \"nat\": {\n        \"static_prefix\": \"192.0.2.0/24\"\n      },\n      \"next_hop\": \"192.0.2.1\",\n      \"prefix\": \"192.0.2.0/24\"\n    }\n  ],\n  \"static_addressing\": {\n    \"address\": \"192.0.2.0/24\",\n    \"dhcp_relay\": {\n      \"server_addresses\": [\n        \"192.0.2.1\"\n      ]\n    },\n    \"dhcp_server\": {\n      \"dhcp_pool_end\": \"192.0.2.1\",\n      \"dhcp_pool_start\": \"192.0.2.1\",\n      \"dns_server\": \"192.0.2.1\",\n      \"reservations\": {\n        \"00:11:22:33:44:55\": \"192.0.2.100\",\n        \"AA:BB:CC:DD:EE:FF\": \"192.168.1.101\"\n      }\n    },\n    \"secondary_address\": \"192.0.2.0/24\",\n    \"virtual_address\": \"192.0.2.0/24\"\n  },\n  \"vlan_tag\": 0\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "site_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "lan_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

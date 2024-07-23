@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/radar/bgp/routes/moas",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "origin",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "prefix",
+      "value": "1.1.1.0/24",
+      "disabled": true
+    },
+    {
+      "name": "invalid_only",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "format",
+      "value": "json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 4
+}

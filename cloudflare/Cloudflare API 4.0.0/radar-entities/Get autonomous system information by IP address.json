@@ -1,0 +1,39 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/radar/entities/asns/ip",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "ip",
+      "value": "8.8.8.8",
+      "disabled": false
+    },
+    {
+      "name": "format",
+      "value": "json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

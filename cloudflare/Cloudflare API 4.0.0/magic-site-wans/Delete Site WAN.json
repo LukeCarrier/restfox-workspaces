@@ -1,0 +1,39 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/sites/{site_id}/wans/{wan_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "site_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "wan_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

@@ -1,0 +1,94 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/teamnet/routes",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "comment",
+      "value": "Example comment for this route.",
+      "disabled": true
+    },
+    {
+      "name": "is_deleted",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "network_subset",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "network_superset",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "existed_at",
+      "value": "2019-10-12T07:20:50.52Z",
+      "disabled": true
+    },
+    {
+      "name": "tunnel_id",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "route_id",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "tun_types",
+      "value": "cfd_tunnel,warp_connector",
+      "disabled": true
+    },
+    {
+      "name": "virtual_network_id",
+      "value": "f70ff985-a4ef-4643-bbbc-4a0ed4fc8415",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

@@ -1,0 +1,92 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/page_shield/connections",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "exclude_urls",
+      "value": "blog.cloudflare.com,www.example",
+      "disabled": true
+    },
+    {
+      "name": "urls",
+      "value": "blog.cloudflare.com,www.example",
+      "disabled": true
+    },
+    {
+      "name": "hosts",
+      "value": "blog.cloudflare.com,www.example*,*cloudflare.com",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "2",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "100",
+      "disabled": true
+    },
+    {
+      "name": "order_by",
+      "value": "first_seen_at",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "asc",
+      "disabled": true
+    },
+    {
+      "name": "prioritize_malicious",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "exclude_cdn_cgi",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "active,inactive",
+      "disabled": true
+    },
+    {
+      "name": "page_url",
+      "value": "example.com/page,*/checkout,example.com/*,*checkout*",
+      "disabled": true
+    },
+    {
+      "name": "export",
+      "value": "csv",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

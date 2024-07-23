@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_identifier}/web3/hostnames/{identifier}/ipfs_universal_path/content_list/entries/{content_list_entry_identifier}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"content\": \"QmPZ9gcCEpqKTo6aq61g2nXGUhM4iCL3ewB6LDXZCtioEB\",\n  \"description\": \"this is my content list entry\",\n  \"type\": \"cid\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "content_list_entry_identifier",
+      "value": ""
+    },
+    {
+      "name": "identifier",
+      "value": ""
+    },
+    {
+      "name": "zone_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 11
+}

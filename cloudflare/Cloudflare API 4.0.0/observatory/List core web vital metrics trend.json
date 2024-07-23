@@ -1,0 +1,66 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/speed_api/pages/{url}/trend",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "region",
+      "value": "us-central1",
+      "disabled": false
+    },
+    {
+      "name": "deviceType",
+      "value": "DESKTOP",
+      "disabled": false
+    },
+    {
+      "name": "start",
+      "value": "2014-01-01T05:20:00.12345Z",
+      "disabled": false
+    },
+    {
+      "name": "end",
+      "value": "2014-01-01T05:20:00.12345Z",
+      "disabled": true
+    },
+    {
+      "name": "tz",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "metrics",
+      "value": "performanceScore,ttfb,fcp,si,lcp,tti,tbt,cls",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    },
+    {
+      "name": "url",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 6
+}

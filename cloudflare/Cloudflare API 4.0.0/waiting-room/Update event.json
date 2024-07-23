@@ -1,0 +1,42 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/waiting_rooms/{waiting_room_id}/events/{event_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"custom_page_html\": \"{{#waitTimeKnown}} {{waitTime}} mins {{/waitTimeKnown}} {{^waitTimeKnown}} Event is prequeueing / Queue all enabled {{/waitTimeKnown}}\",\n  \"description\": \"Production event - DO NOT MODIFY\",\n  \"disable_session_renewal\": true,\n  \"event_end_time\": \"2021-09-28T17:00:00.000Z\",\n  \"event_start_time\": \"2021-09-28T15:30:00.000Z\",\n  \"name\": \"production_webinar_event\",\n  \"new_users_per_minute\": 0,\n  \"prequeue_start_time\": \"2021-09-28T15:00:00.000Z\",\n  \"queueing_method\": \"random\",\n  \"session_duration\": 0,\n  \"shuffle_at_event_start\": true,\n  \"suspended\": true,\n  \"total_active_users\": 0\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "event_id",
+      "value": ""
+    },
+    {
+      "name": "waiting_room_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 15
+}

@@ -1,0 +1,37 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/certificate_authorities/hostname_associations",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "mtls_certificate_id",
+      "value": "b2134436-2555-4acf-be5b-26c48136575e",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

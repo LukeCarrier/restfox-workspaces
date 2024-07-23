@@ -1,0 +1,124 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{accountId}/urlscanner/scan",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "scanId",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "100",
+      "disabled": true
+    },
+    {
+      "name": "next_cursor",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "date_start",
+      "value": "2024-07-23T21:25:26.298Z",
+      "disabled": true
+    },
+    {
+      "name": "date_end",
+      "value": "2024-07-23T21:25:26.298Z",
+      "disabled": true
+    },
+    {
+      "name": "url",
+      "value": "https://example.com/?hello",
+      "disabled": true
+    },
+    {
+      "name": "hostname",
+      "value": "example.com",
+      "disabled": true
+    },
+    {
+      "name": "path",
+      "value": "/samples/subresource-integrity/",
+      "disabled": true
+    },
+    {
+      "name": "ip",
+      "value": "1.1.1.1",
+      "disabled": true
+    },
+    {
+      "name": "asn",
+      "value": "13335",
+      "disabled": true
+    },
+    {
+      "name": "hash",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "page_url",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "page_hostname",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "page_path",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "page_asn",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "page_ip",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "account_scans",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "is_malicious",
+      "value": "true",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "accountId",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

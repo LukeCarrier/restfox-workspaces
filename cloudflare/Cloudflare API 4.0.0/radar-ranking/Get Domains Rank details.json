@@ -1,0 +1,59 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/radar/ranking/domain/{domain}",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "5",
+      "disabled": true
+    },
+    {
+      "name": "rankingType",
+      "value": "POPULAR",
+      "disabled": true
+    },
+    {
+      "name": "name",
+      "value": "main_series",
+      "disabled": true
+    },
+    {
+      "name": "date",
+      "value": "2022-09-19",
+      "disabled": true
+    },
+    {
+      "name": "format",
+      "value": "json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "domain",
+      "value": "google.com"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

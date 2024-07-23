@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/workers/scripts/{script_name}/script-settings",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"logpush\": true,\n  \"tail_consumers\": [\n    {\n      \"environment\": \"production\",\n      \"namespace\": \"my-namespace\",\n      \"service\": \"my-log-consumer\"\n    }\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "script_name",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 7
+}

@@ -1,0 +1,64 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/api_gateway/user_schemas/{schema_id}/operations",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "feature",
+      "value": "thresholds",
+      "disabled": true
+    },
+    {
+      "name": "host",
+      "value": "api.cloudflare.com",
+      "disabled": true
+    },
+    {
+      "name": "method",
+      "value": "GET",
+      "disabled": true
+    },
+    {
+      "name": "endpoint",
+      "value": "/api/v1",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "20",
+      "disabled": true
+    },
+    {
+      "name": "operation_status",
+      "value": "new",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 11
+}

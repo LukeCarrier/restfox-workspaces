@@ -1,0 +1,39 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/intel/domain-history",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "domain",
+      "value": "example.com",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

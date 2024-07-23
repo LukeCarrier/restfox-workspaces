@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/addressing/prefixes/{prefix_id}/bgp/prefixes/{bgp_prefix_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"on_demand\": {\n    \"advertised\": true\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "prefix_id",
+      "value": ""
+    },
+    {
+      "name": "bgp_prefix_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

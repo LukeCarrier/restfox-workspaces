@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/sites",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"connector_id\": \"ac60d3d0435248289d446cedd870bcf4\",\n  \"description\": \"string\",\n  \"ha_mode\": true,\n  \"location\": {\n    \"lat\": 37.6192,\n    \"lon\": 122.3816\n  },\n  \"name\": \"site_1\",\n  \"secondary_connector_id\": \"8d67040d3835dbcf46ce29da440dc482\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

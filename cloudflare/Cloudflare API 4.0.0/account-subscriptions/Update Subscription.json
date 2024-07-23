@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_identifier}/subscriptions/{subscription_identifier}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"app\": null,\n  \"component_values\": [\n    {\n      \"default\": 5,\n      \"name\": \"page_rules\",\n      \"price\": 5,\n      \"value\": 20\n    }\n  ],\n  \"frequency\": \"monthly\",\n  \"rate_plan\": {\n    \"currency\": \"USD\",\n    \"externally_managed\": true,\n    \"id\": \"free\",\n    \"is_contract\": true,\n    \"public_name\": \"Business Plan\",\n    \"scope\": \"zone\",\n    \"sets\": [\n      \"string\"\n    ]\n  },\n  \"zone\": {}\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "subscription_identifier",
+      "value": ""
+    },
+    {
+      "name": "account_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

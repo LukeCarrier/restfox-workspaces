@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/workers/scripts/{script_name}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "rollback_to",
+      "value": "f174e90a-fafe-4643-bbbc-4a0ed4fc8415",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "script_name",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

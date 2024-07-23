@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/speed_api/pages/{url}/tests",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"region\": \"us-central1\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    },
+    {
+      "name": "url",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

@@ -1,0 +1,57 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/client_certificates",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "status",
+      "value": "all",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "20",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "10",
+      "disabled": true
+    },
+    {
+      "name": "offset",
+      "value": "10",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

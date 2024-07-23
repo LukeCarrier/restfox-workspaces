@@ -1,0 +1,47 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/workers/scripts/{script_name}/content",
+  "method": "PUT",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "CF-WORKER-BODY-PART",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "CF-WORKER-MAIN-MODULE-PART",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "script_name",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 4
+}

@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/keyless_certificates/{keyless_certificate_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"enabled\": true,\n  \"host\": \"example.com\",\n  \"name\": \"example.com Keyless SSL\",\n  \"port\": 24008,\n  \"tunnel\": {\n    \"private_ip\": \"10.0.0.1\",\n    \"vnet_id\": \"7365377a-85a4-4390-9480-531ef7dc7a3c\"\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "keyless_certificate_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

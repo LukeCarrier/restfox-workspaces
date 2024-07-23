@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/teamnet/routes/{route_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"comment\": \"Example comment for this route.\",\n  \"network\": \"172.16.0.0/16\",\n  \"virtual_network_id\": \"f70ff985-a4ef-4643-bbbc-4a0ed4fc8415\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "route_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 7
+}

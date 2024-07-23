@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dlp/profiles/custom/{profile_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"allowed_match_count\": 5,\n  \"context_awareness\": {\n    \"enabled\": true,\n    \"skip\": {\n      \"files\": true\n    }\n  },\n  \"description\": \"A standard CVV card number\",\n  \"entries\": [\n    {\n      \"enabled\": true,\n      \"id\": \"719d1215-260f-41d0-8c32-eb320ad107f7\",\n      \"name\": \"Credit card (Visa)\",\n      \"pattern\": {\n        \"regex\": \"^4[0-9]{6,14}$\",\n        \"validation\": \"luhn\"\n      },\n      \"profile_id\": null\n    }\n  ],\n  \"name\": \"Generic CVV Card Number\",\n  \"ocr_enabled\": true,\n  \"shared_entries\": [\n    null\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "profile_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 4
+}

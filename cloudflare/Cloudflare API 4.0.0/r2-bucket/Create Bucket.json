@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/r2/buckets",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "\"{\\\"name\\\": \\\"example-bucket\\\"}\""
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

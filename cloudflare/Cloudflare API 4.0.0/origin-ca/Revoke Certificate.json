@@ -1,0 +1,26 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/certificates/{certificate_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "certificate_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

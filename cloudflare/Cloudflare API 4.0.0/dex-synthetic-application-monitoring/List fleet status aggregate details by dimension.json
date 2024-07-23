@@ -1,0 +1,62 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dex/fleet-status/over-time",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "to",
+      "value": "2023-10-11T00:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "from",
+      "value": "2023-10-11T00:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "colo",
+      "value": "SJC",
+      "disabled": true
+    },
+    {
+      "name": "device_id",
+      "value": "cb49c27f-7f97-49c5-b6f3-f7c01ead0fd7",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 3
+}

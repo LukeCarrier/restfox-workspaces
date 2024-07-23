@@ -1,0 +1,59 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/workers/domains",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "zone_name",
+      "value": "example.com",
+      "disabled": true
+    },
+    {
+      "name": "service",
+      "value": "foo",
+      "disabled": true
+    },
+    {
+      "name": "zone_id",
+      "value": "593c9c94de529bbbfaac7c53ced0447d",
+      "disabled": true
+    },
+    {
+      "name": "hostname",
+      "value": "foo.example.com",
+      "disabled": true
+    },
+    {
+      "name": "environment",
+      "value": "production",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

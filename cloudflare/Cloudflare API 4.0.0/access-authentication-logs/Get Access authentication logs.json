@@ -1,0 +1,52 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/access/logs/access_requests",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "limit",
+      "value": "25",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "desc",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2020-07-01T05:20:00Z",
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": "2020-10-01T05:20:00Z",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

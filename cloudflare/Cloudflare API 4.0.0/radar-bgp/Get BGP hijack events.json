@@ -1,0 +1,109 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/radar/bgp/hijacks/events",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "eventId",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "hijackerAsn",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "victimAsn",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "involvedAsn",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "involvedCountry",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "prefix",
+      "value": "1.1.1.0/24",
+      "disabled": true
+    },
+    {
+      "name": "minConfidence",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "maxConfidence",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "dateRange",
+      "value": "7d",
+      "disabled": true
+    },
+    {
+      "name": "dateStart",
+      "value": "2023-09-01T11:41:33.782Z",
+      "disabled": true
+    },
+    {
+      "name": "dateEnd",
+      "value": "2023-09-01T11:41:33.782Z",
+      "disabled": true
+    },
+    {
+      "name": "sortBy",
+      "value": "TIME",
+      "disabled": true
+    },
+    {
+      "name": "sortOrder",
+      "value": "DESC",
+      "disabled": true
+    },
+    {
+      "name": "format",
+      "value": "json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

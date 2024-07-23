@@ -1,0 +1,51 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/rules/lists/{list_id}/items",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "cursor",
+      "value": "zzz",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "search",
+      "value": "1.1.1.",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "list_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 8
+}

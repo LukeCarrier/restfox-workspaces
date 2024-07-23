@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/gateway/configuration",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"settings\": {\n    \"activity_log\": {\n      \"enabled\": true\n    },\n    \"antivirus\": {\n      \"enabled_download_phase\": true,\n      \"enabled_upload_phase\": true,\n      \"fail_closed\": true,\n      \"notification_settings\": {\n        \"enabled\": true,\n        \"msg\": \"string\",\n        \"support_url\": \"string\"\n      }\n    },\n    \"block_page\": {\n      \"background_color\": \"string\",\n      \"enabled\": true,\n      \"footer_text\": \"--footer--\",\n      \"header_text\": \"--header--\",\n      \"logo_path\": \"https://logos.com/a.png\",\n      \"mailto_address\": \"admin@example.com\",\n      \"mailto_subject\": \"Blocked User Inquiry\",\n      \"name\": \"Cloudflare\",\n      \"suppress_footer\": true\n    },\n    \"body_scanning\": {\n      \"inspection_mode\": \"deep\"\n    },\n    \"browser_isolation\": {\n      \"non_identity_enabled\": true,\n      \"url_browser_isolation_enabled\": true\n    },\n    \"certificate\": {\n      \"id\": \"d1b364c5-1311-466e-a194-f0e943e0799f\"\n    },\n    \"custom_certificate\": {\n      \"enabled\": true,\n      \"id\": \"d1b364c5-1311-466e-a194-f0e943e0799f\"\n    },\n    \"extended_email_matching\": {\n      \"enabled\": true\n    },\n    \"fips\": {\n      \"tls\": true\n    },\n    \"protocol_detection\": {\n      \"enabled\": true\n    },\n    \"tls_decrypt\": {\n      \"enabled\": true\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 6
+}

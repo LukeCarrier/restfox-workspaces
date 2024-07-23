@@ -1,0 +1,47 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "name",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "20",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "desc",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

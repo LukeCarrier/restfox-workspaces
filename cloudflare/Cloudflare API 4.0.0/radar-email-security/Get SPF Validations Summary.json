@@ -1,0 +1,74 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/radar/email/security/summary/spf",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "name",
+      "value": "main_series",
+      "disabled": true
+    },
+    {
+      "name": "dateRange",
+      "value": "7d",
+      "disabled": true
+    },
+    {
+      "name": "dateStart",
+      "value": "2023-09-01T11:41:33.782Z",
+      "disabled": true
+    },
+    {
+      "name": "dateEnd",
+      "value": "2023-09-01T11:41:33.782Z",
+      "disabled": true
+    },
+    {
+      "name": "arc",
+      "value": "PASS",
+      "disabled": true
+    },
+    {
+      "name": "dkim",
+      "value": "PASS",
+      "disabled": true
+    },
+    {
+      "name": "dmarc",
+      "value": "PASS",
+      "disabled": true
+    },
+    {
+      "name": "tlsVersion",
+      "value": "TLSv1_2",
+      "disabled": true
+    },
+    {
+      "name": "format",
+      "value": "json",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 5
+}

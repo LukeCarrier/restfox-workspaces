@@ -1,0 +1,94 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/cfd_tunnel",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "name",
+      "value": "blog",
+      "disabled": true
+    },
+    {
+      "name": "is_deleted",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "existed_at",
+      "value": "2019-10-12T07:20:50.52Z",
+      "disabled": true
+    },
+    {
+      "name": "uuid",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "was_active_at",
+      "value": "2009-11-10T23:00:00Z",
+      "disabled": true
+    },
+    {
+      "name": "was_inactive_at",
+      "value": "2009-11-10T23:00:00Z",
+      "disabled": true
+    },
+    {
+      "name": "include_prefix",
+      "value": "vpc1-",
+      "disabled": true
+    },
+    {
+      "name": "exclude_prefix",
+      "value": "vpc1-",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "healthy",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

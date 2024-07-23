@@ -1,0 +1,102 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dex/fleet-status/devices",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "to",
+      "value": "2023-10-11T00:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "from",
+      "value": "2023-10-11T00:00:00Z",
+      "disabled": false
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": false
+    },
+    {
+      "name": "per_page",
+      "value": "10",
+      "disabled": false
+    },
+    {
+      "name": "sort_by",
+      "value": "timestamp",
+      "disabled": true
+    },
+    {
+      "name": "colo",
+      "value": "SJC",
+      "disabled": true
+    },
+    {
+      "name": "device_id",
+      "value": "cb49c27f-7f97-49c5-b6f3-f7c01ead0fd7",
+      "disabled": true
+    },
+    {
+      "name": "mode",
+      "value": "proxy",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "connected",
+      "disabled": true
+    },
+    {
+      "name": "platform",
+      "value": "windows",
+      "disabled": true
+    },
+    {
+      "name": "version",
+      "value": "1.0.0",
+      "disabled": true
+    },
+    {
+      "name": "source",
+      "value": "last_seen",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,41 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/storage/kv/namespaces/{namespace_id}/values/{key_name}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "key_name",
+      "value": ""
+    },
+    {
+      "name": "namespace_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 12
+}

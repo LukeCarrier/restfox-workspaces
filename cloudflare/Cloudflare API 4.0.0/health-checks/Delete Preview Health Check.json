@@ -1,0 +1,37 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/healthchecks/preview/{healthcheck_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "healthcheck_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

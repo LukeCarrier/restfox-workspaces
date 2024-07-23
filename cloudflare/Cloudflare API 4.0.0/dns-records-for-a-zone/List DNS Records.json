@@ -1,0 +1,157 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/dns_records",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "name",
+      "value": "example.com",
+      "disabled": true
+    },
+    {
+      "name": "type",
+      "value": "A",
+      "disabled": true
+    },
+    {
+      "name": "content",
+      "value": "127.0.0.1",
+      "disabled": true
+    },
+    {
+      "name": "proxied",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "match",
+      "value": "any",
+      "disabled": true
+    },
+    {
+      "name": "comment",
+      "value": "Hello, world",
+      "disabled": true
+    },
+    {
+      "name": "comment.present",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "comment.absent",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "comment.exact",
+      "value": "Hello, world",
+      "disabled": true
+    },
+    {
+      "name": "comment.contains",
+      "value": "ello, worl",
+      "disabled": true
+    },
+    {
+      "name": "comment.startswith",
+      "value": "Hello, w",
+      "disabled": true
+    },
+    {
+      "name": "comment.endswith",
+      "value": "o, world",
+      "disabled": true
+    },
+    {
+      "name": "tag",
+      "value": "team:DNS",
+      "disabled": true
+    },
+    {
+      "name": "tag.present",
+      "value": "important",
+      "disabled": true
+    },
+    {
+      "name": "tag.absent",
+      "value": "important",
+      "disabled": true
+    },
+    {
+      "name": "tag.exact",
+      "value": "greeting:Hello, world",
+      "disabled": true
+    },
+    {
+      "name": "tag.contains",
+      "value": "greeting:ello, worl",
+      "disabled": true
+    },
+    {
+      "name": "tag.startswith",
+      "value": "greeting:Hello, w",
+      "disabled": true
+    },
+    {
+      "name": "tag.endswith",
+      "value": "greeting:o, world",
+      "disabled": true
+    },
+    {
+      "name": "search",
+      "value": "www.cloudflare.com",
+      "disabled": true
+    },
+    {
+      "name": "tag_match",
+      "value": "any",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "5",
+      "disabled": true
+    },
+    {
+      "name": "order",
+      "value": "type",
+      "disabled": true
+    },
+    {
+      "name": "direction",
+      "value": "asc",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

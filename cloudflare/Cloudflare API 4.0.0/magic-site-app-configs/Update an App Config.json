@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/sites/{site_id}/app_configs/{app_config_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"account_app_id\": \"ac60d3d0435248289d446cedd870bcf4\",\n  \"breakout\": true,\n  \"managed_app_id\": \"cloudflare\",\n  \"priority\": 0\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "site_id",
+      "value": ""
+    },
+    {
+      "name": "app_config_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 3
+}

@@ -1,0 +1,31 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/firewall/access_rules/rules/{identifier}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

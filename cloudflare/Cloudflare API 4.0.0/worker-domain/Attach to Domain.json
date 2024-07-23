@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/workers/domains",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"environment\": \"production\",\n  \"hostname\": \"foo.example.com\",\n  \"service\": \"foo\",\n  \"zone_id\": \"593c9c94de529bbbfaac7c53ced0447d\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

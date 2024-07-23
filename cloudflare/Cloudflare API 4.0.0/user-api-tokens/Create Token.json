@@ -1,0 +1,18 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/user/tokens",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"condition\": {\n    \"request_ip\": {\n      \"in\": [\n        \"123.123.123.0/24\",\n        \"2606:4700::/32\"\n      ],\n      \"not_in\": [\n        \"123.123.123.100/24\",\n        \"2606:4700:4700::/48\"\n      ]\n    }\n  },\n  \"expires_on\": \"2020-01-01T00:00:00Z\",\n  \"name\": \"readonly token\",\n  \"not_before\": \"2018-07-01T05:20:00Z\",\n  \"policies\": [\n    {}\n  ]\n}"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

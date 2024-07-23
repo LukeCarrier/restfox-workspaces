@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_identifier}/firewall/access_rules/rules/{identifier}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "identifier",
+      "value": ""
+    },
+    {
+      "name": "account_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

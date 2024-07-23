@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/api_gateway/operations",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  {\n    \"endpoint\": \"/api/v1/users/:var1:\",\n    \"host\": \"www.example.com\",\n    \"method\": \"GET\"\n  }\n]"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 2
+}

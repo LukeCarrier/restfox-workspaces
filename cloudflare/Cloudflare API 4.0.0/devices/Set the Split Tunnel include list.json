@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/devices/policy/include",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  {\n    \"address\": \"192.0.2.0/24\",\n    \"description\": \"Include testing domains from the tunnel\",\n    \"host\": \"*.example.com\"\n  }\n]"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 10
+}

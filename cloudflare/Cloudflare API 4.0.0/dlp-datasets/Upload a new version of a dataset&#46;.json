@@ -1,0 +1,41 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dlp/datasets/{dataset_id}/upload/{version}",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "dataset_id",
+      "value": ""
+    },
+    {
+      "name": "version",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 6
+}

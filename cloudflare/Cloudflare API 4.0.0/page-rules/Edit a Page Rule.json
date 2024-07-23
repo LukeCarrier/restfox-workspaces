@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/pagerules/{pagerule_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"actions\": [\n    {\n      \"id\": \"browser_check\",\n      \"value\": \"on\"\n    }\n  ],\n  \"priority\": 1,\n  \"status\": \"active\",\n  \"targets\": [\n    {\n      \"constraint\": {\n        \"operator\": \"matches\",\n        \"value\": \"*example.com/images/*\"\n      },\n      \"target\": \"url\"\n    }\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "pagerule_id",
+      "value": ""
+    },
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 4
+}

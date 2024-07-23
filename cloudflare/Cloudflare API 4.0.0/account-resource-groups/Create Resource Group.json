@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/iam/resource_groups",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"meta\": {\n    \"editable\": \"false\"\n  },\n  \"scope\": {\n    \"key\": \"com.cloudflare.api.account.eb78d65290b24279ba6f44721b3ea3c4\",\n    \"objects\": [\n      {\n        \"key\": \"com.cloudflare.api.account.zone.23f8d65290b24279ba6f44721b3eaad5\"\n      }\n    ]\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,87 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_identifier}/firewall/lockdowns",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "description",
+      "value": "endpoints",
+      "disabled": true
+    },
+    {
+      "name": "modified_on",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "ip",
+      "value": "1.2.3.4",
+      "disabled": true
+    },
+    {
+      "name": "priority",
+      "value": "5",
+      "disabled": true
+    },
+    {
+      "name": "uri_search",
+      "value": "/some/path",
+      "disabled": true
+    },
+    {
+      "name": "ip_range_search",
+      "value": "1.2.3.0/16",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "20",
+      "disabled": true
+    },
+    {
+      "name": "created_on",
+      "value": "undefined",
+      "disabled": true
+    },
+    {
+      "name": "description_search",
+      "value": "endpoints",
+      "disabled": true
+    },
+    {
+      "name": "ip_search",
+      "value": "1.2.3.4",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

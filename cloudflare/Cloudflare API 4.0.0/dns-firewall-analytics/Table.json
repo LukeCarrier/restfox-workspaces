@@ -1,0 +1,71 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dns_firewall/{dns_firewall_id}/dns_analytics/report",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "metrics",
+      "value": "queryCount,uncachedCount",
+      "disabled": true
+    },
+    {
+      "name": "dimensions",
+      "value": "queryType",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2023-11-11T12:00:00Z",
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": "2023-11-11T13:00:00Z",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "100",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "+responseCode,-queryName",
+      "disabled": true
+    },
+    {
+      "name": "filters",
+      "value": "responseCode==NOERROR,queryType==A",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "dns_firewall_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

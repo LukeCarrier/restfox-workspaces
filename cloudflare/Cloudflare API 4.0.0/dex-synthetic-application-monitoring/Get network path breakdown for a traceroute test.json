@@ -1,0 +1,66 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/dex/traceroute-tests/{test_id}/network-path",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "deviceId",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "from",
+      "value": "1689520412000",
+      "disabled": false
+    },
+    {
+      "name": "to",
+      "value": "1689606812000",
+      "disabled": false
+    },
+    {
+      "name": "interval",
+      "value": "string",
+      "disabled": false
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "test_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 10
+}

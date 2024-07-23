@@ -1,0 +1,41 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/queues/{queue_id}/consumers/{consumer_id}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/json"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "consumer_id",
+      "value": ""
+    },
+    {
+      "name": "queue_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 7
+}

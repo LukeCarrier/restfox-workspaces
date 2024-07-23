@@ -1,0 +1,37 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/ai/finetunes/{finetune_id}/finetune-assets",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": 48546000
+    },
+    {
+      "name": "finetune_id",
+      "value": "bc451aef-f723-4b26-a6b2-901afd2e7a8a"
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

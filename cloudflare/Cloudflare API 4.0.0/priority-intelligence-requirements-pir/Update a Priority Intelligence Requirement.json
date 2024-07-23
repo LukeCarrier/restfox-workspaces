@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_identifier}/cloudforce-one/requests/priority/{priority_identifer}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"labels\": [\n    \"DoS\",\n    \"CVE\"\n  ],\n  \"priority\": 1,\n  \"requirement\": \"DoS attacks carried out by CVEs\",\n  \"tlp\": \"string\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_identifier",
+      "value": ""
+    },
+    {
+      "name": "priority_identifer",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 5
+}

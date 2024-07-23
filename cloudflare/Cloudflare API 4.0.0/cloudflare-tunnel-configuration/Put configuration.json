@@ -1,0 +1,43 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/cfd_tunnel/{tunnel_id}/configurations",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"config\": {\n    \"ingress\": [\n      {\n        \"hostname\": \"tunnel.example.com\",\n        \"originRequest\": {\n          \"access\": {\n            \"audTag\": [\n              \"string\"\n            ],\n            \"required\": true,\n            \"teamName\": \"Your Zero Trust authentication domain.\"\n          },\n          \"caPool\": \"string\",\n          \"connectTimeout\": 10,\n          \"disableChunkedEncoding\": true,\n          \"http2Origin\": true,\n          \"httpHostHeader\": \"string\",\n          \"keepAliveConnections\": 100,\n          \"keepAliveTimeout\": 90,\n          \"noHappyEyeballs\": true,\n          \"noTLSVerify\": true,\n          \"originServerName\": \"string\",\n          \"proxyType\": \"string\",\n          \"tcpKeepAlive\": 30,\n          \"tlsTimeout\": 10\n        },\n        \"path\": \"subpath\",\n        \"service\": \"https://localhost:8001\"\n      }\n    ],\n    \"originRequest\": {\n      \"access\": {\n        \"audTag\": [\n          \"string\"\n        ],\n        \"required\": true,\n        \"teamName\": \"Your Zero Trust authentication domain.\"\n      },\n      \"caPool\": \"string\",\n      \"connectTimeout\": 10,\n      \"disableChunkedEncoding\": true,\n      \"http2Origin\": true,\n      \"httpHostHeader\": \"string\",\n      \"keepAliveConnections\": 100,\n      \"keepAliveTimeout\": 90,\n      \"noHappyEyeballs\": true,\n      \"noTLSVerify\": true,\n      \"originServerName\": \"string\",\n      \"proxyType\": \"string\",\n      \"tcpKeepAlive\": 30,\n      \"tlsTimeout\": 10\n    },\n    \"warp-routing\": {\n      \"enabled\": true\n    }\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "tunnel_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 1
+}

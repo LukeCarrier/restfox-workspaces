@@ -1,0 +1,58 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/teamnet/routes/network/{ip_network_encoded}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-User-Service-Key",
+      "value": "{{ xAuthUserServiceKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "virtual_network_id",
+      "value": "f70ff985-a4ef-4643-bbbc-4a0ed4fc8415",
+      "disabled": true
+    },
+    {
+      "name": "tun_type",
+      "value": "cfd_tunnel",
+      "disabled": true
+    },
+    {
+      "name": "tunnel_id",
+      "value": "undefined",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "ip_network_encoded",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

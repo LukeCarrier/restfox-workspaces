@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_identifier}/cloudforce-one/requests",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"completed_after\": null,\n  \"completed_before\": null,\n  \"created_after\": null,\n  \"created_before\": null,\n  \"page\": 0,\n  \"per_page\": 10,\n  \"request_type\": \"Victomology\",\n  \"sort_by\": \"created\",\n  \"sort_order\": \"string\",\n  \"status\": \"string\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_identifier",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

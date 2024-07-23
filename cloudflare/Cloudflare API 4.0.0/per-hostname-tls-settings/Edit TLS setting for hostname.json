@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/hostnames/settings/{setting_id}/{hostname}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"value\": [\n    \"ECDHE-RSA-AES128-GCM-SHA256\",\n    \"AES128-GCM-SHA256\"\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    },
+    {
+      "name": "setting_id",
+      "value": ""
+    },
+    {
+      "name": "hostname",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 2
+}

@@ -1,0 +1,57 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/iam/permission_groups",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "id",
+      "value": "6d7f2f5f5b1d4a0e9081fdc98d432fd1",
+      "disabled": true
+    },
+    {
+      "name": "name",
+      "value": "NameOfThePermissionGroup",
+      "disabled": true
+    },
+    {
+      "name": "label",
+      "value": "labelOfThePermissionGroup",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "1",
+      "disabled": true
+    },
+    {
+      "name": "per_page",
+      "value": "20",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

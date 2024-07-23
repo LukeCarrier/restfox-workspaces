@@ -1,0 +1,69 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone}/spectrum/analytics/events/bytime",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "dimensions",
+      "value": "event,appID",
+      "disabled": true
+    },
+    {
+      "name": "sort",
+      "value": "+count,-bytesIngress",
+      "disabled": true
+    },
+    {
+      "name": "until",
+      "value": "2014-01-02T03:20:00Z",
+      "disabled": true
+    },
+    {
+      "name": "metrics",
+      "value": "count,bytesIngress",
+      "disabled": true
+    },
+    {
+      "name": "filters",
+      "value": "event==disconnect%20AND%20coloName!=SFO",
+      "disabled": true
+    },
+    {
+      "name": "since",
+      "value": "2014-01-02T02:20:00Z",
+      "disabled": true
+    },
+    {
+      "name": "time_delta",
+      "value": "minute",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

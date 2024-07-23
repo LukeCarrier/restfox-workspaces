@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone_id}/dns_settings",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"foundation_dns\": true,\n  \"multi_provider\": true,\n  \"nameservers\": {\n    \"type\": \"cloudflare.standard\"\n  },\n  \"ns_ttl\": 86400,\n  \"secondary_overrides\": true,\n  \"soa\": {\n    \"expire\": 604800,\n    \"min_ttl\": 1800,\n    \"mname\": \"kristina.ns.cloudflare.com\",\n    \"refresh\": 10000,\n    \"retry\": 2400,\n    \"rname\": \"admin.example.com\",\n    \"ttl\": 3600\n  },\n  \"zone_mode\": \"dns_only\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "zone_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/stream/clip",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"allowedOrigins\": [\n    \"example.com\"\n  ],\n  \"clippedFromVideoUID\": \"023e105f4ecef8ad9ca31a8372d0c353\",\n  \"creator\": \"creator-id_abcde12345\",\n  \"endTimeSeconds\": 0,\n  \"maxDurationSeconds\": 0,\n  \"requireSignedURLs\": true,\n  \"startTimeSeconds\": 0,\n  \"thumbnailTimestampPct\": 0.529241,\n  \"watermark\": {\n    \"uid\": \"ea95132c15732412d22c1476fa83f27a\"\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

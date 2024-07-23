@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone}/spectrum/analytics/aggregate/current",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "appID",
+      "value": "ea95132c15732412d22c1476fa83f27a,d122c5f4bb71e25cc9e86ab43b142e2f",
+      "disabled": true
+    },
+    {
+      "name": "app_id_param",
+      "value": "ea95132c15732412d22c1476fa83f27a,d122c5f4bb71e25cc9e86ab43b142e2f",
+      "disabled": true
+    },
+    {
+      "name": "colo_name",
+      "value": "PDX",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "zone",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 0
+}

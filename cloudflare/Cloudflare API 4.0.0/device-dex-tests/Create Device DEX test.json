@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/devices/dex_tests",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"data\": {\n    \"host\": \"https://dash.cloudflare.com\",\n    \"kind\": \"http\",\n    \"method\": \"GET\"\n  },\n  \"description\": \"Checks the dash endpoint every 30 minutes\",\n  \"enabled\": true,\n  \"interval\": \"30m\",\n  \"name\": \"HTTP dash health check\",\n  \"target_policies\": [\n    {\n      \"default\": true,\n      \"id\": \"string\",\n      \"name\": \"string\"\n    }\n  ],\n  \"targeted\": true\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 1
+}

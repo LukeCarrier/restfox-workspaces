@@ -1,0 +1,32 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/access/seats",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "[\n  {\n    \"access_seat\": true,\n    \"gateway_seat\": true,\n    \"seat_uid\": \"f174e90a-fafe-4643-bbbc-4a0ed4fc8415\"\n  }\n]"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 0
+}

@@ -1,0 +1,39 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/stream/direct_upload",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"allowedOrigins\": [\n    \"example.com\"\n  ],\n  \"creator\": \"creator-id_abcde12345\",\n  \"expiry\": \"2021-01-02T02:20:00Z\",\n  \"maxDurationSeconds\": 0,\n  \"meta\": {\n    \"name\": \"video12345.mp4\"\n  },\n  \"requireSignedURLs\": true,\n  \"scheduledDeletion\": \"2014-01-02T02:20:00Z\",\n  \"thumbnailTimestampPct\": 0.529241,\n  \"watermark\": {\n    \"uid\": \"ea95132c15732412d22c1476fa83f27a\"\n  }\n}"
+  },
+  "headers": [
+    {
+      "name": "Upload-Creator",
+      "value": "creator-id_abcde12345",
+      "disabled": true
+    },
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}

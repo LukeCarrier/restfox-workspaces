@@ -1,0 +1,69 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/ai/models/search",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "per_page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "page",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "task",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "author",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "source",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "hide_experimental",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "search",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": 48546000
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 2
+}

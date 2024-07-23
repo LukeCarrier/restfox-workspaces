@@ -1,0 +1,40 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/sites/{site_id}/acls/{acl_id}",
+  "method": "PATCH",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"Allows local traffic between PIN pads and cash register.\",\n  \"forward_locally\": true,\n  \"lan_1\": {\n    \"lan_id\": \"string\",\n    \"lan_name\": \"string\",\n    \"ports\": [\n      1\n    ],\n    \"subnets\": [\n      null\n    ]\n  },\n  \"lan_2\": {\n    \"lan_id\": \"string\",\n    \"lan_name\": \"string\",\n    \"ports\": [\n      1\n    ],\n    \"subnets\": [\n      null\n    ]\n  },\n  \"name\": \"PIN Pad - Cash Register\",\n  \"protocols\": [\n    \"string\"\n  ]\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "site_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    },
+    {
+      "name": "acl_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 4
+}

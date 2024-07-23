@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/zones/{zone}/spectrum/apps/{app_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"argo_smart_routing\": true,\n  \"dns\": {\n    \"name\": \"ssh.example.com\",\n    \"type\": \"CNAME\"\n  },\n  \"edge_ips\": {\n    \"connectivity\": \"all\",\n    \"type\": \"dynamic\"\n  },\n  \"ip_firewall\": true,\n  \"origin_dns\": {\n    \"name\": \"origin.example.com\",\n    \"ttl\": 0,\n    \"type\": \"string\"\n  },\n  \"origin_port\": 22,\n  \"protocol\": \"tcp/22\",\n  \"proxy_protocol\": \"off\",\n  \"tls\": \"full\",\n  \"traffic_type\": \"direct\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "app_id",
+      "value": ""
+    },
+    {
+      "name": "zone",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 4
+}

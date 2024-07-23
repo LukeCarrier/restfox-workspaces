@@ -1,0 +1,38 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/stream/{identifier}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"allowedOrigins\": [\n    \"example.com\"\n  ],\n  \"creator\": \"creator-id_abcde12345\",\n  \"maxDurationSeconds\": 0,\n  \"meta\": {\n    \"name\": \"video12345.mp4\"\n  },\n  \"requireSignedURLs\": true,\n  \"scheduledDeletion\": \"2014-01-02T02:20:00Z\",\n  \"thumbnailTimestampPct\": 0.529241,\n  \"uploadExpiry\": \"2014-01-02T02:20:00Z\"\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "identifier",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 7
+}

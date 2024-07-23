@@ -1,0 +1,36 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/magic/cf_interconnects/{cf_interconnect_id}",
+  "method": "PUT",
+  "body": {
+    "mimeType": "application/json",
+    "text": "{\n  \"description\": \"Tunnel for Interconnect to ORD\",\n  \"gre\": {\n    \"cloudflare_endpoint\": \"203.0.113.1\"\n  },\n  \"health_check\": {\n    \"enabled\": true,\n    \"rate\": \"low\",\n    \"target\": \"203.0.113.1\",\n    \"type\": \"request\"\n  },\n  \"interface_address\": \"192.0.2.0/31\",\n  \"mtu\": 1476\n}"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "cf_interconnect_id",
+      "value": ""
+    },
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "No Auth"
+  },
+  "sortOrder": 3
+}

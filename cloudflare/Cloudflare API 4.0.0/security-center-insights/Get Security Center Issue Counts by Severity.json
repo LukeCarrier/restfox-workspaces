@@ -1,0 +1,89 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/accounts/{account_id}/intel/attack-surface-report/issues/severity",
+  "method": "GET",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [
+    {
+      "name": "X-Auth-Email",
+      "value": "{{ xAuthEmail }}",
+      "disabled": false
+    },
+    {
+      "name": "X-Auth-Key",
+      "value": "{{ xAuthKey }}",
+      "disabled": false
+    }
+  ],
+  "parameters": [
+    {
+      "name": "dismissed",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "issue_class",
+      "value": "a_record_dangling,always_use_https_not_enabled",
+      "disabled": true
+    },
+    {
+      "name": "issue_type",
+      "value": "compliance_violation,email_security",
+      "disabled": true
+    },
+    {
+      "name": "product",
+      "value": "access,dns",
+      "disabled": true
+    },
+    {
+      "name": "severity",
+      "value": "low,moderate",
+      "disabled": true
+    },
+    {
+      "name": "subject",
+      "value": "example.com",
+      "disabled": true
+    },
+    {
+      "name": "issue_class~neq",
+      "value": "a_record_dangling,always_use_https_not_enabled",
+      "disabled": true
+    },
+    {
+      "name": "issue_type~neq",
+      "value": "compliance_violation,email_security",
+      "disabled": true
+    },
+    {
+      "name": "product~neq",
+      "value": "access,dns",
+      "disabled": true
+    },
+    {
+      "name": "severity~neq",
+      "value": "low,moderate",
+      "disabled": true
+    },
+    {
+      "name": "subject~neq",
+      "value": "example.com",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "account_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "bearer",
+    "token": "{{bearerToken}}",
+    "prefix": ""
+  },
+  "sortOrder": 3
+}
