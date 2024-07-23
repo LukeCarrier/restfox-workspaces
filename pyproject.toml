@@ -7,11 +7,13 @@ license = "UNLICENSED"
 readme = "README.md"
 
 [tool.poetry.scripts]
+cloudflare = "restfox_workspace_utils.cloudflare:main"
 openapi = "restfox_workspace_utils.openapi:main"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 PyYAML = "^6.0"
+python-slugify = "^8.0.4"
 
 [build-system]
 requires = ["poetry-core"]
