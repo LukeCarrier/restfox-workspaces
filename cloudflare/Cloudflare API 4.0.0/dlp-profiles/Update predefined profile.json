@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"allowed_match_count\": 5,\n  \"context_awareness\": {\n    \"enabled\": true,\n    \"skip\": {\n      \"files\": true\n    }\n  },\n  \"entries\": [\n    null\n  ],\n  \"ocr_enabled\": true\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 6
 }

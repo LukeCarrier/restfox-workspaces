@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"activated\": true,\n  \"interrupt_window_duration_hours\": 0,\n  \"interrupt_window_hour_of_day\": 0,\n  \"notes\": \"string\",\n  \"timezone\": \"string\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 3
 }

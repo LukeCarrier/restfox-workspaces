@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "[\n  {\n    \"description\": \"Domain bypass for local development\",\n    \"dns_server\": [\n      null\n    ],\n    \"suffix\": \"example.com\"\n  }\n]"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

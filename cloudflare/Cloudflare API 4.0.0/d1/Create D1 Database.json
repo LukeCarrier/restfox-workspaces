@@ -6,28 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"name\": \"my-database\",\n  \"primary_location_hint\": \"wnam\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -36,9 +15,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 1
 }

@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"description\": \"This is a note\",\n  \"kind\": \"ip\",\n  \"name\": \"list1\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

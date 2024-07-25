@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"destination_conf\": \"s3://pcaps-bucket?region=us-east-1\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

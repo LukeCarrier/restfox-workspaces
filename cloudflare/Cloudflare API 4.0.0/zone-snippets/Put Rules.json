@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"rules\": [\n    {\n      \"description\": \"Rule description\",\n      \"enabled\": true,\n      \"expression\": \"http.cookie eq \\\"a=b\\\"\",\n      \"snippet_name\": \"snippet_name_01\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

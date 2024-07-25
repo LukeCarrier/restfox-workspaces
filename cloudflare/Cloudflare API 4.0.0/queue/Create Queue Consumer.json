@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"dead_letter_queue\": \"example-dlq\",\n  \"environment\": \"production\",\n  \"script_name\": \"example-consumer\",\n  \"settings\": {\n    \"batch_size\": 10,\n    \"max_retries\": 3,\n    \"max_wait_time_ms\": 5000\n  },\n  \"type\": \"worker\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 6
 }

@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"cache_invalidate_on_update\": true,\n  \"cache_ttl\": 0,\n  \"collect_logs\": true,\n  \"id\": \"my-gateway\",\n  \"rate_limiting_interval\": 0,\n  \"rate_limiting_limit\": 0,\n  \"rate_limiting_technique\": \"string\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -26,9 +15,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 1
 }

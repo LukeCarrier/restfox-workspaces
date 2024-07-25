@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"custom_metadata\": {},\n  \"custom_origin_server\": \"origin2.example.com\",\n  \"custom_origin_sni\": \"sni.example.com\",\n  \"ssl\": {}\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

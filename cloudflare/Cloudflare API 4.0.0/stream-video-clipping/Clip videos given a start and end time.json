@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"allowedOrigins\": [\n    \"example.com\"\n  ],\n  \"clippedFromVideoUID\": \"023e105f4ecef8ad9ca31a8372d0c353\",\n  \"creator\": \"creator-id_abcde12345\",\n  \"endTimeSeconds\": 0,\n  \"maxDurationSeconds\": 0,\n  \"requireSignedURLs\": true,\n  \"startTimeSeconds\": 0,\n  \"thumbnailTimestampPct\": 0.529241,\n  \"watermark\": {\n    \"uid\": \"ea95132c15732412d22c1476fa83f27a\"\n  }\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -26,9 +15,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 0
 }

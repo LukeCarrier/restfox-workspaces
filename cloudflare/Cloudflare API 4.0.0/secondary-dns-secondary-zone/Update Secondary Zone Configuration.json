@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"auto_refresh_seconds\": 86400,\n  \"name\": \"www.example.com.\",\n  \"peers\": [\n    \"23ff594956f20c2a721606e94745a8aa\",\n    \"00920f38ce07c2e2f4df50b1f61d4194\"\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

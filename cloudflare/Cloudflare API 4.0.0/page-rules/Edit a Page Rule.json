@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"actions\": [\n    {\n      \"id\": \"browser_check\",\n      \"value\": \"on\"\n    }\n  ],\n  \"priority\": 1,\n  \"status\": \"active\",\n  \"targets\": [\n    {\n      \"constraint\": {\n        \"operator\": \"matches\",\n        \"value\": \"*example.com/images/*\"\n      },\n      \"target\": \"url\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 4
 }

@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"body\": {\n    \"base64\": \"c29tZV9yZXF1ZXN0X2JvZHk=\",\n    \"json\": {},\n    \"plain_text\": \"string\"\n  },\n  \"context\": {\n    \"bot_score\": 0,\n    \"geoloc\": {\n      \"city\": \"London\",\n      \"continent\": \"string\",\n      \"is_eu_country\": true,\n      \"iso_code\": \"string\",\n      \"latitude\": 0,\n      \"longitude\": 0,\n      \"postal_code\": \"string\",\n      \"region_code\": \"string\",\n      \"subdivision_2_iso_code\": \"string\",\n      \"timezone\": \"string\"\n    },\n    \"skip_challenge\": true,\n    \"threat_score\": 0\n  },\n  \"cookies\": {\n    \"cookie_name_1\": \"cookie_value_1\",\n    \"cookie_name_2\": \"cookie_value_2\"\n  },\n  \"headers\": {\n    \"header_name_1\": \"header_value_1\",\n    \"header_name_2\": \"header_value_2\"\n  },\n  \"method\": \"PUT\",\n  \"protocol\": \"HTTP/1.1\",\n  \"skip_response\": true,\n  \"url\": \"https://some.zone/some_path\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

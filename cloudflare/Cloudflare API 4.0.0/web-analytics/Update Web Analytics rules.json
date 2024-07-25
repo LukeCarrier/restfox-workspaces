@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"delete_rules\": [\n    \"f174e90a-fafe-4643-bbbc-4a0ed4fc8415\"\n  ],\n  \"rules\": [\n    {\n      \"host\": \"example.com\",\n      \"id\": \"f174e90a-fafe-4643-bbbc-4a0ed4fc8415\",\n      \"inclusive\": true,\n      \"is_paused\": true,\n      \"paths\": [\n        \"*\"\n      ]\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 9
 }

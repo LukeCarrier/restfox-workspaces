@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "[\n  \"f174e90a-fafe-4643-bbbc-4a0ed4fc8415\"\n]"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

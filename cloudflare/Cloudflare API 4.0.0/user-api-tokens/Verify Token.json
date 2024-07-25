@@ -9,9 +9,7 @@
   "parameters": [],
   "pathParameters": [],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 2
 }

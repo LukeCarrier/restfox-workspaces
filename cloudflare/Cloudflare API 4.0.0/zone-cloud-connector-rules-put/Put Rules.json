@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "[\n  {\n    \"description\": \"Rule description\",\n    \"enabled\": true,\n    \"expression\": \"http.cookie eq \\\"a=b\\\"\",\n    \"id\": \"95c365e17e1b46599cd99e5b231fac4e\",\n    \"parameters\": {\n      \"host\": \"examplebucket.s3.eu-north-1.amazonaws.com\"\n    },\n    \"provider\": \"aws_s3\"\n  }\n]"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

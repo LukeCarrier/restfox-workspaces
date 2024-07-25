@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "[\n  {\n    \"base64\": true,\n    \"expiration\": 1578435000,\n    \"expiration_ttl\": 300,\n    \"key\": \"My-Key\",\n    \"metadata\": {\n      \"someMetadataKey\": \"someMetadataValue\"\n    },\n    \"value\": \"Some string\"\n  }\n]"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 6
 }

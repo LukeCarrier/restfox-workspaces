@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"datasetId\": 3\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [
     {
       "name": "format",
@@ -27,9 +16,7 @@
   ],
   "pathParameters": [],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 1
 }

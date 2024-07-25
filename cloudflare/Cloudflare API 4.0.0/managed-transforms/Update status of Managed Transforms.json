@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"managed_request_headers\": [\n    {\n      \"enabled\": true,\n      \"id\": \"add_cf-bot-score_header\"\n    }\n  ],\n  \"managed_response_headers\": [\n    {\n      \"enabled\": true,\n      \"id\": \"add_cf-bot-score_header\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"environment\": \"production\",\n  \"hostname\": \"foo.example.com\",\n  \"service\": \"foo\",\n  \"zone_id\": \"593c9c94de529bbbfaac7c53ced0447d\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -26,9 +15,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 1
 }

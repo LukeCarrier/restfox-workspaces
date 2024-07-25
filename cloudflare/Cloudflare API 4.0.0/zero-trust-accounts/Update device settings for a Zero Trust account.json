@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"gateway_proxy_enabled\": true,\n  \"gateway_udp_proxy_enabled\": true,\n  \"root_certificate_installation_enabled\": true,\n  \"use_zt_virtual_ip\": true\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

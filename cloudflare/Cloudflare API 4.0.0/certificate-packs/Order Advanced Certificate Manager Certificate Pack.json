@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"certificate_authority\": \"lets_encrypt\",\n  \"cloudflare_branding\": true,\n  \"hosts\": [\n    \"example.com\",\n    \"*.example.com\",\n    \"www.example.com\"\n  ],\n  \"type\": \"advanced\",\n  \"validation_method\": \"txt\",\n  \"validity_days\": 0\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

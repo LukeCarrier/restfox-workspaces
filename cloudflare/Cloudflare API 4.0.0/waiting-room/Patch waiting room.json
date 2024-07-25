@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"additional_routes\": [\n    {\n      \"host\": \"shop2.example.com\",\n      \"path\": \"/shop2/checkout\"\n    }\n  ],\n  \"cookie_attributes\": {\n    \"samesite\": \"auto\",\n    \"secure\": \"auto\"\n  },\n  \"cookie_suffix\": \"abcd\",\n  \"custom_page_html\": \"{{#waitTimeKnown}} {{waitTime}} mins {{/waitTimeKnown}} {{^waitTimeKnown}} Queue all enabled {{/waitTimeKnown}}\",\n  \"default_template_language\": \"es-ES\",\n  \"description\": \"Production - DO NOT MODIFY\",\n  \"disable_session_renewal\": true,\n  \"host\": \"shop.example.com\",\n  \"json_response_enabled\": true,\n  \"name\": \"production_webinar\",\n  \"new_users_per_minute\": 0,\n  \"path\": \"/shop/checkout\",\n  \"queue_all\": true,\n  \"queueing_method\": \"fifo\",\n  \"queueing_status_code\": 202,\n  \"session_duration\": 5,\n  \"suspended\": true,\n  \"total_active_users\": 0\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 8
 }

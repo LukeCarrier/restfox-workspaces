@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"hostnames\": [\n    \"auth.cloudflare.com\"\n  ],\n  \"ip_subnets\": [\n    null\n  ],\n  \"name\": \"Cloudflare Dashboard\",\n  \"type\": \"Development\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

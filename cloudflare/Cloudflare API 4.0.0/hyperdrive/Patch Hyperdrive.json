@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"origin\": {\n    \"access_client_secret\": \"0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef\",\n    \"password\": \"password1234!\"\n  }\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 4
 }

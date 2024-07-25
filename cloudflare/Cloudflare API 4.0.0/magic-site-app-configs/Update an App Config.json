@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"account_app_id\": \"ac60d3d0435248289d446cedd870bcf4\",\n  \"breakout\": true,\n  \"managed_app_id\": \"cloudflare\",\n  \"priority\": 0\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

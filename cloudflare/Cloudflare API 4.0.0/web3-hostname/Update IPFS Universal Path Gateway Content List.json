@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"action\": \"block\",\n  \"entries\": [\n    {\n      \"content\": \"QmPZ9gcCEpqKTo6aq61g2nXGUhM4iCL3ewB6LDXZCtioEB\",\n      \"description\": \"this is my content list entry\",\n      \"type\": \"cid\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

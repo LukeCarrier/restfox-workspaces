@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"address\": \"www.example.com\",\n  \"check_regions\": [\n    \"WEU\",\n    \"ENAM\"\n  ],\n  \"consecutive_fails\": 1,\n  \"consecutive_successes\": 1,\n  \"description\": \"Health check for www.example.com\",\n  \"http_config\": {\n    \"allow_insecure\": true,\n    \"expected_body\": \"success\",\n    \"expected_codes\": [\n      \"2xx\",\n      \"302\"\n    ],\n    \"follow_redirects\": true,\n    \"header\": {\n      \"Host\": [\n        \"example.com\"\n      ],\n      \"X-App-ID\": [\n        \"abc123\"\n      ]\n    },\n    \"method\": \"GET\",\n    \"path\": \"/health\",\n    \"port\": 80\n  },\n  \"interval\": 60,\n  \"name\": \"server-1\",\n  \"retries\": 2,\n  \"suspended\": true,\n  \"tcp_config\": {\n    \"method\": \"connection_established\",\n    \"port\": 80\n  },\n  \"timeout\": 5,\n  \"type\": \"HTTPS\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -26,9 +15,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 2
 }

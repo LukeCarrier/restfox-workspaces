@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"description\": \"Allows local traffic between PIN pads and cash register.\",\n  \"forward_locally\": true,\n  \"lan_1\": {\n    \"lan_id\": \"string\",\n    \"lan_name\": \"string\",\n    \"ports\": [\n      1\n    ],\n    \"subnets\": [\n      null\n    ]\n  },\n  \"lan_2\": {\n    \"lan_id\": \"string\",\n    \"lan_name\": \"string\",\n    \"ports\": [\n      1\n    ],\n    \"subnets\": [\n      null\n    ]\n  },\n  \"name\": \"PIN Pad - Cash Register\",\n  \"protocols\": [\n    \"string\"\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

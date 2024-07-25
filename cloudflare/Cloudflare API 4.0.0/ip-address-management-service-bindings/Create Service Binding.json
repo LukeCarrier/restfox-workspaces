@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"cidr\": \"192.0.2.0/24\",\n  \"service_id\": \"2db684ee7ca04e159946fd05b99e1bcd\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

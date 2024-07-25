@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"logpush\": true,\n  \"tail_consumers\": [\n    {\n      \"environment\": \"production\",\n      \"namespace\": \"my-namespace\",\n      \"service\": \"my-log-consumer\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {
@@ -30,9 +19,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 7
 }

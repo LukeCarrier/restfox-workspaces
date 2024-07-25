@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"ip\": \"192.0.2.53\",\n  \"ixfr_enable\": true,\n  \"name\": \"my-peer-1\",\n  \"port\": 53,\n  \"tsig_id\": \"69cd1e104af3e6ed3cb344f263fd0d5a\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

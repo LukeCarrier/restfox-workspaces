@@ -11,16 +11,6 @@
       "name": "Upload-Creator",
       "value": "creator-id_abcde12345",
       "disabled": true
-    },
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
     }
   ],
   "parameters": [],
@@ -31,9 +21,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 3
 }

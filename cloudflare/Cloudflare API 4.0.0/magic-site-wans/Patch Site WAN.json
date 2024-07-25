@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"name\": \"string\",\n  \"physport\": 1,\n  \"priority\": 0,\n  \"static_addressing\": {\n    \"address\": \"192.0.2.0/24\",\n    \"gateway_address\": \"192.0.2.1\",\n    \"secondary_address\": \"192.0.2.0/24\"\n  },\n  \"vlan_tag\": 0\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

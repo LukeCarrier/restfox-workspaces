@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"redact_pii\": true,\n  \"settings_by_rule_type\": {\n    \"dns\": {},\n    \"http\": {},\n    \"l4\": {}\n  }\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

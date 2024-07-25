@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"enabled\": true,\n  \"host\": \"example.com\",\n  \"name\": \"example.com Keyless SSL\",\n  \"port\": 24008,\n  \"tunnel\": {\n    \"private_ip\": \"10.0.0.1\",\n    \"vnet_id\": \"7365377a-85a4-4390-9480-531ef7dc7a3c\"\n  }\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

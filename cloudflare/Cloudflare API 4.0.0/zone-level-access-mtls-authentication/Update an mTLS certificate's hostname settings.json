@@ -6,18 +6,7 @@
     "mimeType": "application/json",
     "text": "{\n  \"settings\": [\n    {\n      \"china_network\": true,\n      \"client_certificate_forwarding\": true,\n      \"hostname\": \"admin.example.com\"\n    }\n  ]\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [
     {

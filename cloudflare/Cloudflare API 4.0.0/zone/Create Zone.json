@@ -6,24 +6,11 @@
     "mimeType": "application/json",
     "text": "{\n  \"account\": {\n    \"id\": \"023e105f4ecef8ad9ca31a8372d0c353\"\n  },\n  \"name\": \"example.com\",\n  \"type\": \"full\"\n}"
   },
-  "headers": [
-    {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    }
-  ],
+  "headers": [],
   "parameters": [],
   "pathParameters": [],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 1
 }

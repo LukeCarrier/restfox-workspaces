@@ -7,16 +7,6 @@
   },
   "headers": [
     {
-      "name": "X-Auth-Email",
-      "value": "{{ xAuthEmail }}",
-      "disabled": false
-    },
-    {
-      "name": "X-Auth-Key",
-      "value": "{{ xAuthKey }}",
-      "disabled": false
-    },
-    {
       "name": "X-Auth-User-Service-Key",
       "value": "{{ xAuthUserServiceKey }}",
       "disabled": false
@@ -34,9 +24,7 @@
     }
   ],
   "authentication": {
-    "type": "bearer",
-    "token": "{{bearerToken}}",
-    "prefix": ""
+    "type": "No Auth"
   },
   "sortOrder": 9
 }
