@@ -1,0 +1,54 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/radar/early_fraud_warnings",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "charge",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "created",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "payment_intent",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 349
+}

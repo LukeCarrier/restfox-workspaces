@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/sigma/scheduled_query_runs/{scheduled_query_run}",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "scheduled_query_run",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 386
+}

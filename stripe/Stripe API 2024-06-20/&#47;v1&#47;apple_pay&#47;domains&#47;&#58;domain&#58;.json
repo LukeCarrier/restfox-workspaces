@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/apple_pay/domains/{domain}",
+  "method": "DELETE",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "domain",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 34
+}

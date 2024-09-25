@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/subscription_items/{subscription_item}/usage_records",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "subscription_item",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 400
+}

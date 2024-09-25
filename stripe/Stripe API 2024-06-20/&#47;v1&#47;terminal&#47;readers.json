@@ -1,0 +1,59 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/terminal/readers",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "device_type",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "location",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "serial_number",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 449
+}

@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/subscriptions/{subscription}/resume",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "subscription",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 414
+}

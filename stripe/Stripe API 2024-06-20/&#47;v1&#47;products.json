@@ -1,0 +1,64 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/products",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "active",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "created",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ids",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "shippable",
+      "value": "true",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "url",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 325
+}

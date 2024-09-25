@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/subscriptions/{subscription_exposed_id}",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "subscription_exposed_id",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 411
+}

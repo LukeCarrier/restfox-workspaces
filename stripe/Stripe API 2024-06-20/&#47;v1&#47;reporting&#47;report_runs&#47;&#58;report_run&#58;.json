@@ -1,0 +1,29 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/reporting/report_runs/{report_run}",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "report_run",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 367
+}

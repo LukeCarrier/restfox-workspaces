@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/webhook_endpoints/{webhook_endpoint}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "webhook_endpoint",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 549
+}

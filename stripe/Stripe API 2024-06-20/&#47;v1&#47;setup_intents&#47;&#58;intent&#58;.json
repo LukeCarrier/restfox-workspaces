@@ -1,0 +1,34 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/setup_intents/{intent}",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "client_secret",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [
+    {
+      "name": "intent",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 376
+}

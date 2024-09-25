@@ -1,0 +1,49 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/billing/alerts",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "alert_type",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "meter",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 52
+}

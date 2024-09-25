@@ -1,0 +1,27 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/transfers/{transfer}/reversals/{id}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "id",
+      "value": ""
+    },
+    {
+      "name": "transfer",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 512
+}

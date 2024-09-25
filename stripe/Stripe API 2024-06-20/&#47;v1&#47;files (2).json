@@ -1,0 +1,17 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/files",
+  "method": "POST",
+  "body": {
+    "mimeType": "No Body"
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 186
+}

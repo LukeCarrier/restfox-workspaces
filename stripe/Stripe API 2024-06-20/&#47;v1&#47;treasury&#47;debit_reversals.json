@@ -1,0 +1,59 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/treasury/debit_reversals",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "financial_account",
+      "value": "string",
+      "disabled": false
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "received_debit",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "resolution",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 516
+}

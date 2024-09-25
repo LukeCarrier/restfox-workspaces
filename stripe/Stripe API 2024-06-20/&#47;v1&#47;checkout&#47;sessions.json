@@ -1,0 +1,74 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/checkout/sessions",
+  "method": "GET",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [
+    {
+      "name": "created",
+      "value": "null",
+      "disabled": true
+    },
+    {
+      "name": "customer",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "customer_details",
+      "value": "[object Object]",
+      "disabled": true
+    },
+    {
+      "name": "ending_before",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "expand",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "limit",
+      "value": "0",
+      "disabled": true
+    },
+    {
+      "name": "payment_intent",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "payment_link",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "starting_after",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "status",
+      "value": "string",
+      "disabled": true
+    },
+    {
+      "name": "subscription",
+      "value": "string",
+      "disabled": true
+    }
+  ],
+  "pathParameters": [],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 86
+}

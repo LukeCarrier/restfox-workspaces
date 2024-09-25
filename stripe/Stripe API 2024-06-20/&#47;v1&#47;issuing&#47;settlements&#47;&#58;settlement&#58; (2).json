@@ -1,0 +1,23 @@
+{
+  "_type": "request",
+  "url": "{{ base_url }}/v1/issuing/settlements/{settlement}",
+  "method": "POST",
+  "body": {
+    "mimeType": "application/x-www-form-urlencoded",
+    "params": []
+  },
+  "headers": [],
+  "parameters": [],
+  "pathParameters": [
+    {
+      "name": "settlement",
+      "value": ""
+    }
+  ],
+  "authentication": {
+    "type": "basic",
+    "username": "{{ httpUsername }}",
+    "password": "{{ httpPassword }}"
+  },
+  "sortOrder": 263
+}
